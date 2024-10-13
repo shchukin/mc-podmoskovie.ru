@@ -1,0 +1,22 @@
+.stage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 28px 24px;
+}
+
+
+
+@media (width < 1200px) {
+
+    .stage {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px 18px;
+    }
+}
+
+@media (width < 740px) {
+
+    .stage {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 440px));
+    }
+}

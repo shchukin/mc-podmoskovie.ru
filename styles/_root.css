@@ -2,4 +2,18 @@
     --font-heading: "Ubuntu";
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 200ms ease;
+    --heading-spacing: 40px;
+}
+
+
+@media (768px <= width < 1200px) {
+    :root {
+        --heading-spacing: 32px;
+    }
+}
+
+@media (width < 768px) {
+    :root {
+        --heading-spacing: 24px;
+    }
 }

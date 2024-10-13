@@ -6,5 +6,5 @@
     }
 
     .education__body {
-
+        margin-top: var(--heading-spacing);
     }

@@ -1,0 +1,90 @@
+.video-thumb {
+
+}
+    .video-thumb__preview {
+        position: relative;
+        display: block;
+        border: none; /* конфликт с legacy */
+    }
+        .video-thumb__image {
+            vertical-align: top;
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            max-width: none;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video-thumb__preview::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            display: block;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+            background-color: #E0E0E0;
+            background-image: url("../vectors/video-thumb.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 50%;
+        }
+
+    .video-thumb__heading {
+        margin-top: 16px;
+        font-family: var(--font-heading);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1FBBC7;
+    }
+        .video-thumb__link {
+            display: block;
+            width: fit-content;
+            border: none; /* конфликт с legacy */
+        }
+
+        .video-thumb__link:hover {
+            color: #f08c07;
+        }
+
+    .video-thumb__description {
+        margin-top: 12px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+
+
+
+@media (width < 1200px) {
+
+    .video-thumb {
+
+    }
+        .video-thumb__preview {
+
+        }
+            .video-thumb__image {
+                border-radius: 8px;
+            }
+
+            .video-thumb__preview::after {
+                width: 50px;
+                height: 50px;
+            }
+
+        .video-thumb__heading {
+            margin-top: 12px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .video-thumb__description {
+            margin-top: 9px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+}

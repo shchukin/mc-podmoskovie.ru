@@ -7,7 +7,7 @@
     }
 
     .lab__body {
-        margin-top: 40px;
+        margin-top: var(--heading-spacing);
         display: grid;
         grid-template-columns: minmax(0, 552fr) minmax(0, 784fr);
         gap: 24px;
@@ -32,7 +32,6 @@
         }
 
         .lab__body {
-            margin-top: 20px;
             /*grid-template-columns: minmax(0, 554fr) minmax(0, 782fr);*/
         }
             .lab__description {
@@ -82,7 +81,7 @@
         }
 
         .lab__body {
-            margin-top: 24px;
+
         }
             .lab__description {
 

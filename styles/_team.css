@@ -7,7 +7,7 @@
     }
 
     .team__body {
-        margin-top: 27px;
+        margin-top: var(--heading-spacing);
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
@@ -62,7 +62,7 @@
         }
 
         .team__body {
-            margin-top: 22px;
+
         }
             .team__content {
                 gap: 30px;
@@ -125,7 +125,6 @@
         }
 
         .team__body {
-            margin-top: 25px;
             display: block;
             /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
             /*gap: 24px;*/

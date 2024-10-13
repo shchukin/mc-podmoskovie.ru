@@ -7,7 +7,7 @@
     }
 
     .branches__body {
-        margin-top: 40px;
+        margin-top: var(--heading-spacing);
         columns: 3;
         gap: 24px;
     }
@@ -99,7 +99,6 @@
         }
 
         .branches__body {
-            margin-top: 30px;
             /*columns: 3;*/
             gap: 18px;
         }
@@ -178,7 +177,6 @@
         }
 
         .branches__body {
-            /*margin-top: 40px;*/
             columns: unset;
             /*gap: 24px;*/
         }

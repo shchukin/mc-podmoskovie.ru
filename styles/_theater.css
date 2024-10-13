@@ -1,0 +1,10 @@
+.theater {
+
+}
+    .theater__heading {
+
+    }
+
+    .theater__body {
+        margin-top: var(--heading-spacing);
+    }

@@ -147,5 +147,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /* Pins (табы) */
+
+    document.querySelectorAll('.pins__tab').forEach((tab) => {
+        tab.addEventListener('click', function () {
+
+            const tabsContainer = tab.closest('.pins');
+            const tabSiblings = Array.from(tabsContainer.querySelectorAll('.pins__tab'));
+            const tabIndex = tabSiblings.indexOf(tab);
+
+            /* Закладки */
+            const currentTab = tabsContainer.querySelector('.pins__tab--current');
+            currentTab.classList.remove('pins__tab--current');
+            tab.classList.add('pins__tab--current');
+
+            /* Тельца */
+            const currentBody = tabsContainer.querySelector('.pins__item--current');
+            currentBody.classList.remove('pins__item--current');
+            const newBody = tabsContainer.querySelectorAll('.pins__item')[tabIndex];
+            newBody.classList.add('pins__item--current');
+        });
+    });
+
+
 
 });
