@@ -323,10 +323,11 @@
         position: absolute;
         right: 0;
         bottom: 100%;
+        margin-bottom: var(--heading-spacing);
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 4px;
+        gap: 12px;
     }
 
         .swiper--css-skin-education .swiper-scrollbar {
@@ -393,4 +394,8 @@
             }
 
 
-
+@media (width < 740px) {
+    .swiper--css-skin-education .swiper-navigation {
+        display: none;
+    }
+}
