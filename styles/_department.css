@@ -1,0 +1,227 @@
+.accordion {
+
+}
+    .accordion__item {
+        margin-top: 40px;
+    }
+
+    .accordion__item:first-child {
+        margin-top: 0;
+    }
+        .accordion__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+            .accordion__handler {
+                position: relative;
+                border: none;
+                background-color: transparent;
+                width: 100%;
+                padding: 18px 61px 18px 24px;
+                border-bottom: 2px solid #20BBC7;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                display: block;
+                font-family: inherit;
+                text-align: left;
+                cursor: pointer;
+                transition: background-color var(--transition-hover);
+            }
+
+            .accordion__handler:hover {
+                background-color: rgb(31 187 199 / 5%);
+            }
+                .accordion__label {
+                    margin-right: 16px;
+                    font-family: var(--font-heading);
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #2D2D2D;
+                }
+
+                .accordion__note {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: rgb(0 150 170 / 50%);
+                    white-space: nowrap;
+                }
+
+                .accordion__handler::after {
+                    content: "";
+                    position: absolute;
+                    right: 24px;
+                    top: 50%;
+                    margin-top: -18px;
+                    display: block;
+                    width: 37px;
+                    height: 37px;
+                    background-image: url("../vectors/accordion-item.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: transform 600ms var(--ease-out-quint);
+                }
+
+                .accordion__item--expanded .accordion__handler::after {
+                    transform: scaleY(-1);
+                }
+
+        .accordion__dropdown {
+            margin-top: 22px;
+            display: none;
+        }
+
+        .accordion__item--expanded .accordion__dropdown {
+            display: block;
+            animation: var(--slide-bottom);
+        }
+
+
+
+@media (768px <= width < 1200px) {
+
+    .accordion {
+
+    }
+        .accordion__item {
+            margin-top: 32px;
+        }
+
+        .accordion__item:first-child {
+            /*margin-top: 0;*/
+        }
+            .accordion__heading {
+
+            }
+                .accordion__handler {
+                    /*position: relative;*/
+                    /*border: none;*/
+                    /*background-color: transparent;*/
+                    /*width: 100%;*/
+                    /*padding: 18px 61px 18px 24px;*/
+                    /*border-bottom: 2px solid #20BBC7;*/
+                    /*border-top-left-radius: 8px;*/
+                    /*border-top-right-radius: 8px;*/
+                    /*display: flex;*/
+                    /*align-items: baseline;*/
+                    /*gap: 16px;*/
+                    /*font-family: inherit;*/
+                    /*cursor: pointer;*/
+                    /*transition: background-color var(--transition-hover);*/
+                }
+
+                .accordion__handler:hover {
+                    /*background-color: rgb(31 187 199 / 5%);*/
+                }
+                    .accordion__label {
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+                        font-size: 24px;
+                        line-height: 28px;
+                        /*color: #2D2D2D;*/
+                    }
+
+                    .accordion__note {
+                        /*font-weight: 500;*/
+                        font-size: 14px;
+                        line-height: 20px;
+                        /*color: rgb(0 150 170 / 50%);*/
+                    }
+
+                    .accordion__handler::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*right: 24px;*/
+                        /*top: 50%;*/
+                        margin-top: -16px;
+                        /*display: block;*/
+                        width: 32px;
+                        height: 32px;
+                        /*background-image: url("../vectors/accordion-item.svg");*/
+                        /*background-size: contain;*/
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: center center;*/
+                    }
+
+            .accordion__dropdown {
+                margin-top: 18px;
+            }
+}
+
+
+
+@media (width < 768px) {
+
+    .accordion {
+
+    }
+        .accordion__item {
+            margin-top: 30px;
+        }
+
+        .accordion__item:first-child {
+            /*margin-top: 0;*/
+        }
+            .accordion__heading {
+
+            }
+                .accordion__handler {
+                    /*position: relative;*/
+                    /*border: none;*/
+                    /*background-color: transparent;*/
+                    /*width: 100%;*/
+                    padding: 12px 32px 12px 0;
+                    /*border-bottom: 2px solid #20BBC7;*/
+                    /*border-top-left-radius: 8px;*/
+                    /*border-top-right-radius: 8px;*/
+                    display: block;
+                    /*align-items: baseline;*/
+                    /*gap: 16px;*/
+                    /*font-family: inherit;*/
+                    /*cursor: pointer;*/
+                    /*transition: background-color var(--transition-hover);*/
+                }
+
+                .accordion__handler:hover {
+                    /*background-color: rgb(31 187 199 / 5%);*/
+                }
+                    .accordion__label {
+                        display: block;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: left;
+                        /*color: #2D2D2D;*/
+                    }
+
+                    .accordion__note {
+                        display: block;
+                        margin-top: 4px;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: left;
+                        /*color: rgb(0 150 170 / 50%);*/
+                    }
+
+                    .accordion__handler::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        right: 0;
+                        /*top: 50%;*/
+                        margin-top: -14px;
+                        /*display: block;*/
+                        width: 28px;
+                        height: 28px;
+                        /*background-image: url("../vectors/accordion-item.svg");*/
+                        /*background-size: contain;*/
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: center center;*/
+                    }
+
+            .accordion__dropdown {
+                margin-top: 14px;
+            }
+
+}

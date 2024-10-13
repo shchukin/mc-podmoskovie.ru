@@ -1,0 +1,65 @@
+.wysiwyg {
+    --wysiwyg-font-size: 20px;
+    --wysiwyg-line-height: 24px;
+}
+
+@media (768px <= width < 1200px) {
+
+    .wysiwyg {
+        --wysiwyg-font-size: 18px;
+        --wysiwyg-line-height: 22px;
+    }
+}
+
+
+@media (width < 767px) {
+
+    .wysiwyg {
+        --wysiwyg-font-size: 16px;
+        --wysiwyg-line-height: 19px;
+    }
+}
+
+
+
+
+.wysiwyg {
+    font-size: var(--wysiwyg-font-size);
+    line-height: var(--wysiwyg-line-height);
+}
+
+.wysiwyg p,
+.wysiwyg ul,
+.wysiwyg ol,
+.wysiwyg hr,
+.wysiwyg figure,
+.wysiwyg blockquote {
+    margin-top: var(--wysiwyg-line-height);
+    margin-bottom: var(--wysiwyg-line-height);
+}
+
+.wysiwyg p:first-child,
+.wysiwyg ul:first-child,
+.wysiwyg ol:first-child,
+.wysiwyg hr:first-child,
+.wysiwyg figure:first-child,
+.wysiwyg blockquote:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg p:last-child,
+.wysiwyg ul:last-child,
+.wysiwyg ol:last-child,
+.wysiwyg hr:last-child,
+.wysiwyg figure:last-child,
+.wysiwyg blockquote:last-child {
+    margin-bottom: 0;
+}
+
+.wysiwyg p:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg p:last-child {
+    margin-bottom: 0;
+}

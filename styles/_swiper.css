@@ -1,0 +1,107 @@
+.swiper--css-default-skin {
+
+}
+
+@media (width < 740px) {
+
+    .swiper--css-default-skin {
+        overflow: visible; /* чтобы визуально карусель выглядела получше (а обрежется на ровне .content из legacy */
+    }
+        .swiper--css-default-skin .swiper-wrapper {
+            display: grid;
+            grid-auto-flow: column;
+        }
+            .swiper--css-default-skin .swiper-slide {
+                height: 100%;
+            }
+
+    .swiper--css-default-skin .swiper-pagination {
+        position: static;
+        width: auto;
+        display: flex;
+        gap: 3px;
+        font-family: var(--font-heading);
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0096AA;
+    }
+        .swiper--css-default-skin .swiper-pagination-current {
+
+        }
+
+        .swiper--css-default-skin .swiper-pagination-total {
+            color: #B3E0E6;
+        }
+
+    .swiper--css-default-skin {
+
+    }
+        .swiper--css-default-skin .swiper-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .swiper--css-default-skin .swiper-button-prev,
+            .swiper--css-default-skin .swiper-button-next {
+                position: static;
+                margin: 0;
+                width: 40px;
+                height: 60px;
+            }
+
+            .swiper--css-default-skin .swiper-button-prev {
+
+            }
+
+            .swiper--css-default-skin .swiper-button-next {
+
+            }
+
+
+            .swiper--css-default-skin .swiper-button-next.swiper-button-disabled,
+            .swiper--css-default-skin .swiper-button-prev.swiper-button-disabled {
+                opacity: 70%;
+            }
+
+
+                .swiper--css-default-skin .swiper-button-prev::after,
+                .swiper--css-default-skin .swiper-button-next::after {
+                    width: 100%;
+                    height: 100%;
+                    text-indent: 200%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    background-size: 30px 30px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .swiper--css-default-skin .swiper-button-prev::after {
+                    background-image: url("../vectors/swiper-default-skin-prev.svg");
+                }
+
+                .swiper--css-default-skin .swiper-button-next::after {
+                    background-image: url("../vectors/swiper-default-skin-next.svg");
+                }
+}
+
+
+
+.swiper--css-doctors {
+
+}
+    /* На десктопах слайдера нет -- там обычная сетка */
+    @media (740px <= width) {
+
+        .swiper--css-doctors .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 60px 24px;
+        }
+
+        .swiper--css-doctors .swiper-controls {
+            display: none !important; /* !important`ом перебиваем флекс */
+        }
+    }
+

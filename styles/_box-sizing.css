@@ -1,0 +1,11 @@
+.box-sizing * {
+    box-sizing: border-box;
+}
+
+.box-sizing *::before {
+    box-sizing: border-box;
+}
+
+.box-sizing *::after {
+    box-sizing: border-box;
+}

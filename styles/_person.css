@@ -1,0 +1,105 @@
+.person {
+    --pull-out-image: 30px;
+}
+
+.person {
+    min-height: 100%;
+    border: 1px solid #B3E0E6;
+    border-radius: 20px;
+}
+    .person__preview {
+        display: block;
+        border: none;
+        overflow: hidden; /* Обрезаем вытягивание фоток */
+        text-align: center;
+    }
+        .person__image {
+            vertical-align: top;
+            width: 100%;
+            max-width: 340px;
+            aspect-ratio: 830/700; /* Каноничная фотка */
+            object-fit: cover;
+        }
+
+        @media (768px <= width) {
+            .person__image {
+                width: calc(100% + 2 * var(--pull-out-image));
+                margin-left: calc(-1 * var(--pull-out-image));
+                margin-right: calc(-1 * var(--pull-out-image));
+            }
+        }
+
+        .person__preview:hover .person__image {
+
+        }
+
+    .person__body {
+        border-top: 1px solid #1FBBC7;
+        padding: 16px 16px 40px;
+    }
+        .person__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 32px;
+            color: #1FBBC7;
+            text-decoration: none;
+        }
+            .person__link {
+                border: none; /* Конфликт с legacy */
+                transition: var(--transition-hover);
+                color: inherit;
+            }
+
+            .person__link:hover {
+                color: #f08c07;
+            }
+
+
+        .person__stats {
+            margin-top: 3px;
+        }
+            .person__experience {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgb(0 150 170 / 50%);
+            }
+
+            .person__bullet {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 6px;
+                margin-right: 6px;
+                width: 10px;
+                height: 10px;
+                background-color: #0096AA;
+                border-radius: 50%;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .person__feedback {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #0096AA;
+                text-decoration: 1.5px underline currentColor;
+                text-underline-offset: 2px;
+                border: none; /* Конфликт с legacy */
+            }
+
+
+            .person__feedback:hover {
+                color: #f08c07;
+            }
+
+        .person__profession {
+            margin-top: 5px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #57585A;
+        }
+

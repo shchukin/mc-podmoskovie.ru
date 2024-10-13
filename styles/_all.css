@@ -1,0 +1,58 @@
+.all {
+
+}
+    .all__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .all__description {
+        margin-top: 25px;
+        max-width: 926px;
+    }
+
+    .all__body {
+        margin-top: 40px;
+    }
+
+
+
+
+@media (768px <= width < 1200px) {
+
+    .all {
+
+    }
+        .all__heading {
+
+        }
+
+        .all__description {
+            margin-top: 20px;
+            max-width: 870px;
+        }
+
+        .all__body {
+            margin-top: 32px;
+        }
+}
+
+
+
+@media (width < 740px) {
+
+    .all {
+
+    }
+        .all__heading {
+
+        }
+
+        .all__description {
+            margin-top: 24px;
+        }
+
+        .all__body {
+            margin-top: 40px;
+        }
+}

@@ -1,0 +1,12 @@
+/* оверрайд */
+
+.wrapper {
+
+}
+
+/*@media (min-width: 1240px) {*/
+
+    .wrapper--wide {
+        max-width: 1440px;
+    }
+/*}*/

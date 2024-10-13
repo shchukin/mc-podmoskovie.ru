@@ -1,0 +1,24 @@
+.doctors-page-v2 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+
+@media (768px <= width < 1200px) {
+
+    .doctors-page-v2 {
+        padding-top: 32px;
+        gap: 80px;
+    }
+}
+
+@media (width < 768px) {
+
+    .doctors-page-v2 {
+        padding-top: 24px;
+        gap: 60px;
+    }
+}
