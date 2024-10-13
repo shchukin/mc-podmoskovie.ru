@@ -1,8 +1,10 @@
 .thumb {
     display: block;
+    border: none; /* конфликт с legacy */
 }
     .thumb__image {
         vertical-align: top;
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
