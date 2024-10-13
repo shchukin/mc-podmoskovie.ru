@@ -82,4 +82,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    new Swiper('.swiper--js-init-gallery', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: false,
+        spaceBetween: 15,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
+
 });

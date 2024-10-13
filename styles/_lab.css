@@ -9,7 +9,7 @@
     .lab__body {
         margin-top: 40px;
         display: grid;
-        grid-template-columns: minmax(0, 554fr) minmax(0, 782fr);
+        grid-template-columns: minmax(0, 552fr) minmax(0, 784fr);
         gap: 24px;
     }
         .lab__description {
