@@ -98,6 +98,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Свайпер для галлереи */
+
     new Swiper('.swiper--js-init-gallery', {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -111,6 +113,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+
+
+
+    /* Свайпер для образования */
+
+    new Swiper('.swiper--js-init-education', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 15,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true, // Enables clicking on pagination bullets
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            500: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            768: {
+                slidesPerView: "auto",
+                slidesPerGroup: 2,
+                autoHeight: false,
+            }
+        }
     });
 
 

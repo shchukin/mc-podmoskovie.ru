@@ -51,7 +51,6 @@
 
             .branches__dropdown {
                 margin-top: 24px;
-                padding: 0 16px 32px;
             }
                 .branches__service-heading {
                     margin-top: 0;
@@ -240,6 +239,7 @@
 
                 .branches__dropdown {
                     margin-top: 0;
+                    padding: 0 16px 32px;
                     display: none;
                 }
 

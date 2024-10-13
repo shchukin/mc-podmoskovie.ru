@@ -1,0 +1,142 @@
+.certificate {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+    .certificate__head {
+        padding: 16px 16px 24px;
+    }
+        .certificate__time,
+        .certificate__time:hover {
+            display: block;
+            font-size: 18px;
+            line-height: 32px;
+            color: #9999A2;
+            border: none; /* конфликт с legacy */
+        }
+
+        .certificate__owner {
+            display: block;
+            margin-top: 4px;
+            max-width: 250px;
+            font-weight: 500;
+            font-family: var(--font-heading);
+            font-size: 20px;
+            line-height: 22px;
+            color: #0096AA;
+            border: none; /* конфликт с legacy */
+        }
+
+    .certificate__preview {
+        display: block;
+        border: none; /* конфликт с legacy */
+    }
+        .certificate__image {
+            vertical-align: top;
+            height: 464px; /* Все картинки получают размеры по высоте */
+            width: auto; /* Ширина получается из высоты... */
+            max-width: 437px; /* ... но н более 437px */
+            object-fit: contain;
+            object-position: top left;
+        }
+
+
+
+@media (width < 1200px) {
+
+    .certificate {
+        /*background-color: #F5F5F5;*/
+        /*border-radius: 10px;*/
+    }
+        .certificate__head {
+            /*padding: 16px 16px 24px;*/
+        }
+            .certificate__time,
+            .certificate__time:hover {
+                /*display: block;*/
+                font-size: 15px;
+                line-height: 28px;
+                /*color: #9999A2;*/
+                /*border: none; !* конфликт с legacy *!*/
+            }
+
+            .certificate__owner {
+                /*display: block;*/
+                /*margin-top: 4px;*/
+                max-width: 220px;
+                /*font-weight: 500;*/
+                /*font-family: var(--font-heading);*/
+                font-size: 18px;
+                line-height: 20px;
+                /*color: #0096AA;*/
+                /*border: none; !* конфликт с legacy *!*/
+            }
+
+        .certificate__preview {
+            /*display: block;*/
+            /*border: none; !* конфликт с legacy *!*/
+        }
+            .certificate__image {
+                /*vertical-align: top;*/
+                height: 380px; /* Все картинки получают размеры по высоте */
+                /*width: auto; !* Ширина получается из высоты... *!*/
+                max-width: 340px; /* ... но н более 437px */
+                /*object-fit: contain;*/
+                /*object-position: top left;*/
+            }
+    }
+
+
+@media (width < 992px) {
+
+    .certificate__image {
+        height: 320px; /* Все картинки получают размеры по высоте */
+        max-width: 300px; /* ... но н более 437px */
+    }
+}
+
+
+
+@media (width < 768px) {
+
+    .certificate {
+        /*background-color: #F5F5F5;*/
+        /*border-radius: 10px;*/
+    }
+        .certificate__head {
+            /*padding: 16px 16px 24px;*/
+        }
+            .certificate__time,
+            .certificate__time:hover {
+                /*display: block;*/
+                /*font-size: 18px;*/
+                /*line-height: 32px;*/
+                /*color: #9999A2;*/
+                /*border: none; !* конфликт с legacy *!*/
+            }
+
+            .certificate__owner {
+                /*display: block;*/
+                /*margin-top: 4px;*/
+                /*max-width: 250px;*/
+                /*font-weight: 500;*/
+                /*font-family: var(--font-heading);*/
+                /*font-size: 20px;*/
+                /*line-height: 22px;*/
+                /*color: #0096AA;*/
+                /*border: none; !* конфликт с legacy *!*/
+            }
+
+        .certificate__preview {
+            /*display: block;*/
+            /*border: none; !* конфликт с legacy *!*/
+        }
+            .certificate__image {
+                vertical-align: top;
+                width: 100%; /* Ширина получается из высоты... */
+                height: auto; /* Все картинки получают размеры по высоте */
+                max-width: none;
+                /*object-fit: contain;*/
+                /*object-position: top left;*/
+            }
+}
+

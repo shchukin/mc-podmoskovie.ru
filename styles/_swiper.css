@@ -303,3 +303,94 @@
 
 
 
+
+/* Скин для образования */
+
+.swiper--css-skin-education {
+    position: relative;
+    overflow: visible;
+}
+    .swiper--css-skin-education .swiper-wrapper {
+        /*display: grid;*/
+        /*grid-auto-flow: column;*/
+    }
+        .swiper--css-skin-education .swiper-slide {
+            width: auto;
+            /*height: 100%;*/
+        }
+
+    .swiper--css-skin-education .swiper-navigation {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+        .swiper--css-skin-education .swiper-scrollbar {
+            position: static;
+            margin-top: 24px;
+            height: 6px;
+            width: auto;
+            background-color: #E6F5F7;
+        }
+            .swiper-scrollbar-drag {
+                height: 6px;
+                background-color: #0096AA;
+            }
+
+        .swiper--css-skin-education .swiper-button-prev,
+        .swiper--css-skin-education .swiper-button-next {
+            position: static;
+            margin: 0;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0 150 170 / 50%);
+            border-radius: 50%;
+            pointer-events: auto;
+        }
+
+        .swiper--css-skin-education .swiper-button-prev:active,
+        .swiper--css-skin-education .swiper-button-next:active {
+            transform: translateY(1px);
+        }
+
+        .swiper--css-skin-education .swiper-button-prev {
+
+        }
+
+        .swiper--css-skin-education .swiper-button-next {
+
+        }
+
+
+        .swiper--css-skin-education .swiper-button-next.swiper-button-disabled,
+        .swiper--css-skin-education .swiper-button-prev.swiper-button-disabled {
+            opacity: 70%;
+        }
+
+
+            .swiper--css-skin-education .swiper-button-prev::after,
+            .swiper--css-skin-education .swiper-button-next::after {
+                width: 100%;
+                height: 100%;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                background-size: 50px 50px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .swiper--css-skin-education .swiper-button-prev::after {
+                background-image: url("../vectors/swiper-skin-gallery-prev.svg");
+            }
+
+            .swiper--css-skin-education .swiper-button-next::after {
+                background-image: url("../vectors/swiper-skin-gallery-next.svg");
+            }
+
+
+
