@@ -1,3 +1,66 @@
 .branches {
 
 }
+    .branches__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .branches__body {
+        margin-top: 40px;
+    }
+        .branches__item {
+            padding: 36px 24px 48px;
+            background-color: #F5F5F5;
+            border-radius: 20px;
+        }
+            .branches__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+                .branches__handler {
+                    border: none;
+                    padding: 0;
+                    background-color: transparent;
+                    font-family: var(--font-heading);
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 41px;
+                    color: #1FBBC7;
+                    cursor: text;
+                }
+
+            .branches__dropdown {
+                margin-top: 24px;
+            }
+                .branches__service-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #585858;
+                }
+
+                .branches__list {
+                    margin-top: 8px;
+                }
+                    .branches__link {
+                        display: block;
+                        width: fit-content;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        border: none;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #585858;
+                        text-decoration: 1.5px underline transparent;
+                        text-underline-offset: 2px;
+                    }
+
+                    .branches__link:hover {
+                        color: #585858;
+                        text-decoration-color: currentColor;
+                    }
