@@ -30,6 +30,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /* Аккордеон в branches */
+
+    const branchesHandler = document.querySelectorAll('.branches__handler');
+
+    branchesHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            if (!isDesktop) {
+                event.preventDefault();
+            }
+            const branchesItem = event.currentTarget.closest('.branches__item');
+            branchesItem.classList.toggle('branches__item--expanded');
+        });
+    });
+
+
+
     /* Инициализация Swiper`ов */
 
     let swiperInstances = [];
@@ -96,6 +112,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             prevEl: '.swiper-button-prev',
         },
     });
+
 
 
 
