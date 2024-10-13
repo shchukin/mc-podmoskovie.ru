@@ -8,11 +8,15 @@
 
     .branches__body {
         margin-top: 40px;
+        columns: 3;
+        gap: 24px;
     }
         .branches__item {
+            margin-bottom: 24px;
             padding: 36px 24px 48px;
             background-color: #F5F5F5;
             border-radius: 20px;
+            break-inside: avoid;
         }
             .branches__sub-heading {
                 margin-top: 0;
@@ -27,6 +31,7 @@
                     font-size: 36px;
                     line-height: 41px;
                     color: #1FBBC7;
+                    text-align: left;
                     cursor: text;
                 }
 
