@@ -1,3 +1,94 @@
 .lab {
 
 }
+    .lab__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .lab__body {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: minmax(0, 554fr) minmax(0, 782fr);
+        gap: 24px;
+    }
+        .lab__description {
+
+        }
+
+        .lab__gallery {
+
+        }
+
+
+
+@media (768px <= width < 1200px) {
+
+    .lab {
+
+    }
+        .lab__heading {
+
+        }
+
+        .lab__body {
+            margin-top: 20px;
+            /*grid-template-columns: minmax(0, 554fr) minmax(0, 782fr);*/
+        }
+            .lab__description {
+
+            }
+
+            .lab__gallery {
+
+            }
+}
+
+
+
+
+@media (width < 992px) {
+
+    .lab {
+
+    }
+        .lab__heading {
+
+        }
+
+        .lab__body {
+            display: block;
+            /*grid-template-columns: minmax(0, 554fr) minmax(0, 782fr);*/
+        }
+            .lab__description {
+
+            }
+
+            .lab__gallery {
+                margin-top: 32px;
+                max-width: 440px;
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .lab {
+
+    }
+        .lab__heading {
+
+        }
+
+        .lab__body {
+            margin-top: 24px;
+        }
+            .lab__description {
+
+            }
+
+            .lab__gallery {
+                margin-top: 40px;
+            }
+}
