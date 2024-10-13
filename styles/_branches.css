@@ -13,7 +13,7 @@
     }
         .branches__item {
             margin-bottom: 24px;
-            padding: 36px 24px 48px;
+            padding: 36px 24px;
             background-color: #F5F5F5;
             border-radius: 20px;
             break-inside: avoid;
@@ -21,22 +21,37 @@
             .branches__sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 41px;
+                color: #1FBBC7;
             }
                 .branches__handler {
+                    display: block;
                     border: none;
                     padding: 0;
                     background-color: transparent;
-                    font-family: var(--font-heading);
-                    font-weight: 500;
-                    font-size: 36px;
-                    line-height: 41px;
-                    color: #1FBBC7;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    color: inherit;
                     text-align: left;
-                    cursor: text;
+                    text-decoration: 2px underline transparent;
+                    text-underline-offset: 3px;
+                    cursor: pointer;
+                    transition: text-decoration-color var(--transition-hover);
+                }
+
+                .branches__handler:hover {
+                    color: inherit;
+                    text-decoration-color: currentColor;
                 }
 
             .branches__dropdown {
                 margin-top: 24px;
+                padding: 0 16px 32px;
             }
                 .branches__service-heading {
                     margin-top: 0;
@@ -50,6 +65,7 @@
 
                 .branches__list {
                     margin-top: 8px;
+                    padding-bottom: 12px;
                 }
                     .branches__link {
                         display: block;
@@ -63,9 +79,177 @@
                         color: #585858;
                         text-decoration: 1.5px underline transparent;
                         text-underline-offset: 2px;
+                        transition: text-decoration-color var(--transition-hover);
                     }
 
                     .branches__link:hover {
                         color: #585858;
                         text-decoration-color: currentColor;
                     }
+
+
+
+@media (768px <= width < 1200px) {
+
+    .branches {
+
+    }
+        .branches__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .branches__body {
+            margin-top: 30px;
+            /*columns: 3;*/
+            gap: 18px;
+        }
+            .branches__item {
+                margin-bottom: 18px;
+                padding: 28px 18px;
+                /*background-color: #F5F5F5;*/
+                border-radius: 15px;
+                /*break-inside: avoid;*/
+            }
+                .branches__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                    .branches__handler {
+                        /*border: none;*/
+                        /*padding: 0;*/
+                        /*background-color: transparent;*/
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+
+                        /*color: #1FBBC7;*/
+                        /*text-align: left;*/
+                        /*cursor: text;*/
+                    }
+
+                .branches__dropdown {
+                    margin-top: 18px;
+                }
+                    .branches__service-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-family: inherit;*/
+                        /*font-weight: 600;*/
+                        font-size: 18px;
+                        line-height: 24px;
+                        /*color: #585858;*/
+                    }
+
+                    .branches__list {
+                        margin-top: 6px;
+                        padding-bottom: 6px;
+                    }
+                        .branches__link {
+                            /*display: block;*/
+                            /*width: fit-content;*/
+                            padding-top: 6px;
+                            padding-bottom: 6px;
+                            /*border: none;*/
+                            /*font-weight: 500;*/
+                            font-size: 17px;
+                            line-height: 22px;
+                            /*color: #585858;*/
+                            /*text-decoration: 1.5px underline transparent;*/
+                            /*text-underline-offset: 2px;*/
+                        }
+
+                        .branches__link:hover {
+                            /*color: #585858;*/
+                            /*text-decoration-color: currentColor;*/
+                        }
+}
+
+
+
+@media (width < 768px) {
+
+    .branches {
+
+    }
+        .branches__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .branches__body {
+            /*margin-top: 40px;*/
+            columns: unset;
+            /*gap: 24px;*/
+        }
+            .branches__item {
+                /*margin-bottom: 24px;*/
+                padding: 0;
+                /*background-color: #F5F5F5;*/
+                /*border-radius: 20px;*/
+                /*break-inside: avoid;*/
+            }
+
+            .branches__item:last-child {
+                margin-bottom: 0;
+            }
+                .branches__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-size: 36px;*/
+                    /*line-height: 41px;*/
+                    /*color: #1FBBC7;*/
+                }
+                    .branches__handler {
+                        /*border: none;*/
+                        padding: 24px 16px;
+                        /*background-color: transparent;*/
+                        /*font-family: inherit;*/
+                        /*font-weight: inherit;*/
+                        /*font-size: inherit;*/
+                        /*line-height: inherit;*/
+                        /*color: inherit;*/
+                        /*text-align: left;*/
+                        cursor: pointer;
+                    }
+
+                .branches__dropdown {
+                    /*margin-top: 24px;*/
+                }
+                    .branches__service-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-family: inherit;*/
+                        /*font-weight: 600;*/
+                        /*font-size: 24px;*/
+                        /*line-height: 29px;*/
+                        /*color: #585858;*/
+                    }
+
+                    .branches__list {
+                        /*margin-top: 8px;*/
+                    }
+                        .branches__link {
+                            /*display: block;*/
+                            /*width: fit-content;*/
+                            /*padding-top: 8px;*/
+                            /*padding-bottom: 8px;*/
+                            /*border: none;*/
+                            /*font-weight: 500;*/
+                            /*font-size: 20px;*/
+                            /*line-height: 24px;*/
+                            /*color: #585858;*/
+                            /*text-decoration: 1.5px underline transparent;*/
+                            /*text-underline-offset: 2px;*/
+                        }
+
+                        .branches__link:hover {
+                            /*color: #585858;*/
+                            /*text-decoration-color: currentColor;*/
+                        }
+}
+
+
