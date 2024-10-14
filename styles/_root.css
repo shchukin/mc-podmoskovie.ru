@@ -3,6 +3,12 @@
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 200ms ease;
     --heading-spacing: 40px;
+    --input-border-focus: #1FBBC7;
+    --input-border-hover: #F4AE51;
+    --disabled-background: rgb(128 128 128 / 10%);
+    --disabled-color: rgb(128 128 128 / 50%);
+    --error: #FF0033;
+    --placeholder-color: #1FBBC7;
 }
 
 

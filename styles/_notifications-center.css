@@ -1,0 +1,30 @@
+.notifications-center {
+    position: fixed;
+    z-index: 2000;
+    top: 20px;
+    left: 50%;
+    margin-left: -270px;
+    width: 540px;
+}
+
+
+@media (1850px <= width) {
+
+    .notifications-center {
+        top: 30px;
+        margin-left: -320px;
+        width: 640px;
+    }
+}
+
+
+@media (width < 740px) {
+
+    .notifications-center {
+        top: calc(0.5 * var(--container-padding));
+        left: calc(0.5 * var(--container-padding));
+        right: calc(0.5 * var(--container-padding));
+        margin-left: 0;
+        width: auto;
+    }
+}

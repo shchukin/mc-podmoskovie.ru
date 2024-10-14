@@ -1,0 +1,132 @@
+.button {
+    position: relative;
+    vertical-align: top;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 16px 24px;
+    min-width: 100px;
+    background-color: #F08C07;
+    border-radius: 28px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color var(--transition-hover);
+}
+
+.button:hover {
+    background-color: #F4AE51;
+}
+
+.button:active {
+    translate: 0 1px;
+    transition: none;
+}
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.button--loading {
+    color: transparent;
+    pointer-events: none;
+}
+    .button--loading::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-top: -16px;
+        margin-left: -16px;
+        background-image: url("../vectors/button-loading.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: button-loading-spin 1s steps(12) infinite;
+    }
+
+    @media (1850px <= width) {
+        .button--loading::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+
+.button--success {
+    color: transparent;
+    pointer-events: none;
+}
+    .button--success::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin-top: -14px;
+        margin-left: -14px;
+        background-image: url("../vectors/button-success.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1850px <= width) {
+        .button--success::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+
+
+.button--warning {
+    color: transparent;
+    pointer-events: none;
+}
+    .button--warning::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin-top: -14px;
+        margin-left: -14px;
+        background-image: url("../vectors/button-warning.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1850px <= width) {
+        .button--warning::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+
+
+
+
