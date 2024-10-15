@@ -332,16 +332,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /* Параллакс счётчиков */
     /* https://dev.to/clementgaudiniere/create-a-parallax-effect-when-the-mouse-moves-3km0 */
 
-    // const $counters = document.querySelector('.counters');
-    // const countersTop = $counters.offsetTop;
-
     function parallax(event) {
         this.querySelectorAll(".counters__item").forEach((shift) => {
             const position = shift.getAttribute("value");
-            const x = (window.innerWidth - event.pageX * position) / 100;
-            const y = (window.innerHeight - event.pageY * position) / 100;
 
-            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            const normalizedX = (event.clientX / window.innerWidth) * 2 - 1;
+            const normalizedY = (event.clientY / window.innerHeight) * 2 - 1;
+
+            // Print the normalized positions (optional)
+            console.log(`Normalized X: ${normalizedX}, Normalized Y: ${-normalizedY}`);
+
+
+            shift.style.transform = `translateX(${normalizedX * position}px) translateY(${normalizedY * position}px)`;
         });
     }
 
