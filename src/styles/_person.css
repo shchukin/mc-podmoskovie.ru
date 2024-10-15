@@ -9,19 +9,36 @@
     overflow: hidden;
 }
     .person__preview {
+        position: relative;
         display: block;
         border: none;
-        border-bottom: 1px solid #1FBBC7;
         overflow: hidden; /* Обрезаем вытягивание фоток */
         text-align: center;
-        transition: background-color var(--transition-hover),
-                    border-bottom-color var(--transition-hover);
+        transition: background-color var(--transition-hover);
     }
 
     .person__preview:hover {
         background-color: #B3E0E6;
-        border-bottom-color: #B3E0E6;
     }
+        /* делаем не бордюр, а именно отдельный слой с одним пикселя поверх картинки,
+         чтобы при наведении его можно было убрать и проступила картинка.
+         А то иначе был бы эффект такой странный, что пропадает полоса. */
+        .person__preview::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            height: 1px;
+            background-color: #1FBBC7;
+            transition: background-color var(--transition-hover);
+        }
+
+        .person__preview:hover::after {
+            background-color: transparent;
+        }
+
         .person__image {
             vertical-align: top;
             width: 100%;
