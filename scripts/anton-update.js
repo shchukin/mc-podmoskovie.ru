@@ -334,16 +334,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function parallax(event) {
         this.querySelectorAll(".counters__item").forEach((shift) => {
-            const position = shift.getAttribute("value");
+            const factor = shift.getAttribute("data-factor");
 
-            const normalizedX = (event.clientX / window.innerWidth) * 2 - 1;
-            const normalizedY = (event.clientY / window.innerHeight) * 2 - 1;
+            const x = (event.clientX / window.innerWidth) * 2 - 1;
+            const y = (event.clientY / window.innerHeight) * 2 - 1;
 
-            // Print the normalized positions (optional)
-            console.log(`Normalized X: ${normalizedX}, Normalized Y: ${-normalizedY}`);
-
-
-            shift.style.transform = `translateX(${normalizedX * position}px) translateY(${normalizedY * position}px)`;
+            shift.style.transform = `translateX(${x * factor}px) translateY(${y * factor}px)`;
         });
     }
 
