@@ -1,0 +1,71 @@
+
+
+/* Start:/local/templates/base/components/bitrix/news.list/education.masonry/style.css?17196691011116*/
+.education-item {
+    background: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+    .education-item {
+        margin-bottom: 25px;
+    }
+}
+
+.education-item__cert {
+    filter: brightness(0.95);
+}
+
+.education-item__doctor {
+    padding: 20px;
+    border-bottom: 1px solid #E3E3E3;
+    display: flex;
+    gap: 10px;
+}
+@media (min-width: 992px) {
+    .education-item__doctor {
+        padding: 30px 30px 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.education-item__doctor-picture{
+    flex:0 0 70px;
+}
+
+
+.education-item__doctor-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: #333231;
+    margin-top: 10px;
+
+
+}
+
+@media (min-width: 992px) {
+    .education-item__doctor-name {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+
+.education-item__date {
+    line-height: 1.75;
+    color: #9999A2;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    .education-item__date {
+        font-size: 18px;
+    }
+}
+
+/* End */
+/* /local/templates/base/components/bitrix/news.list/education.masonry/style.css?17196691011116 */
