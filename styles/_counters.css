@@ -2,230 +2,260 @@
     position: relative;
     height: 616px;
 }
-    .counters__item {
+    .counters__scaled-container {
         position: absolute;
-        background-image: radial-gradient(circle at center, rgb(179 224 230 / 40%) 40%, rgb(179 224 230 / 60%) 71%, rgb(179 224 230 / 100%) 100%);
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: transform 1000ms var(--ease-out-quint);
+        inset: 0;
     }
-        .counters__value {
-            font-family: var(--font-heading);
-            font-weight: bold;
-            color: #22BBC7;
-            letter-spacing: -4px;
-            text-align: center;
+
+    @media (width < 1200px) {
+        .counters__scaled-container {
+            transform: scale(90%);
+            left: -5%;
+            right: -5%;
         }
-
-        .counters__unit {
-            margin-top: 4px;
-            padding-left: 10%;
-            padding-right: 10%;
-            font-weight: 500;
-            color: #585858;
-            text-align: center;
-        }
-
-
-    .counters__item--doctors {
-        left: 50.1470%;
-        top: 345px;
-        width: 250px;
-        height: 250px;
-        margin-left: -125px;
-        margin-top: -125px;
     }
-        .counters__item--doctors .counters__value {
-            font-size: 100px;
-            line-height: 100px;
+
+    @media (width < 1100px) {
+        .counters__scaled-container {
+            transform: scale(80%);
+            left: -12.5%;
+            right: -12.5%;
         }
-
-        .counters__item--doctors .counters__unit {
-            margin-top: -4px;
-            font-size: 22px;
-            line-height: 22px;
-        }
-
-
-    .counters__item--labs {
-        left: 8.0882%;
-        top: 155px;
-        width: 220px;
-        height: 220px;
-        margin-left: -110px;
-        margin-top: -110px;
     }
-        .counters__item--labs .counters__value {
-            font-size: 80px;
-            line-height: 80px;
+
+    @media (width < 900px) {
+        .counters__scaled-container {
+            transform: scale(60%);
+            left: -30%;
+            right: -30%;
         }
-
-        .counters__item--labs .counters__unit {
-            font-size: 16px;
-            line-height: 20px;
-        }
-
-
-    .counters__item--coordinators {
-        left: 35.0735%;
-        top: 140px;
-        width: 160px;
-        height: 160px;
-        margin-left: -80px;
-        margin-top: -80px;
     }
-        .counters__item--coordinators .counters__value {
-            font-size: 60px;
-            line-height: 60px;
+
+        .counters__item {
+            position: absolute;
+            background-image: radial-gradient(circle at center, rgb(179 224 230 / 40%) 40%, rgb(179 224 230 / 60%) 71%, rgb(179 224 230 / 100%) 100%);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 1000ms var(--ease-out-quint);
         }
+            .counters__value {
+                font-family: var(--font-heading);
+                font-weight: bold;
+                color: #22BBC7;
+                letter-spacing: -4px;
+                text-align: center;
+            }
 
-        .counters__item--coordinators .counters__unit {
-            margin-top: 2px;
-            font-size: 15px;
-            line-height: 20px;
+            .counters__unit {
+                margin-top: 4px;
+                padding-left: 10%;
+                padding-right: 10%;
+                font-weight: 500;
+                color: #585858;
+                text-align: center;
+            }
+
+
+        .counters__item--doctors {
+            left: 50.1470%;
+            top: 345px;
+            width: 250px;
+            height: 250px;
+            margin-left: -125px;
+            margin-top: -125px;
         }
+            .counters__item--doctors .counters__value {
+                font-size: 100px;
+                line-height: 100px;
+            }
+
+            .counters__item--doctors .counters__unit {
+                margin-top: -4px;
+                font-size: 22px;
+                line-height: 22px;
+            }
 
 
-    .counters__item--juniors {
-        left: 62.5735%;
-        top: 130px;
-        width: 200px;
-        height: 200px;
-        margin-left: -100px;
-        margin-top: -100px;
+        .counters__item--labs {
+            left: 8.0882%;
+            top: 155px;
+            width: 220px;
+            height: 220px;
+            margin-left: -110px;
+            margin-top: -110px;
+        }
+            .counters__item--labs .counters__value {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            .counters__item--labs .counters__unit {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+
+        .counters__item--coordinators {
+            left: 35.0735%;
+            top: 140px;
+            width: 160px;
+            height: 160px;
+            margin-left: -80px;
+            margin-top: -80px;
+        }
+            .counters__item--coordinators .counters__value {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            .counters__item--coordinators .counters__unit {
+                margin-top: 2px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+
+        .counters__item--juniors {
+            left: 62.5735%;
+            top: 130px;
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+            margin-top: -100px;
+        }
+            .counters__item--juniors .counters__value {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            .counters__item--juniors .counters__unit {
+                margin-top: 2px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+        .counters__item--x-rays {
+            left: 76.1764%;
+            top: 319px;
+            width: 160px;
+            height: 160px;
+            margin-left: -80px;
+            margin-top: -80px;
+        }
+            .counters__item--x-rays .counters__value {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            .counters__item--x-rays .counters__unit {
+                margin-top: 3px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+        .counters__item--assistants {
+            left: 87.9411%;
+            top: 110px;
+            width: 220px;
+            height: 220px;
+            margin-left: -110px;
+            margin-top: -110px;
+        }
+            .counters__item--assistants .counters__value {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            .counters__item--assistants .counters__unit {
+                margin-top: 6px;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+
+        .counters__item--admins {
+            left: 9.4814%;
+            top: 456px;
+            width: 190px;
+            height: 190px;
+            margin-left: -95px;
+            margin-top: -95px;
+        }
+            .counters__item--admins .counters__value {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            .counters__item--admins .counters__unit {
+                margin-top: 3px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+
+        .counters__item--heads-of-departments {
+            left: 29.5588%;
+            top: 375px;
+            width: 160px;
+            height: 160px;
+            margin-left: -80px;
+            margin-top: -80px;
+        }
+            .counters__item--heads-of-departments .counters__value {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            .counters__item--heads-of-departments .counters__unit {
+                margin-top: 2px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+
+
+        .counters__item--call-center {
+            left: 66.9852%;
+            top: 515px;
+            width: 168px;
+            height: 168px;
+            margin-left: -84px;
+            margin-top: -84px;
+        }
+            .counters__item--call-center .counters__value {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            .counters__item--call-center .counters__unit {
+                margin-top: 3px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+
+
+        .counters__item--office {
+            left: 92.6470%;
+            top: 407px;
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+            margin-top: -100px;
+        }
+            .counters__item--office .counters__value {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            .counters__item--office .counters__unit {
+                margin-top: 7px;
+                font-size: 18px;
+                line-height: 22px;
+            }
     }
-        .counters__item--juniors .counters__value {
-            font-size: 80px;
-            line-height: 80px;
-        }
-
-        .counters__item--juniors .counters__unit {
-            margin-top: 2px;
-            font-size: 14px;
-            line-height: 17px;
-        }
-
-    .counters__item--x-rays {
-        left: 76.1764%;
-        top: 319px;
-        width: 160px;
-        height: 160px;
-        margin-left: -80px;
-        margin-top: -80px;
-    }
-        .counters__item--x-rays .counters__value {
-            font-size: 60px;
-            line-height: 60px;
-        }
-
-        .counters__item--x-rays .counters__unit {
-            margin-top: 3px;
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-    .counters__item--assistants {
-        left: 87.9411%;
-        top: 110px;
-        width: 220px;
-        height: 220px;
-        margin-left: -110px;
-        margin-top: -110px;
-    }
-        .counters__item--assistants .counters__value {
-            font-size: 80px;
-            line-height: 80px;
-        }
-
-        .counters__item--assistants .counters__unit {
-            margin-top: 6px;
-            font-size: 20px;
-            line-height: 20px;
-        }
-
-
-    .counters__item--admins {
-        left: 9.4814%;
-        top: 456px;
-        width: 190px;
-        height: 190px;
-        margin-left: -95px;
-        margin-top: -95px;
-    }
-        .counters__item--admins .counters__value {
-            font-size: 80px;
-            line-height: 80px;
-        }
-
-        .counters__item--admins .counters__unit {
-            margin-top: 3px;
-            font-size: 16px;
-            line-height: 20px;
-        }
-
-
-    .counters__item--heads-of-departments {
-        left: 29.5588%;
-        top: 375px;
-        width: 160px;
-        height: 160px;
-        margin-left: -80px;
-        margin-top: -80px;
-    }
-        .counters__item--heads-of-departments .counters__value {
-            font-size: 60px;
-            line-height: 60px;
-        }
-
-        .counters__item--heads-of-departments .counters__unit {
-            margin-top: 2px;
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-
-
-    .counters__item--call-center {
-        left: 66.9852%;
-        top: 515px;
-        width: 168px;
-        height: 168px;
-        margin-left: -84px;
-        margin-top: -84px;
-    }
-        .counters__item--call-center .counters__value {
-            font-size: 60px;
-            line-height: 60px;
-        }
-
-        .counters__item--call-center .counters__unit {
-            margin-top: 3px;
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-
-
-    .counters__item--office {
-        left: 92.6470%;
-        top: 407px;
-        width: 200px;
-        height: 200px;
-        margin-left: -100px;
-        margin-top: -100px;
-    }
-        .counters__item--office .counters__value {
-            font-size: 80px;
-            line-height: 80px;
-        }
-
-        .counters__item--office .counters__unit {
-            margin-top: 7px;
-            font-size: 18px;
-            line-height: 22px;
-        }
 
 
