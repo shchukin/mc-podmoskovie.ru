@@ -74,3 +74,30 @@
 
             }
 }
+
+@media (width < 740px) {
+
+    .pins {
+
+    }
+        .pins__navigation {
+            /*gap: 14px 16px;*/
+        }
+            .pins__tab {
+                /*padding: 12px 16px;*/
+                /*border-radius: 23px;*/
+                /*font-size: 16px;*/
+                /*line-height: 20px;*/
+            }
+
+        .pins__bodies {
+            margin-top: 32px;
+        }
+            .pins__item {
+
+            }
+
+            .pins__item--current {
+
+            }
+}
