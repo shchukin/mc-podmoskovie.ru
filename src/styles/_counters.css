@@ -472,6 +472,9 @@
             /*inset: 0;*/
             transform: none;
             inset: auto;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
             .counters__item {
                 /*position: absolute;*/
@@ -678,7 +681,7 @@
 
             .counters__item--doctors {
                 left: 48.538%;
-                top: 353px;
+                top: 458px;
                 width: 210px;
                 height: 210px;
                 margin-left: -105px;
@@ -697,8 +700,8 @@
 
 
             .counters__item--labs {
-                left: 0;
-                top: 0;
+                left: 26.3157%;
+                top: 90px;
                 width: 180px;
                 height: 180px;
                 margin-left: -90px;
@@ -717,8 +720,8 @@
 
 
             .counters__item--coordinators {
-                left: 0;
-                top: 960px;
+                left: 19.0058%;
+                top: 1025px;
                 width: 130px;
                 height: 130px;
                 margin-left: -65px;
@@ -738,7 +741,7 @@
 
             .counters__item--juniors {
                 left: 75.1461%;
-                top: 594px;
+                top: 679px;
                 width: 170px;
                 height: 170px;
                 margin-left: -85px;
@@ -757,7 +760,7 @@
 
             .counters__item--x-rays {
                 left: 80.9941%;
-                top: 5px;
+                top: 70px;
                 width: 130px;
                 height: 130px;
                 margin-left: -65px;
@@ -775,8 +778,8 @@
                 }
 
             .counters__item--assistants {
-                left: 0;
-                top: 738px;
+                left: 29.2397%;
+                top: 838px;
                 width: 200px;
                 height: 200px;
                 margin-left: -100px;
@@ -796,7 +799,7 @@
 
             .counters__item--admins {
                 left: 73.6842%;
-                top: 161px;
+                top: 251px;
                 width: 180px;
                 height: 180px;
                 margin-left: -90px;
@@ -815,8 +818,8 @@
 
 
             .counters__item--heads-of-departments {
-                left: 0;
-                top: 573px;
+                left: 19.0058%;
+                top: 638px;
                 width: 130px;
                 height: 130px;
                 margin-left: -65px;
@@ -836,8 +839,8 @@
 
 
             .counters__item--call-center {
-                left: 0;
-                top: 209px;
+                left: 20.7602%;
+                top: 280px;
                 width: 143px;
                 height: 143px;
                 margin-left: -71px;
@@ -858,7 +861,7 @@
 
             .counters__item--office {
                 left: 73.6842%;
-                top: 883px;
+                top: 973px;
                 width: 180px;
                 height: 180px;
                 margin-left: -90px;

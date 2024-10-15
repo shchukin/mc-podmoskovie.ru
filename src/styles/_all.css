@@ -12,7 +12,7 @@
     }
 
     .all__body {
-        margin-top: var(--heading-spacing);
+        margin-top: 40px;
     }
 
 
@@ -32,7 +32,7 @@
         }
 
         .all__body {
-
+            margin-top: 32px;
         }
 }
 
@@ -52,6 +52,6 @@
         }
 
         .all__body {
-
+            margin-top: 40px;
         }
 }
