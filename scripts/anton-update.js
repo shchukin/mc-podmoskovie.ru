@@ -327,4 +327,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
+
+
+    /* Параллакс счётчиков */
+    /* https://dev.to/clementgaudiniere/create-a-parallax-effect-when-the-mouse-moves-3km0 */
+
+    // const $counters = document.querySelector('.counters');
+    // const countersTop = $counters.offsetTop;
+
+    function parallax(event) {
+        this.querySelectorAll(".counters__item").forEach((shift) => {
+            const position = shift.getAttribute("value");
+            const x = (window.innerWidth - event.pageX * position) / 100;
+            const y = (window.innerHeight - event.pageY * position) / 100;
+
+            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+    }
+
+    document.addEventListener("mousemove", parallax);
+
 });

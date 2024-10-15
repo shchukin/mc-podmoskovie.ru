@@ -10,6 +10,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: transform 1000ms var(--ease-out-quint);
     }
         .counters__value {
             font-family: var(--font-heading);
