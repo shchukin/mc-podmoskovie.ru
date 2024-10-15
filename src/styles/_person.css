@@ -6,12 +6,21 @@
     min-height: 100%;
     border: 1px solid #B3E0E6;
     border-radius: 20px;
+    overflow: hidden;
 }
     .person__preview {
         display: block;
         border: none;
+        border-bottom: 1px solid #1FBBC7;
         overflow: hidden; /* Обрезаем вытягивание фоток */
         text-align: center;
+        transition: background-color var(--transition-hover),
+                    border-bottom-color var(--transition-hover);
+    }
+
+    .person__preview:hover {
+        background-color: #B3E0E6;
+        border-bottom-color: #B3E0E6;
     }
         .person__image {
             vertical-align: top;
@@ -49,7 +58,6 @@
                 }
 
     .person__body {
-        border-top: 1px solid #1FBBC7;
         padding: 16px 16px 40px;
     }
         .person__heading {
