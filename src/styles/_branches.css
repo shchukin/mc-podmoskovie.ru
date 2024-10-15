@@ -226,9 +226,9 @@
                             border-radius: 50%;
                         }
 
-                        .branches__item--expanded .branches__handler::after {
-                            background-color: transparent;
+                        .branches__item--expanded:has(.branches__dropdown) .branches__handler::after {
                             border-radius: 0;
+                            background-color: transparent;
                             background-image: url("../vectors/branches-handler-close.svg");
                             background-size: contain;
                             background-repeat: no-repeat;
