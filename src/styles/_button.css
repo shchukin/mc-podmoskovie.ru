@@ -24,12 +24,12 @@
 }
 
 .button:hover {
-    background-color: #DB7D00;
+    background-color: #F89818;
     color: #FFFFFF;
 }
 
 .button:active {
-    translate: 0 1px;
+    background-color: #be6f06;
     transition: none;
 }
 
