@@ -15,8 +15,6 @@
         .counters__value {
             font-family: var(--font-heading);
             font-weight: bold;
-            font-size: 80px;
-            line-height: 80px;
             color: #22BBC7;
             letter-spacing: -4px;
             text-align: center;
@@ -24,12 +22,31 @@
 
         .counters__unit {
             margin-top: 4px;
+            padding-left: 10%;
+            padding-right: 10%;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
             color: #585858;
             text-align: center;
         }
+
+
+    .counters__item--doctors {
+        left: 557px;
+        top: 220px;
+        width: 250px;
+        height: 250px;
+    }
+        .counters__item--doctors .counters__value {
+            font-size: 100px;
+            line-height: 100px;
+        }
+
+        .counters__item--doctors .counters__unit {
+            margin-top: -4px;
+            font-size: 22px;
+            line-height: 22px;
+        }
+
 
     .counters__item--labs {
         left: 0;
@@ -37,6 +54,16 @@
         width: 220px;
         height: 220px;
     }
+        .counters__item--labs .counters__value {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .counters__item--labs .counters__unit {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
 
     .counters__item--coordinators {
         left: 397px;
@@ -47,7 +74,6 @@
         .counters__item--coordinators .counters__value {
             font-size: 60px;
             line-height: 60px;
-            letter-spacing: -4px;
         }
 
         .counters__item--coordinators .counters__unit {
@@ -55,3 +81,131 @@
             font-size: 15px;
             line-height: 20px;
         }
+
+
+    .counters__item--juniors {
+        right: 413px;
+        top: 30px;
+        width: 200px;
+        height: 200px;
+    }
+        .counters__item--juniors .counters__value {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .counters__item--juniors .counters__unit {
+            margin-top: 2px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+    .counters__item--x-rays {
+        top: 239px;
+        right: 244px;
+        width: 160px;
+        height: 160px;
+    }
+        .counters__item--x-rays .counters__value {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        .counters__item--x-rays .counters__unit {
+            margin-top: 3px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+    .counters__item--assistants {
+        right: 54px;
+        top: 0;
+        width: 220px;
+        height: 220px;
+    }
+        .counters__item--assistants .counters__value {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .counters__item--assistants .counters__unit {
+            margin-top: 6px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+
+    .counters__item--admins {
+        bottom: 65px;
+        left: 33px;
+        width: 190px;
+        height: 190px;
+    }
+        .counters__item--admins .counters__value {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .counters__item--admins .counters__unit {
+            margin-top: 3px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+
+    .counters__item--heads-of-departments {
+        bottom: 161px;
+        left: 322px;
+        width: 160px;
+        height: 160px;
+    }
+        .counters__item--heads-of-departments .counters__value {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        .counters__item--heads-of-departments .counters__unit {
+            margin-top: 2px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+
+
+    .counters__item--call-center {
+        bottom: 18px;
+        right: 365px;
+        width: 168px;
+        height: 168px;
+    }
+        .counters__item--call-center .counters__value {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        .counters__item--call-center .counters__unit {
+            margin-top: 3px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+
+
+    .counters__item--office {
+        bottom: 109px;
+        right: 0;
+        width: 200px;
+        height: 200px;
+    }
+        .counters__item--office .counters__value {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .counters__item--office .counters__unit {
+            margin-top: 7px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+
