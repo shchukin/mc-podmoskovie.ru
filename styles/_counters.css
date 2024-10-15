@@ -481,7 +481,8 @@
                 /*flex-direction: column;*/
                 /*align-items: center;*/
                 /*justify-content: center;*/
-                /*transition: transform 1000ms var(--ease-out-quint);*/
+                transform: none !important;
+                transition: none;
             }
                 .counters__value {
                     /*font-family: var(--font-heading);*/
@@ -676,7 +677,7 @@
 
 
             .counters__item--doctors {
-                left: 61px;
+                left: 48.538%;
                 top: 353px;
                 width: 210px;
                 height: 210px;
@@ -736,7 +737,7 @@
 
 
             .counters__item--juniors {
-                left: 172px;
+                left: 75.1461%;
                 top: 594px;
                 width: 170px;
                 height: 170px;
@@ -755,7 +756,7 @@
                 }
 
             .counters__item--x-rays {
-                left: 212px;
+                left: 80.9941%;
                 top: 5px;
                 width: 130px;
                 height: 130px;
@@ -794,7 +795,7 @@
 
 
             .counters__item--admins {
-                left: 162px;
+                left: 73.6842%;
                 top: 161px;
                 width: 180px;
                 height: 180px;
@@ -856,7 +857,7 @@
 
 
             .counters__item--office {
-                left: 162px;
+                left: 73.6842%;
                 top: 883px;
                 width: 180px;
                 height: 180px;
