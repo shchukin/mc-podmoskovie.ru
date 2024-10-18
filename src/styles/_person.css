@@ -3,6 +3,8 @@
 }
 
 .person {
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
     border: 1px solid #B3E0E6;
     border-radius: 20px;
@@ -75,6 +77,9 @@
                 }
 
     .person__body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
         padding: 16px 16px 40px;
     }
         .person__heading {
@@ -144,14 +149,191 @@
         }
 
         .person__register {
-            margin-top: 20px;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 300ms ease,
-                        visibility 300ms ease;
+            margin-top: auto;
+            padding-top: 20px;
         }
 
-        .person:hover .person__register {
-            opacity: 1;
-            visibility: visible;
+        @media (768px < width) {
+
+            .person__register {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 300ms ease,
+                            visibility 300ms ease;
+            }
+
+            .person:hover .person__register {
+                opacity: 1;
+                visibility: visible;
+            }
         }
+
+
+
+
+@media (width < 768px) {
+
+    .person {
+        /*--pull-out-image: 30px;*/
+    }
+
+    .person {
+        /*min-height: 100%;*/
+        /*border: 1px solid #B3E0E6;*/
+        /*border-radius: 20px;*/
+        /*overflow: hidden; !* обрезаем уголки при наведении *!*/
+    }
+        .person__preview {
+            /*position: relative;*/
+            /*display: block;*/
+            /*border: none;*/
+            /*overflow: hidden; !* Обрезаем вытягивание фоток *!*/
+            /*text-align: center;*/
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .person__preview:hover {
+            /*background-color: #B3E0E6;*/
+        }
+            /* делаем не бордюр, а именно отдельный слой с одним пикселя поверх картинки,
+             чтобы при наведении его можно было убрать и проступила картинка.
+             А то иначе был бы эффект такой странный, что пропадает полоса. */
+            .person__preview::after {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*right: 0;*/
+                /*bottom: 0;*/
+                /*display: block;*/
+                /*height: 1px;*/
+                /*background-color: #1FBBC7;*/
+                /*transition: background-color var(--transition-hover);*/
+            }
+
+            .person__preview:hover::after {
+                /*background-color: transparent;*/
+            }
+
+            .person__image {
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*max-width: 340px;*/
+                /*aspect-ratio: 830/700; !* Каноничная фотка *!*/
+                /*object-fit: cover;*/
+            }
+
+            @media (768px <= width) {
+                .person__image {
+                    /*width: calc(100% + 2 * var(--pull-out-image));*/
+                    /*margin-left: calc(-1 * var(--pull-out-image));*/
+                    /*margin-right: calc(-1 * var(--pull-out-image));*/
+                }
+            }
+
+            .person__preview:hover .person__image {
+
+            }
+                .person__achievements {
+                    /*position: absolute;*/
+                    /*right: 9px;*/
+                    /*top: 0;*/
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                }
+                    .person__medal {
+                        /*vertical-align: top;*/
+                        /*margin-left: -30px;*/
+                    }
+
+                    .person__medal:first-child {
+                        /*margin-left: 0;*/
+                    }
+
+        .person__body {
+            /*padding: 16px 16px 40px;*/
+        }
+            .person__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: bold;*/
+                font-size: 22px;
+                line-height: 25px;
+                /*color: #1FBBC7;*/
+                /*text-decoration: none;*/
+            }
+                .person__link {
+                    /*border: none; !* Конфликт с legacy *!*/
+                    /*transition: var(--transition-hover);*/
+                    /*color: inherit;*/
+                }
+
+                .person__link:hover {
+                    /*color: #f08c07;*/
+                }
+
+
+            .person__stats {
+                /*margin-top: 3px;*/
+            }
+                .person__experience {
+                    /*font-weight: 500;*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                    /*color: rgb(0 150 170 / 50%);*/
+                }
+
+                .person__bullet {
+                    /*display: inline-block;*/
+                    /*vertical-align: middle;*/
+                    /*margin-left: 6px;*/
+                    /*margin-right: 6px;*/
+                    /*width: 10px;*/
+                    /*height: 10px;*/
+                    /*background-color: #0096AA;*/
+                    /*border-radius: 50%;*/
+                    /*text-indent: 200%;*/
+                    /*white-space: nowrap;*/
+                    /*overflow: hidden;*/
+                }
+
+                .person__feedback {
+                    /*font-weight: 600;*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                    /*color: #0096AA;*/
+                    /*text-decoration: 1.5px underline currentColor;*/
+                    /*text-underline-offset: 2px;*/
+                    /*border: none; !* Конфликт с legacy *!*/
+                }
+
+
+                .person__feedback:hover {
+                    /*color: #f08c07;*/
+                }
+
+            .person__profession {
+                /*margin-top: 5px;*/
+                /*font-size: 16px;*/
+                /*line-height: 20px;*/
+                /*color: #57585A;*/
+            }
+
+            .person__register {
+                /*margin-top: 20px;*/
+            }
+
+            @media (768px < width) {
+
+                .person__register {
+                    /*opacity: 0;*/
+                    /*visibility: hidden;*/
+                    /*transition: opacity 300ms ease,*/
+                    /*            visibility 300ms ease;*/
+                }
+
+                .person:hover .person__register {
+                    /*opacity: 1;*/
+                    /*visibility: visible;*/
+                }
+            }
+}
