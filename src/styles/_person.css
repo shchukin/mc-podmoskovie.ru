@@ -1,5 +1,5 @@
 .person {
-    --pull-out-image: 30px;
+    --pull-out-image: 70px;
 }
 
 .person {
@@ -44,7 +44,7 @@
         .person__image {
             vertical-align: top;
             width: 100%;
-            max-width: 340px;
+            max-width: none;
             aspect-ratio: 830/700; /* Каноничная фотка */
             object-fit: cover;
         }
@@ -224,6 +224,7 @@
 
             @media (768px <= width) {
                 .person__image {
+                    max-width: 400px;
                     /*width: calc(100% + 2 * var(--pull-out-image));*/
                     /*margin-left: calc(-1 * var(--pull-out-image));*/
                     /*margin-right: calc(-1 * var(--pull-out-image));*/
