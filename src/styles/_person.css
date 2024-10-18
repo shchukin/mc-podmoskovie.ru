@@ -145,4 +145,13 @@
 
         .person__register {
             margin-top: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 300ms ease,
+                        visibility 300ms ease;
+        }
+
+        .person:hover .person__register {
+            opacity: 1;
+            visibility: visible;
         }
