@@ -1,0 +1,39 @@
+.equipment-and-materials {
+    min-height: 576px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #63BFCB;
+    background-image: url("../images/equipment-and-materials@1x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);
+    background-size: 824px 576px, auto;
+    background-repeat: no-repeat, repeat;
+    background-position: calc(50% + 444px) 27px, center top;
+}
+
+@media (min-resolution: 1.5dppx) {
+    .equipment-and-materials {
+        background-image: url("../images/equipment-and-materials@2x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);
+    }
+}
+
+    .equipment-and-materials__container {
+
+    }
+        .equipment-and-materials__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 900px;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 69px;
+            color: #FFFFFF;
+        }
+
+        .equipment-and-materials__description {
+            margin-top: 40px;
+            margin-bottom: 0;
+            max-width: 631px;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }

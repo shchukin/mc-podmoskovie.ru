@@ -169,6 +169,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
+
+
     /* Форма */
 
     /* Уведомления */
