@@ -1,9 +1,14 @@
 .setup {
-
+    padding-top: 80px;
+    padding-bottom: 110px;
 }
     .setup__heading {
         margin-top: 0;
         margin-bottom: 0;
+        max-width: 790px;
+        font-family: var(--font-heading);
+        font-size: 32px;
+        line-height: 38px;
     }
 
     .setup__body {
