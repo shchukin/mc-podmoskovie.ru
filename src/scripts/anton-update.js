@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Аккордеон в branches */
+
+    const setupHandler = document.querySelectorAll('.setup__handler');
+
+    setupHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            if (!isDesktop) {
+                event.preventDefault();
+            }
+            const setupItem = event.currentTarget.closest('.setup__item');
+            setupItem.classList.toggle('setup__item--expanded');
+        });
+    });
+
+
 
     /* Инициализация Swiper`ов */
 
