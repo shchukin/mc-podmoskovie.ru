@@ -12,19 +12,23 @@
     }
 
     .setup__body {
-        margin-top: var(--heading-spacing);
+        margin-top: calc(var(--heading-spacing) + 4px);
         columns: 3;
         gap: 24px;
     }
         .setup__item {
             margin-bottom: 24px;
-            padding: 36px 24px;
+            padding: 40px 24px 36px;
             background-color: #F5F5F5;
             border-radius: 20px;
             break-inside: avoid;
         }
+            .setup__icon {
+                vertical-align: top;
+            }
+
             .setup__sub-heading {
-                margin-top: 0;
+                margin-top: 24px;
                 margin-bottom: 0;
                 font-family: var(--font-heading);
                 font-weight: 500;
@@ -55,10 +59,9 @@
                 }
 
             .setup__dropdown {
-                margin-top: 24px;
+                margin-top: 16px;
             }
                 .setup__list {
-                    margin-top: 8px;
                     padding-bottom: 12px;
                 }
                     .setup__link {
