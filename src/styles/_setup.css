@@ -49,6 +49,7 @@
             }
                 .setup__handler {
                     display: block;
+                    width: fit-content;
                     border: none;
                     padding: 0;
                     background-color: transparent;
@@ -219,6 +220,7 @@
                     .setup__handler {
                         position: relative;
                         /*border: none;*/
+                        width: 100%;
                         padding: 14px 54px 24px 16px;
                         /*background-color: transparent;*/
                         /*font-family: inherit;*/
