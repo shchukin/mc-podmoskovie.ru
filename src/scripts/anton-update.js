@@ -384,24 +384,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     document.addEventListener("mousemove", parallax);
 
-
-
-    /* Scans */
-
-    const dots = document.querySelectorAll('#dot');
-
-    dots.forEach((element)=>{
-        element.addEventListener('mouseenter', () => {
-            // element.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-            // element.style.transform = 'scale(2)'; // Enlarge by 200%
-            // element.style.opacity = '0'; // Fade out to zero
-            //
-            // // Optional: Reset after animation completes
-            // setTimeout(() => {
-            //     element.style.transform = '';
-            //     element.style.opacity = '';
-            // }, 500); // Match transition duration
-        });
-    });
-
 });
