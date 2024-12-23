@@ -312,9 +312,25 @@
 
                     .scans__data {
                         margin-top: 40px;
+                        overflow-x: auto;
+                        margin-left: -15px;
+                        margin-right: -15px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-bottom: 15px;
+                    }
+
+                    .scans__data::-webkit-scrollbar {
+                        height: 4px;
+                        background-image: linear-gradient(transparent, transparent 1px, #C4C4C4 1px, #C4C4C4 3px, transparent 3px, transparent);
+                    }
+
+                    .scans__data::-webkit-scrollbar-thumb {
+                        background-color: #1FBBC7;
+                        border-radius: 2px;
                     }
                         .scans__graph {
-
+                            width: 550px;
                         }
 
             .scans__clients-feedback {
