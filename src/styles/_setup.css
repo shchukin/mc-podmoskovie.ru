@@ -101,11 +101,14 @@
 @media (768px <= width < 1200px) {
 
     .setup {
-
+        padding-top: 60px;
+        padding-bottom: 80px;
     }
         .setup__heading {
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
+            font-size: 28px;
+            line-height: 36px;
         }
 
         .setup__body {
@@ -176,16 +179,19 @@
 @media (width < 768px) {
 
     .setup {
-
+        padding-top: 60px;
+        padding-bottom: 100px;
     }
         .setup__heading {
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
+            font-size: 24px;
+            line-height: 29px;
         }
 
         .setup__body {
             columns: unset;
-            /*gap: 24px;*/
+            /*margin-top: ;*/
         }
             .setup__item {
                 /*margin-bottom: 24px;*/

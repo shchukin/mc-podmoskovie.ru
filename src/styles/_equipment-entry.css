@@ -12,6 +12,7 @@
     }
         .equipment-entry__content {
             margin-left: 50%;
+            padding-left: 10px;
         }
             .equipment-entry__heading {
                 margin-top: 0;
@@ -28,6 +29,86 @@
     .equipment-entry__image {
         position: absolute;
         right: 50%;
+        margin-right: 40px;
         bottom: 0;
+        max-width: none;
     }
 
+
+@media (768px <= width < 1200px) {
+
+    .equipment-entry {
+        /*padding-top: 40px;*/
+        /*padding-bottom: 100px;*/
+        /*background-color: #53B8C5;*/
+        /*background-image: linear-gradient(-99.243deg, #0096AA, #B3E0E6);*/
+        /*color: #FFFFFF;*/
+        min-height: 400px; /* высота картинки */
+    }
+        .equipment-entry__container {
+            /*position: relative;*/
+            /*z-index: 10;*/
+        }
+            .equipment-entry__content {
+                margin-left: 0;
+                padding-left: 0;
+            }
+                .equipment-entry__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 500;*/
+                    font-size: 36px;
+                    line-height: 46px;
+                }
+
+                .equipment-entry__description {
+                    /*margin-top: 24px;*/
+                }
+
+        .equipment-entry__image {
+            display: none;
+        }
+}
+
+
+
+
+@media (width < 768px) {
+
+    .equipment-entry {
+        padding-top: 28px;
+        padding-bottom: 353px;
+        /*background-color: #53B8C5;*/
+        background-image: linear-gradient(-97.034deg, #B3E0E6 0%, #0096AA 100%);
+        /*color: #FFFFFF;*/
+        min-height: 0; /* высота картинки */
+    }
+        .equipment-entry__container {
+            /*position: relative;*/
+            /*z-index: 10;*/
+        }
+            .equipment-entry__content {
+                margin-left: 0;
+                padding-left: 0;
+            }
+                .equipment-entry__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 500;*/
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+
+                .equipment-entry__description {
+                    /*margin-top: 24px;*/
+                }
+
+        .equipment-entry__image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 390px;
+            height: 375px;
+            margin: 0;
+        }
+}
