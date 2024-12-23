@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
-    /* Аккордеон в branches */
+    /* Аккордеон в setup */
 
-    const setupHandler = document.querySelectorAll('.setup__handler');
+    const setupHandler = document.querySelectorAll('.setup__handler, .setup__icon-handler');
 
     setupHandler.forEach(item => {
         item.addEventListener('click', event => {
