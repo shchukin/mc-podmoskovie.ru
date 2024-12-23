@@ -1,4 +1,5 @@
 .equipment-entry {
+    position: relative;
     padding-top: 40px;
     padding-bottom: 100px;
     background-color: #53B8C5;
