@@ -78,9 +78,35 @@
                     color: #1FBBC7;
                 }
 
-                .scans__graph {
+                .scans__data {
                     margin-top: 24px;
                 }
+                    .scans__graph {
+                        vertical-align: top;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    @keyframes scans-gray-dot {
+                        from { stroke: rgb(32 187 199 / 100%); stroke-width: 0; }
+                        to { stroke: rgb(32 187 199 / 0); stroke-width: 20px; }
+                    }
+
+                    @keyframes scans-orange-dot {
+                        from { stroke: rgb(240 140 7 / 100%); stroke-width: 0; }
+                        to { stroke: rgb(240 140 7 / 0); stroke-width: 20px; }
+                    }
+                        .scans__graph #dot {
+
+                        }
+
+                        .scans__graph #gray-dot:hover {
+                            animation: scans-gray-dot 1000ms ease;
+                        }
+
+                        .scans__graph #orange-dot:hover {
+                            animation: scans-orange-dot 1000ms ease;
+                        }
 
         .scans__clients-feedback {
 
@@ -170,9 +196,12 @@
                         /*color: #1FBBC7;*/
                     }
 
-                    .scans__graph {
+                    .scans__data {
                         /*margin-top: 24px;*/
                     }
+                        .scans__graph {
+
+                        }
 
             .scans__clients-feedback {
 
@@ -281,9 +310,12 @@
                         /*color: #1FBBC7;*/
                     }
 
-                    .scans__graph {
+                    .scans__data {
                         margin-top: 40px;
                     }
+                        .scans__graph {
+
+                        }
 
             .scans__clients-feedback {
 
