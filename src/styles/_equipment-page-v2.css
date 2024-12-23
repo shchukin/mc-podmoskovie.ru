@@ -1,24 +1,10 @@
 .equipment-page-v2 {
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-
-
-@media (768px <= width < 1200px) {
-
-    .equipment-page-v2 {
-        padding-bottom: 80px;
-        gap: 80px;
-    }
+    margin-top: 27px;
 }
 
 @media (width < 768px) {
 
     .equipment-page-v2 {
-        padding-bottom: 60px;
-        gap: 60px;
+        margin-top: 0;
     }
 }

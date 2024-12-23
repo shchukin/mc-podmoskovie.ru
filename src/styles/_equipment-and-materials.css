@@ -1,5 +1,4 @@
 .equipment-and-materials {
-    margin-top: 27px;
     min-height: 576px;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -44,7 +43,6 @@
 @media (768px <= width < 1200px) {
 
     .equipment-and-materials {
-        margin-top: 60px;
         min-height: 400px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -72,8 +70,6 @@
 @media (width < 768px) {
 
     .equipment-and-materials {
-        /*margin-top: 60px;*/
-        /*min-height: 400px;*/
         padding-top: 40px;
         padding-bottom: 298px;
         background-size: 335px auto, auto;

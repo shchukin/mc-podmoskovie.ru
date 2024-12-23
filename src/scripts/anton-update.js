@@ -162,6 +162,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /* Свайпер для оборудования */
+
+    new Swiper('.swiper--js-init-equipment', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                autoHeight: false
+            }
+        }
+    });
+
+
+
     /* Pins (табы) */
 
     document.querySelectorAll('.pins__tab').forEach((tab) => {
