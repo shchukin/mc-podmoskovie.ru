@@ -169,6 +169,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         slidesPerGroup: 1,
         autoHeight: true,
         spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -188,6 +192,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         slidesPerGroup: 1,
         autoHeight: true,
         spaceBetween: 15,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

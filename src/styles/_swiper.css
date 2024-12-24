@@ -402,3 +402,194 @@
         display: none;
     }
 }
+
+
+
+
+
+/* Минималистичные контролы */
+
+.swiper--minimalistic-controls {
+
+}
+    .swiper--minimalistic-controls .swiper-wrapper {
+
+    }
+        .swiper--minimalistic-controls .swiper-slide {
+
+        }
+
+    .swiper--minimalistic-controls .swiper-controls {
+        margin-top: -46px;
+        position: relative;
+        top: -52px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        pointer-events: none;
+    }
+        .swiper--minimalistic-controls .swiper-pagination {
+            position: static;
+            width: auto;
+            display: flex;
+            align-items: baseline;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 32px;
+            color: #0096AA;
+            pointer-events: auto;
+        }
+            .swiper--minimalistic-controls .swiper-pagination-current {
+                opacity: 35%;
+            }
+
+        .swiper--minimalistic-controls .swiper-button-prev,
+        .swiper--minimalistic-controls .swiper-button-next {
+            position: static;
+            margin: 0;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            pointer-events: auto;
+        }
+
+        .swiper--minimalistic-controls .swiper-button-prev:hover,
+        .swiper--minimalistic-controls .swiper-button-next:hover {
+            background-color: rgb(0 150 170 / 10%);
+        }
+
+        .swiper--minimalistic-controls .swiper-button-prev:active,
+        .swiper--minimalistic-controls .swiper-button-next:active {
+            transform: translateY(1px);
+        }
+
+        .swiper--minimalistic-controls .swiper-button-prev {
+
+        }
+
+        .swiper--minimalistic-controls .swiper-button-next {
+
+        }
+
+
+        .swiper--minimalistic-controls .swiper-button-next.swiper-button-disabled,
+        .swiper--minimalistic-controls .swiper-button-prev.swiper-button-disabled {
+            /*opacity: 70%;*/
+        }
+            .swiper--minimalistic-controls .swiper-button-prev::after,
+            .swiper--minimalistic-controls .swiper-button-next::after {
+                width: 100%;
+                height: 100%;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .swiper--minimalistic-controls .swiper-button-prev::after {
+                background-image: url("../vectors/swiper-minimalistic-controls-prev.svg");
+            }
+
+            .swiper--minimalistic-controls .swiper-button-next::after {
+                background-image: url("../vectors/swiper-minimalistic-controls-next.svg");
+            }
+
+
+@media (width < 740px) {
+
+    .swiper--minimalistic-controls {
+        /*position: relative;*/
+        /*overflow: visible;*/
+    }
+        .swiper--minimalistic-controls .swiper-wrapper {
+            /*display: grid;*/
+            /*grid-auto-flow: column;*/
+        }
+            .swiper--minimalistic-controls .swiper-slide {
+                /*width: auto;*/
+                /*height: 100%;*/
+            }
+
+        .swiper--minimalistic-controls .swiper-controls {
+            /*margin-top: -46px;*/
+            /*position: relative;*/
+            top: -34px;
+            right: 5px;
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: flex-end;*/
+        }
+            .swiper--minimalistic-controls .swiper-pagination {
+                /*position: static;*/
+                /*width: auto;*/
+                /*display: flex;*/
+                /*align-items: baseline;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                font-size: 22px;
+                line-height: 26px;
+                /*color: #0096AA;*/
+            }
+                .swiper--minimalistic-controls .swiper-pagination-current {
+                    /*opacity: 35%;*/
+                }
+
+            .swiper--minimalistic-controls .swiper-button-prev,
+            .swiper--minimalistic-controls .swiper-button-next {
+                /*position: static;*/
+                /*margin: 0;*/
+                width: 16px;
+                height: 16px;
+                /*border-radius: 50%;*/
+                /*pointer-events: auto;*/
+            }
+
+            .swiper--minimalistic-controls .swiper-button-prev:hover,
+            .swiper--minimalistic-controls .swiper-button-next:hover {
+                background-color: transparent;
+            }
+
+            .swiper--minimalistic-controls .swiper-button-prev:active,
+            .swiper--minimalistic-controls .swiper-button-next:active {
+                /*transform: translateY(1px);*/
+            }
+
+            .swiper--minimalistic-controls .swiper-button-prev {
+
+            }
+
+            .swiper--minimalistic-controls .swiper-button-next {
+
+            }
+
+
+            .swiper--minimalistic-controls .swiper-button-next.swiper-button-disabled,
+            .swiper--minimalistic-controls .swiper-button-prev.swiper-button-disabled {
+                /*opacity: 70%;*/
+            }
+                .swiper--minimalistic-controls .swiper-button-prev::after,
+                .swiper--minimalistic-controls .swiper-button-next::after {
+                    /*width: 100%;*/
+                    /*height: 100%;*/
+                    /*text-indent: 200%;*/
+                    /*white-space: nowrap;*/
+                    /*overflow: hidden;*/
+                    background-size: 20px 20px;
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                }
+
+                .swiper--minimalistic-controls .swiper-button-prev::after {
+                    /*background-image: url("../vectors/swiper-minimalistic-controls-prev.svg");*/
+                }
+
+                .swiper--minimalistic-controls .swiper-button-next::after {
+                    /*background-image: url("../vectors/swiper-minimalistic-controls-next.svg");*/
+                }
+}
+
+
+
