@@ -1,15 +1,17 @@
 .feedback {
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 9px;
 }
     .feedback__preview {
         flex-shrink: 0;
-        margin-top: 24px;
         align-self: stretch;
     }
         .feedback__photo {
             height: 100%;
+            object-position: center bottom;
+            object-fit: contain;
         }
 
     .feedback__message {
