@@ -181,6 +181,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Свайпер для фидбека */
+
+    new Swiper('.swiper--js-init-feedback', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                autoHeight: false
+            }
+        }
+    });
+
+
 
     /* Pins (табы) */
 

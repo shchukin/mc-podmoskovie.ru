@@ -21,6 +21,28 @@
 }
 
 
+.wysiwyg--smaller {
+    --wysiwyg-font-size: 18px;
+    --wysiwyg-line-height: 23px;
+}
+
+@media (768px <= width < 1200px) {
+
+    .wysiwyg--smaller {
+        --wysiwyg-font-size: 17px;
+        --wysiwyg-line-height: 19px;
+    }
+}
+
+@media (width < 767px) {
+
+    .wysiwyg--smaller {
+        --wysiwyg-font-size: 16px;
+        --wysiwyg-line-height: 19px;
+    }
+}
+
+
 
 
 .wysiwyg {
