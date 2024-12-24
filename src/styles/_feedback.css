@@ -129,7 +129,7 @@
 
         .feedback__message {
             order: -1;
-            min-height: 590px;
+            min-height: 0;
             margin-left: -50px;
             margin-right: -50px;
             padding: 35px 64px 23px;

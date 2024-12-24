@@ -1,0 +1,20 @@
+.footer-wave {
+    position: relative;
+    z-index: 100;
+    margin-top: -38px;
+    height: 91px;
+    background-image: url("../vectors/footer-wave-desktop.svg");
+    background-size: 1920px 91px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+@media (width < 740px) {
+
+    .footer-wave {
+        margin-top: -86px;
+        background-image: url("../vectors/footer-wave-mobile.svg");
+        background-size: 390px 59px;
+    }
+}
