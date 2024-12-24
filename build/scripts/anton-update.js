@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Аккордеон в setup */
+
+    const setupHandler = document.querySelectorAll('.setup__handler, .setup__icon-handler');
+
+    setupHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            if (!isDesktop) {
+                event.preventDefault();
+            }
+            const setupItem = event.currentTarget.closest('.setup__item');
+            setupItem.classList.toggle('setup__item--expanded');
+        });
+    });
+
+
 
     /* Инициализация Swiper`ов */
 
@@ -147,6 +162,53 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /* Свайпер для оборудования */
+
+    new Swiper('.swiper--js-init-equipment', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                autoHeight: false
+            }
+        }
+    });
+
+
+    /* Свайпер для фидбека */
+
+    new Swiper('.swiper--js-init-feedback', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 15,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                autoHeight: false
+            }
+        }
+    });
+
+
+
     /* Pins (табы) */
 
     document.querySelectorAll('.pins__tab').forEach((tab) => {
@@ -168,6 +230,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             newBody.classList.add('pins__item--current');
         });
     });
+
+
 
     /* Форма */
 
