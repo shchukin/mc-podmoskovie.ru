@@ -112,6 +112,13 @@
             margin-top: 100px;
         }
 
+        @media (1200px <= width) {
+
+            .scans__clients-feedback .swiper-slide {
+                height: auto;
+                min-height: 100%;
+            }
+        }
 
 
 @media (768px <= width < 1200px) {
@@ -333,8 +340,11 @@
                             width: 550px;
                         }
 
+
             .scans__clients-feedback {
                 margin-top: 75px;
+                margin-left: -15px;
+                margin-right: -15px;
             }
 }
 

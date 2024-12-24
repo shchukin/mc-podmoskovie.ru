@@ -30,7 +30,7 @@
 
     .wysiwyg--smaller {
         --wysiwyg-font-size: 17px;
-        --wysiwyg-line-height: 19px;
+        --wysiwyg-line-height: 23px;
     }
 }
 
@@ -38,7 +38,7 @@
 
     .wysiwyg--smaller {
         --wysiwyg-font-size: 16px;
-        --wysiwyg-line-height: 19px;
+        --wysiwyg-line-height: 23px;
     }
 }
 

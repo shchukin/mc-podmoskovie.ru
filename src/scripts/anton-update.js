@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         slidesPerView: 1,
         slidesPerGroup: 1,
         autoHeight: true,
-        spaceBetween: 0,
+        spaceBetween: 15,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
