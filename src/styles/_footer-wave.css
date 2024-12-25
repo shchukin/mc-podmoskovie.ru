@@ -2,6 +2,7 @@
     position: relative;
     z-index: 100;
     margin-top: -38px;
+    margin-bottom: -1px;
     height: 91px;
     background-image: url("../vectors/footer-wave-desktop.svg");
     background-size: 1920px 91px;
