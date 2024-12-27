@@ -14,7 +14,7 @@
 @media (width < 740px) {
 
     .footer-wave {
-        margin-top: -92px;
+        margin-top: -90px;
         background-image: url("../vectors/footer-wave-mobile.svg");
         background-size: 390px 59px;
     }
