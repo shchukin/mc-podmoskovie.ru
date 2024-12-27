@@ -23,7 +23,7 @@
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="legacy/styles.f17632b4.css?1735117963">
+    <link rel="stylesheet" href="legacy/styles.f17632b4.css?1735302930">
     <link href="legacy/css2" rel="stylesheet">
     <style>
         @media screen  and (max-width: 1124px) /* Tablet */ {
@@ -68,13 +68,13 @@
         pointer-events: none;
         z-index: -1
     }</style>
-    <link rel="stylesheet" type="text/css" href="legacy/glbox.e14f15e8.css?1735117963">
+    <link rel="stylesheet" type="text/css" href="legacy/glbox.e14f15e8.css?1735302930">
 
-    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css?1735117963">
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css?1735302930">
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="styles/anton-update.css?1735117963">
-    <script src="scripts/anton-update.js?1735117963"></script>
+    <link rel="stylesheet" href="styles/anton-update.css?1735302930">
+    <script src="scripts/anton-update.js?1735302930"></script>
 
 
 </head>
@@ -899,6 +899,47 @@
     </div>
     <!--/Уникальная часть -->
 
+
+    <style>
+        @media (min-width: 768px) {
+
+            .right-aligned-likes {
+                position: relative;
+                z-index: 100;
+                margin-top: -105px;
+            }
+                .right-aligned-likes .likely {
+                    position: relative;
+                    top: -16px;
+                    margin: 0;
+                    display: block;
+                    width: fit-content;
+                    margin-left: auto;
+                }
+
+                .right-aligned-likes .likely {
+                    margin-right: 50px;
+                }
+        }
+
+        @media (max-width: 767px) {
+            .right-aligned-likes {
+                background-color: #F7F7F7;
+            }
+        }
+    </style>
+    <div class="right-aligned-likes">
+        <div class=" py-md">
+            <div class="wrapper wrapper--wide">
+                <div class="likely likely_visible likely_ready">
+                    <button class="likely__widget likely__widget_vkontakte"><span class="likely__icon likely__icon_vkontakte"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.632 3.914 C 15.743 3.545 15.632 3.273 15.102 3.273 L 13.351 3.273 C 12.906 3.273 12.701 3.508 12.59 3.766 C 12.59 3.766 11.699 5.926 10.438 7.329 C 10.03 7.736 9.845 7.865 9.622 7.865 C 9.511 7.865 9.35 7.736 9.35 7.367 L 9.35 3.914 C 9.35 3.471 9.221 3.273 8.85 3.273 L 6.099 3.273 C 5.82 3.273 5.653 3.479 5.653 3.674 C 5.653 4.094 6.284 4.191 6.349 5.373 L 6.349 7.939 C 6.349 8.501 6.247 8.604 6.024 8.604 C 5.431 8.604 3.987 6.434 3.131 3.951 C 2.963 3.468 2.795 3.273 2.347 3.273 L 0.597 3.273 C 0.096 3.273 -0.004 3.508 -0.004 3.766 C -0.004 4.228 0.59 6.517 2.76 9.545 C 4.206 11.613 6.245 12.734 8.099 12.734 C 9.212 12.734 9.35 12.484 9.35 12.056 L 9.35 10.493 C 9.35 9.995 9.455 9.896 9.808 9.896 C 10.067 9.896 10.513 10.025 11.551 11.022 C 12.738 12.203 12.934 12.734 13.602 12.734 L 15.352 12.734 C 15.852 12.734 16.103 12.484 15.958 11.993 C 15.8 11.504 15.234 10.793 14.482 9.951 C 14.074 9.471 13.461 8.954 13.276 8.696 C 13.016 8.363 13.091 8.216 13.276 7.92 C 13.276 7.92 15.409 4.929 15.632 3.914z"></path></svg></span><span class="likely__button likely__button_vkontakte">Поделиться</span><span class="likely__counter likely__counter_vkontakte likely__counter_empty"></span></button>
+                    <button class="likely__widget likely__widget_telegram"><span class="likely__icon likely__icon_telegram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M1.155 7.049 C 5.43 5.188 8.281 3.962 9.708 3.369 C 13.781 1.677 14.627 1.384 15.179 1.374 C 15.3 1.372 15.571 1.402 15.747 1.544 C 15.895 1.664 15.936 1.827 15.956 1.941 C 15.975 2.055 15.999 2.314 15.98 2.517 C 15.759 4.834 14.804 10.454 14.319 13.048 C 14.113 14.146 13.708 14.514 13.316 14.55 C 12.465 14.628 11.818 13.988 10.993 13.448 C 9.702 12.603 8.973 12.077 7.72 11.252 C 6.272 10.299 7.211 9.775 8.036 8.919 C 8.252 8.695 12.004 5.286 12.077 4.977 C 12.086 4.938 12.095 4.794 12.009 4.718 C 11.923 4.642 11.797 4.668 11.705 4.689 C 11.576 4.718 9.514 6.079 5.519 8.772 C 4.934 9.174 4.404 9.369 3.929 9.359 C 3.405 9.348 2.398 9.063 1.649 8.82 C 0.731 8.522 0.001 8.364 0.064 7.858 C 0.097 7.594 0.461 7.325 1.155 7.049z"></path></svg></span><span class="likely__button likely__button_telegram">Отправить</span></button>
+                    <button class="likely__widget likely__widget_odnoklassniki"><span class="likely__icon likely__icon_odnoklassniki"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.1,10.6c-0.7,0.5-1.5,0.8-2.4,1l2.3,2.3c0.5,0.5,0.5,1.2,0,1.7c-0.5,0.5-1.2,0.5-1.7,0L8,13.4l-2.3,2.3 C5.5,15.9,5.2,16,4.9,16c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.2,0-1.7l2.3-2.3c-0.8-0.2-1.7-0.5-2.4-1C3.4,10.3,3.2,9.6,3.5,9 c0.4-0.6,1.1-0.7,1.7-0.4c1.7,1.1,3.9,1.1,5.6,0c0.6-0.4,1.3-0.2,1.7,0.4C12.8,9.5,12.6,10.3,12.1,10.6z M8,8.3 c-2.3,0-4.1-1.9-4.1-4.1C3.9,1.8,5.7,0,8,0c2.3,0,4.1,1.9,4.1,4.1C12.1,6.4,10.3,8.3,8,8.3z M8,2.4c-1,0-1.7,0.8-1.7,1.7 c0,0.9,0.8,1.7,1.7,1.7c0.9,0,1.7-0.8,1.7-1.7C9.7,3.2,9,2.4,8,2.4z"></path></svg></span><span class="likely__button likely__button_odnoklassniki">Класснуть</span><span class="likely__counter likely__counter_odnoklassniki likely__counter_empty"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer selection-invert" itemscope="" itemtype="http://schema.org/WPFooter">
         <div class="wrapper">
             <div class="row">
@@ -1562,11 +1603,11 @@
 <div>
 
 
-    <link href="legacy/player-component.css?1735117963" type="text/css" rel="stylesheet">
-    <link href="legacy/page_c6eccdbbb7b3b92a4d89aebedc114c9a_v1.css?1735117963" type="text/css" rel="stylesheet">
-    <link href="legacy/template_2db5078eaecb164539eecbf4e2a66853_v1.css?1735117963" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="legacy/player-component.css?1735302930" type="text/css" rel="stylesheet">
+    <link href="legacy/page_c6eccdbbb7b3b92a4d89aebedc114c9a_v1.css?1735302930" type="text/css" rel="stylesheet">
+    <link href="legacy/template_2db5078eaecb164539eecbf4e2a66853_v1.css?1735302930" type="text/css" data-template-style="true" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="legacy/all.min.css?1735117963">
+    <link rel="stylesheet" type="text/css" href="legacy/all.min.css?1735302930">
 
 </div>
 
