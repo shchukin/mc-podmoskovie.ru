@@ -8,6 +8,7 @@
     background-size: 1920px 91px;
     background-repeat: no-repeat;
     background-position: center bottom;
+    pointer-events: none; /* чтобы на смартфонах можно было кликать насквозь */
 }
 
 
