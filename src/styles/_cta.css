@@ -99,7 +99,7 @@
 
     .cta {
         padding-top: 24px;
-        /*background-image: radial-gradient(circle, #B3E0E6, transparent 700px);*/
+        background-image: linear-gradient(transparent, #B9E2E8);
     }
         .cta__wrap {
             display: block;
