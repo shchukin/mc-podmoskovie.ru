@@ -1,0 +1,40 @@
+.informer {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.informer::before {
+    content: "";
+    margin-top: -4px;
+    flex-shrink: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url("../vectors/informer.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+@media (width < 740px) {
+
+    .informer {
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+        /*gap: 4px;*/
+    }
+        .informer::before {
+            /*content: "";*/
+            margin-top: -3px;
+            /*flex-shrink: 0;*/
+            /*display: block;*/
+            width: 24px;
+            height: 24px;
+            /*background-image: url("../vectors/informer.svg");*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+}
