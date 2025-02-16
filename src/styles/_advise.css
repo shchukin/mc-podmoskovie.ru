@@ -1,0 +1,56 @@
+.advise {
+    display: grid;
+    grid-template-columns: 430px auto;
+    gap: 40px;
+}
+    .advise__person {
+
+    }
+        .advise__photo {
+            position: relative;
+        }
+            .advise__image {
+                vertical-align: top;
+            }
+
+            .advise__photo::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px; /* На пиксель ниже в случае багов при зуммировании */
+                right: 0;
+                width: 100%;
+                height: 32px;
+                background-image: url("../vectors/advise@2x.svg");
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+
+        .advise__name {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 34px;
+            color: #1FBBC7;
+        }
+
+        .advise__post {
+            font-family: var(--font-heading);
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: lowercase;
+            color: #2D2D2D;
+        }
+
+    .advise__body {
+
+    }
+        .advise__text {
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .advise__action {
+            margin-top: 40px;
+        }

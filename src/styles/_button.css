@@ -136,3 +136,17 @@
         }
     }
 
+
+
+
+.button--smaller-on-smartphone {
+
+}
+
+@media (width < 740px) {
+
+    .button--smaller-on-smartphone {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
