@@ -1,0 +1,101 @@
+.anesthesia-and-sedation {
+    min-height: 576px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #63BFCB;
+    background-image: url("../images/anesthesia-and-sedation@1x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);
+    background-size: 824px 668px, auto;
+    background-repeat: no-repeat, repeat;
+    background-position: calc(50% + 444px) top, center top;
+}
+
+@media (min-resolution: 1.5dppx) {
+    .anesthesia-and-sedation {
+        background-image: url("../images/anesthesia-and-sedation@2x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);
+    }
+}
+
+    .anesthesia-and-sedation__container {
+
+    }
+        .anesthesia-and-sedation__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 900px;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 69px;
+            color: #FFFFFF;
+        }
+
+        .anesthesia-and-sedation__description {
+            margin-top: 23px;
+            margin-bottom: 0;
+            max-width: 631px;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+
+        .anesthesia-and-sedation__action {
+            margin-top: 60px;
+        }
+            .anesthesia-and-sedation__action.button,
+            .anesthesia-and-sedation__action .button {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+
+
+@media (740px <= width < 1200px) {
+
+    .anesthesia-and-sedation {
+        min-height: 400px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-size: 540px auto, auto;
+        background-position: calc(50% + 300px) 27px, center top;
+    }
+        .anesthesia-and-sedation__container {
+
+        }
+            .anesthesia-and-sedation__heading {
+                max-width: 600px;
+                font-size: 40px;
+                line-height: 46px;
+            }
+
+            .anesthesia-and-sedation__description {
+                margin-top: 16px;
+                max-width: 540px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+}
+
+
+@media (width < 740px) {
+
+    .anesthesia-and-sedation {
+        padding-top: 40px;
+        padding-bottom: 298px;
+        background-size: 335px auto, auto;
+        background-position: center bottom 39px, center top;
+    }
+        .anesthesia-and-sedation__container {
+
+        }
+            .anesthesia-and-sedation__heading {
+                font-size: 40px;
+                line-height: 46px;
+            }
+
+            .anesthesia-and-sedation__description {
+                margin-top: 16px;
+                /*max-width: 600px;*/
+                font-size: 18px;
+                line-height: 22px;
+            }
+}
