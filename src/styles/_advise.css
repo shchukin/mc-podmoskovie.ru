@@ -1,20 +1,20 @@
-.advise {
+.advice {
     padding-top: 15px;
     display: grid;
     grid-template-columns: 430px auto;
     gap: 40px;
 }
-    .advise__person {
+    .advice__person {
 
     }
-        .advise__photo {
+        .advice__photo {
             position: relative;
         }
-            .advise__image {
+            .advice__image {
                 vertical-align: top;
             }
 
-            .advise__photo::after {
+            .advice__photo::after {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -27,7 +27,7 @@
                 background-position: center bottom;
             }
 
-        .advise__name {
+        .advice__name {
             font-family: var(--font-heading);
             font-weight: 500;
             font-size: 28px;
@@ -35,7 +35,7 @@
             color: #1FBBC7;
         }
 
-        .advise__post {
+        .advice__post {
             font-family: var(--font-heading);
             font-weight: 300;
             font-size: 18px;
@@ -44,14 +44,14 @@
             color: #2D2D2D;
         }
 
-    .advise__body {
+    .advice__body {
 
     }
-        .advise__text {
+        .advice__text {
             font-weight: 500;
             font-style: italic;
         }
 
-        .advise__action {
+        .advice__action {
             margin-top: 40px;
         }
