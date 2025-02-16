@@ -1,9 +1,9 @@
 @import url("_root.css");
 @import url("_container.css");
-@import url("_doctors-page-v2.css");
 @import url("_department.css");
 @import url("_swiper.css");
 @import url("_person.css");
+@import url("_page.css");
 @import url("_box-sizing.css");
 @import url("_slide-bottom.css");
 @import url("_team.css");
@@ -28,7 +28,6 @@
 @import url("_counters.css");
 
 @import url("_equipment-and-materials.css");
-@import url("_equipment-page-v2.css");
 @import url("_setup.css");
 @import url("_nobr.css");
 @import url("_equipment-entry.css");
@@ -38,4 +37,3 @@
 @import url("_feedback.css");
 @import url("_footer-wave.css");
 
-@import url("_anesthesia-page-v2.css");

@@ -1,5 +1,5 @@
 .reviews {
-    padding-top: 120px;
+
 }
     .reviews__container {
 
@@ -38,7 +38,7 @@
 @media (768px <= width < 1200px) {
 
     .reviews {
-        padding-top: 80px;
+
     }
         .reviews__container {
 

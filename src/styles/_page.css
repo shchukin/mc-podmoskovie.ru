@@ -1,0 +1,53 @@
+.page {
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+}
+
+
+@media (768px <= width < 1200px) {
+
+    .page {
+
+    }
+}
+
+
+@media (width < 768px) {
+
+    .page {
+        margin-top: 0;
+    }
+}
+
+
+
+.page--doctors-v2 {
+    margin-top: 40px;
+}
+
+@media (768px <= width < 1200px) {
+
+    .page--doctors-v2 {
+        margin-top: 32px;
+    }
+}
+
+@media (width < 768px) {
+
+    .page--doctors-v2 {
+        margin-top: 24px;
+    }
+}
+
+
+.page--equipment-v2 {
+    padding-bottom: 0;
+}
+
+.page--anesthesia-v2 {
+    padding-bottom: 0;
+}
+

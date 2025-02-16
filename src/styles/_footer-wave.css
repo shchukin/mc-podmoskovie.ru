@@ -1,7 +1,7 @@
 .footer-wave {
     position: relative;
     z-index: 100;
-    margin-top: -38px;
+    margin-top: calc(-1 * (var(--section-spacing) + 38px));
     margin-bottom: -1px;
     height: 91px;
     background-image: url("../vectors/footer-wave-desktop.svg");
@@ -15,7 +15,7 @@
 @media (width < 740px) {
 
     .footer-wave {
-        margin-top: -90px;
+        margin-top: calc(-1 * (var(--section-spacing) + 90px));
         background-image: url("../vectors/footer-wave-mobile.svg");
         background-size: 390px 59px;
     }

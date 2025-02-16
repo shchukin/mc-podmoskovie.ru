@@ -1,6 +1,9 @@
 .setup {
-    padding-top: 80px;
-    padding-bottom: 110px;
+
+}
+
+.equipment-and-materials + .setup {
+    margin-top: -40px;
 }
     .setup__heading {
         margin-top: 0;
@@ -101,8 +104,11 @@
 @media (768px <= width < 1200px) {
 
     .setup {
-        padding-top: 60px;
-        padding-bottom: 80px;
+
+    }
+
+    .equipment-and-materials + .setup {
+        margin-top: -20px;
     }
         .setup__heading {
             /*margin-top: 0;*/
@@ -179,8 +185,7 @@
 @media (width < 768px) {
 
     .setup {
-        padding-top: 60px;
-        padding-bottom: 100px;
+
     }
         .setup__heading {
             /*margin-top: 0;*/
