@@ -29,6 +29,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Аккордеон в answer */
+
+    const answerHandler = document.querySelectorAll('.answers__handler');
+
+    answerHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            const answersItem = event.currentTarget.closest('.answers__item');
+            answersItem.classList.toggle('answers__item--expanded');
+        });
+    });
+
+
 
     /* Аккордеон в branches */
 
@@ -410,5 +422,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     document.addEventListener("mousemove", parallax);
+
+
+
+
 
 });
