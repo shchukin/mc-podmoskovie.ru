@@ -28,6 +28,7 @@
             }
 
         .advice__name {
+            margin-top: 24px;
             font-family: var(--font-heading);
             font-weight: 500;
             font-size: 28px;
@@ -36,6 +37,7 @@
         }
 
         .advice__post {
+            margin-top: 6px;
             font-family: var(--font-heading);
             font-weight: 300;
             font-size: 18px;

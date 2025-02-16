@@ -6,8 +6,21 @@
     }
 
     .opinions__body {
-
+        margin-top: 40px;
     }
+
+        @media (1200px <= width) {
+
+            .opinions__body .pins__navigation {
+                gap: 24px 40px;
+            }
+                .opinions__body .pins__tab {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+        }
 
     .opinions__addition {
 
