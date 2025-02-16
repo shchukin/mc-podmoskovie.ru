@@ -4,9 +4,9 @@
     padding-bottom: 80px;
     background-color: #63BFCB;
     background-image: url("../images/anesthesia-and-sedation@1x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);
-    background-size: 824px 668px, auto;
+    background-size: 685px 576px, auto;
     background-repeat: no-repeat, repeat;
-    background-position: calc(50% + 444px) top, center top;
+    background-position: calc(50% + 297px) top, center top;
 }
 
 @media (min-resolution: 1.5dppx) {
@@ -55,8 +55,8 @@
         min-height: 400px;
         padding-top: 40px;
         padding-bottom: 40px;
-        background-size: 540px auto, auto;
-        background-position: calc(50% + 300px) 27px, center top;
+        background-size: 470px auto, auto;
+        background-position: calc(50% + 260px) 27px, center top;
     }
         .anesthesia-and-sedation__container {
 
@@ -73,16 +73,20 @@
                 font-size: 18px;
                 line-height: 22px;
             }
+
+            .anesthesia-and-sedation__action {
+
+            }
 }
 
 
 @media (width < 740px) {
 
     .anesthesia-and-sedation {
-        padding-top: 40px;
-        padding-bottom: 298px;
-        background-size: 335px auto, auto;
-        background-position: center bottom 39px, center top;
+        padding-top: 28px;
+        padding-bottom: 300px;
+        background-size: 353px auto, auto;
+        background-position: center bottom, center top;
     }
         .anesthesia-and-sedation__container {
 
@@ -93,9 +97,19 @@
             }
 
             .anesthesia-and-sedation__description {
-                margin-top: 16px;
+                margin-top: 25px;
                 /*max-width: 600px;*/
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 19px;
             }
+
+            .anesthesia-and-sedation__action {
+                margin-top: 40px;
+            }
+                .anesthesia-and-sedation__action.button,
+                .anesthesia-and-sedation__action .button {
+                    padding: 12px 24px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
 }
