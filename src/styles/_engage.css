@@ -1,123 +1,37 @@
 .engage {
-    display: grid;
-    grid-template-columns: 540fr 700fr;
-    gap: 40px;
-    padding: 62px 40px;
-    background-color: #E4F7FA;
-    border-radius: 20px;
+
 }
-    .engage__header {
-
-    }
-        .engage__heading {
-            margin-top: -2px;
-            margin-bottom: 0;
-            font-family: var(--font-heading);
-            font-weight: 500;
-            font-size: 42px;
-            line-height: 48px;
-            color: #0096AA;
-        }
-
-        .engage__description {
-            margin-top: 18px;
-            max-width: 430px;
-            font-size: 18px;
-            line-height: 22px;
-            color: #656565;
-        }
-
-    .engage__body {
-
-    }
-        .engage__fieldset {
-
-        }
-            .engage__field {
-                margin-top: 24px;
-            }
-
-            .engage__field:first-child {
-                margin-top: 0;
-            }
-
-        .engage__footer {
-            margin-top: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 18px;
-        }
-            .engage__agreement {
-                max-width: 391px;
-                font-size: 14px;
-                line-height: 17px;
-                text-align: right;
-                color: #808080;
-            }
-
-            .engage__submit.button,
-            .engage__submit .button {
-                width: 242px;
-            }
-
-
-@media (width < 1200px) {
-
-    .engage {
-
+    .engage__background {
+        display: grid;
+        grid-template-columns: 540fr 700fr;
+        gap: 40px;
+        padding: 62px 40px;
+        background-color: #E4F7FA;
+        border-radius: 20px;
     }
         .engage__header {
 
         }
             .engage__heading {
-                font-size: 32px;
-                line-height: 37px;
+                margin-top: -2px;
+                margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-size: 42px;
+                line-height: 48px;
+                color: #0096AA;
             }
 
             .engage__description {
-                margin-top: 14px;
-                font-size: 16px;
-                line-height: 20px;
-            }
-}
-
-
-
-@media (width < 992px) {
-
-    .engage {
-        /*position: relative;*/
-        display: block;
-        /*grid-template-columns: 540fr 700fr;*/
-        /*gap: 40px;*/
-        /*padding: 40px 24px;*/
-        /*background-color: #E4F7FA;*/
-    }
-
-        .engage__header {
-
-        }
-            .engage__heading {
-                /*margin-top: -2px;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-heading);*/
-                /*font-weight: 500;*/
-                /*font-size: 42px;*/
-                /*line-height: 48px;*/
-                /*color: #0096AA;*/
-            }
-
-            .engage__description {
-                /*margin-top: 18px;*/
-                /*max-width: 430px;*/
-                /*font-size: 18px;*/
-                /*line-height: 22px;*/
-                /*color: #656565;*/
+                margin-top: 18px;
+                max-width: 430px;
+                font-size: 18px;
+                line-height: 22px;
+                color: #656565;
             }
 
         .engage__body {
-            margin-top: 40px;
+
         }
             .engage__fieldset {
 
@@ -131,26 +45,120 @@
                 }
 
             .engage__footer {
-                /*margin-top: 28px;*/
+                margin-top: 28px;
                 display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                /*justify-content: flex-end;*/
-                gap: 10px;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 18px;
             }
                 .engage__agreement {
-                    order: 2;
-                    max-width: none;
-                    /*font-size: 14px;*/
-                    /*line-height: 17px;*/
-                    text-align: center;
-                    /*color: #808080;*/
+                    max-width: 391px;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: right;
+                    color: #808080;
                 }
 
                 .engage__submit.button,
                 .engage__submit .button {
-                    width: 100%;
+                    width: 242px;
                 }
+
+
+@media (width < 1200px) {
+
+    .engage {
+
+    }
+        .engage__background {
+
+        }
+            .engage__header {
+
+            }
+                .engage__heading {
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+
+                .engage__description {
+                    margin-top: 14px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+}
+
+
+
+@media (width < 992px) {
+
+    .engage {
+
+    }
+        .engage__background {
+            /*position: relative;*/
+            display: block;
+            /*grid-template-columns: 540fr 700fr;*/
+            /*gap: 40px;*/
+            /*padding: 40px 24px;*/
+            /*background-color: #E4F7FA;*/
+        }
+            .engage__header {
+
+            }
+                .engage__heading {
+                    /*margin-top: -2px;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-size: 42px;*/
+                    /*line-height: 48px;*/
+                    /*color: #0096AA;*/
+                }
+
+                .engage__description {
+                    /*margin-top: 18px;*/
+                    /*max-width: 430px;*/
+                    /*font-size: 18px;*/
+                    /*line-height: 22px;*/
+                    /*color: #656565;*/
+                }
+
+            .engage__body {
+                margin-top: 40px;
+            }
+                .engage__fieldset {
+
+                }
+                    .engage__field {
+                        margin-top: 24px;
+                    }
+
+                    .engage__field:first-child {
+                        margin-top: 0;
+                    }
+
+                .engage__footer {
+                    /*margin-top: 28px;*/
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    /*justify-content: flex-end;*/
+                    gap: 10px;
+                }
+                    .engage__agreement {
+                        order: 2;
+                        max-width: none;
+                        /*font-size: 14px;*/
+                        /*line-height: 17px;*/
+                        text-align: center;
+                        /*color: #808080;*/
+                    }
+
+                    .engage__submit.button,
+                    .engage__submit .button {
+                        width: 100%;
+                    }
 }
 
 
@@ -162,49 +170,52 @@
 @media (width < 768px) {
 
     .engage {
-        position: relative;
-        padding: 42px 9px 40px;
+
     }
-        .engage::before {
-            content: "";
-            position: absolute;
-            inset: 0 -15px; /* растягиваем фон, обрежется на уровне .content */
-            top: 0;
-            background-color: #E4F7FA;
-        }
-
-        .engage__header {
+        .engage__background {
             position: relative;
+            padding: 42px 9px 40px;
         }
-
-        .engage__body {
-            position: relative;
-        }
-            .engage__fieldset {
-
+            .engage::before {
+                content: "";
+                position: absolute;
+                inset: 0 -15px; /* растягиваем фон, обрежется на уровне .content */
+                top: 0;
+                background-color: #E4F7FA;
             }
-                .engage__field {
-                    margin-top: 16px;
-                }
 
-
-            .engage__footer {
-                margin-top: 38px;
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: flex-end;*/
-                /*gap: 18px;*/
+            .engage__header {
+                position: relative;
             }
-                .engage__agreement {
-                    /*max-width: 391px;*/
-                    font-size: 12px;
-                    line-height: 14px;
-                    /*text-align: right;*/
-                    /*color: #808080;*/
-                }
 
-                .engage__submit.button,
-                .engage__submit .button {
-                    /*width: 242px;*/
+            .engage__body {
+                position: relative;
+            }
+                .engage__fieldset {
+
                 }
+                    .engage__field {
+                        margin-top: 16px;
+                    }
+
+
+                .engage__footer {
+                    margin-top: 38px;
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: flex-end;*/
+                    /*gap: 18px;*/
+                }
+                    .engage__agreement {
+                        /*max-width: 391px;*/
+                        font-size: 12px;
+                        line-height: 14px;
+                        /*text-align: right;*/
+                        /*color: #808080;*/
+                    }
+
+                    .engage__submit.button,
+                    .engage__submit .button {
+                        /*width: 242px;*/
+                    }
 }
