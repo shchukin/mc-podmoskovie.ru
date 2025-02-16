@@ -14,7 +14,7 @@
 }
 
 
-@media (768px <= width < 1200px) {
+@media (740px <= width < 1200px) {
     :root {
         --section-spacing: 80px;
         --heading-spacing: 32px;
@@ -22,7 +22,7 @@
     }
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
     :root {
         --section-spacing: 60px;
         --heading-spacing: 24px;

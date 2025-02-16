@@ -64,7 +64,7 @@
             }
 }
 
-@media (768px <= width < 1000px) {
+@media (740px <= width < 1000px) {
 
     .cta {
 
@@ -95,7 +95,7 @@
 }
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .cta {
         padding-top: 24px;
@@ -124,7 +124,12 @@
 
                 .cta__action {
                     margin-top: 40px;
+                    text-align: center;
                 }
+                    .cta__action .button {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
 
             .cta__image {
                 /*align-self: end;*/

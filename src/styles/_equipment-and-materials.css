@@ -40,7 +40,7 @@
 
 
 
-@media (768px <= width < 1200px) {
+@media (740px <= width < 1200px) {
 
     .equipment-and-materials {
         min-height: 400px;
@@ -67,7 +67,7 @@
 }
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .equipment-and-materials {
         padding-top: 40px;

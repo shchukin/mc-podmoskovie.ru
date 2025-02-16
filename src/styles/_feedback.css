@@ -53,7 +53,7 @@
 
 
 
-@media (768px <= width < 1200px) {
+@media (740px <= width < 1200px) {
 
     .feedback {
         /*height: 100%;*/
@@ -109,7 +109,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .feedback {
         display: flex;
