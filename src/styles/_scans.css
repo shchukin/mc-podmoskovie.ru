@@ -1,5 +1,7 @@
 .scans {
-
+    display: grid;
+    grid-template-columns: 431fr 897fr;
+    gap: 32px;
 }
     .scans__sidebar {
         margin-top: 31px;
@@ -93,7 +95,7 @@
 @media (width < 768px) {
 
     .scans {
-
+        display: block;
     }
         .scans__sidebar {
 

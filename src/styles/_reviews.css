@@ -16,9 +16,6 @@
 
         .reviews__doctor-comment {
             margin-top: 9px;
-            display: grid;
-            grid-template-columns: 431fr 897fr;
-            gap: 32px;
         }
 
         .reviews__clients-feedback {
@@ -79,7 +76,7 @@
             }
 
             .reviews__doctor-comment {
-                display: block;
+
             }
 
             .reviews__clients-feedback {
