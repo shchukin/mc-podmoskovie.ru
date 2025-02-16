@@ -52,8 +52,8 @@
 @media (768px <= width < 1200px) {
 
     .wysiwyg--larger {
-        --wysiwyg-font-size: 17px;
-        --wysiwyg-line-height: 23px;
+        --wysiwyg-font-size: 20px;
+        --wysiwyg-line-height: 24px;
     }
 }
 
@@ -61,7 +61,7 @@
 
     .wysiwyg--larger {
         --wysiwyg-font-size: 16px;
-        --wysiwyg-line-height: 23px;
+        --wysiwyg-line-height: 19px;
     }
 }
 

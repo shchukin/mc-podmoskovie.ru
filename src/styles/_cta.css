@@ -27,5 +27,113 @@
             }
 
         .cta__image {
+            vertical-align: top;
             align-self: end;
         }
+
+
+
+
+@media (1000px <= width < 1200px) {
+
+    .cta {
+
+    }
+        .cta__wrap {
+
+        }
+            .cta__body {
+                padding-top: 50px;
+                padding-bottom: 80px;
+            }
+                .cta__heading {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                .cta__text {
+                    margin-top: 20px;
+                }
+
+                .cta__action {
+                    margin-top: 40px;
+                }
+
+            .cta__image {
+
+            }
+}
+
+@media (768px <= width < 1000px) {
+
+    .cta {
+
+    }
+        .cta__wrap {
+            display: block;
+        }
+            .cta__body {
+                max-width: 700px;
+                padding-top: 50px;
+                padding-bottom: 80px;
+            }
+                .cta__heading {
+
+                }
+
+                .cta__text {
+                    margin-top: 20px;
+                }
+
+                .cta__action {
+                    margin-top: 40px;
+                }
+
+            .cta__image {
+                display: none;
+            }
+}
+
+
+@media (width < 768px) {
+
+    .cta {
+        padding-top: 24px;
+        /*background-image: radial-gradient(circle, #B3E0E6, transparent 700px);*/
+    }
+        .cta__wrap {
+            display: block;
+            /*align-items: center;*/
+            /*grid-template-columns: 692fr 668fr;*/
+        }
+            .cta__body {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+                .cta__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 500;*/
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+                .cta__text {
+                    /*margin-top: 24px;*/
+                }
+
+                .cta__action {
+                    margin-top: 40px;
+                }
+
+            .cta__image {
+                /*align-self: end;*/
+                margin-top: 40px;
+                max-width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+}
+
+
