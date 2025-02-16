@@ -10,6 +10,11 @@
             padding-top: 53px;
             padding-bottom: 101px;
         }
+
+        .cta__body:not(:has(.cta__action)) {
+            margin-bottom: 84px;
+        }
+
             .cta__heading {
                 margin-top: 0;
                 margin-bottom: 0;
