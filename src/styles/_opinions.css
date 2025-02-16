@@ -6,7 +6,7 @@
     }
 
     .opinions__body {
-        margin-top: 40px;
+        margin-top: var(--heading-spacing);
     }
 
         @media (1200px <= width) {
@@ -39,7 +39,7 @@
         }
 
         .opinions__body {
-            margin-top: 24px;
+    
         }
 
         .opinions__addition {
