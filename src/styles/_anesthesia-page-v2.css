@@ -1,0 +1,10 @@
+.anesthesia-page-v2 {
+    margin-top: 27px;
+}
+
+@media (width < 768px) {
+
+    .anesthesia-page-v2 {
+        margin-top: 0;
+    }
+}
