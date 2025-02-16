@@ -1,4 +1,5 @@
 .advise {
+    padding-top: 15px;
     display: grid;
     grid-template-columns: 430px auto;
     gap: 40px;
