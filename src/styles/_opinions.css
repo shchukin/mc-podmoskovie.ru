@@ -23,5 +23,26 @@
         }
 
     .opinions__addition {
+        margin-top: var(--section-spacing);
+    }
+
+
+
+
+@media (width < 740px) {
+
+    .opinions {
 
     }
+        .opinions__heading {
+
+        }
+
+        .opinions__body {
+            margin-top: 24px;
+        }
+
+        .opinions__addition {
+
+        }
+}

@@ -13,10 +13,6 @@
             .cta__heading {
                 margin-top: 0;
                 margin-bottom: 0;
-                font-family: var(--font-heading);
-                font-weight: 500;
-                font-size: 32px;
-                line-height: 37px;
             }
 
             .cta__text {
@@ -48,8 +44,7 @@
                 padding-bottom: 80px;
             }
                 .cta__heading {
-                    font-size: 30px;
-                    line-height: 35px;
+
                 }
 
                 .cta__text {
@@ -112,11 +107,7 @@
                 padding-bottom: 0;
             }
                 .cta__heading {
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
-                    /*font-weight: 500;*/
-                    font-size: 24px;
-                    line-height: 28px;
+
                 }
 
                 .cta__text {

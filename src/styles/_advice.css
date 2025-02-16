@@ -57,3 +57,136 @@
         .advice__action {
             margin-top: 40px;
         }
+
+
+
+@media (768px < width <= 1000px) {
+
+    .advice {
+        /*padding-top: 15px;*/
+        /*display: grid;*/
+        grid-template-columns: 300px auto;
+        /*gap: 40px;*/
+    }
+        .advice__person {
+
+        }
+            .advice__photo {
+                /*position: relative;*/
+            }
+                .advice__image {
+                    /*vertical-align: top;*/
+                }
+
+                .advice__photo::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: 0;*/
+                    /*bottom: -1px; !* На пиксель ниже в случае багов при зуммировании *!*/
+                    /*right: 0;*/
+                    /*width: 100%;*/
+                    /*height: 32px;*/
+                    /*background-image: url("../vectors/advise@2x.svg");*/
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center bottom;*/
+                }
+
+            .advice__name {
+                /*margin-top: 24px;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                font-size: 24px;
+                line-height: 30px;
+                /*color: #1FBBC7;*/
+            }
+
+            .advice__post {
+                margin-top: 2px;
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 300;*/
+                font-size: 15px;
+                line-height: 20px;
+                /*text-transform: lowercase;*/
+                /*color: #2D2D2D;*/
+            }
+
+        .advice__body {
+
+        }
+            .advice__text {
+                /*font-weight: 500;*/
+                /*font-style: italic;*/
+            }
+
+            .advice__action {
+                /*margin-top: 40px;*/
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .advice {
+        margin-top: -8px;
+        padding-top: 0;
+        display: block;
+        /*grid-template-columns: 430px auto;*/
+        /*gap: 40px;*/
+    }
+        .advice__person {
+
+        }
+            .advice__photo {
+                /*position: relative;*/
+            }
+                .advice__image {
+                    /*vertical-align: top;*/
+                    max-width: 298px;
+                }
+
+                .advice__photo::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: 0;*/
+                    /*bottom: -1px; !* На пиксель ниже в случае багов при зуммировании *!*/
+                    /*right: 0;*/
+                    /*width: 100%;*/
+                    /*height: 32px;*/
+                    /*background-image: url("../vectors/advise@2x.svg");*/
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center bottom;*/
+                }
+
+            .advice__name {
+                margin-top: 14px;
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                font-size: 24px;
+                line-height: 30px;
+                /*color: #1FBBC7;*/
+            }
+
+            .advice__post {
+                margin-top: 6px;
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 300;*/
+                font-size: 16px;
+                line-height: 20px;
+                /*text-transform: lowercase;*/
+                /*color: #2D2D2D;*/
+            }
+
+        .advice__body {
+            margin-top: 30px;
+        }
+            .advice__text {
+                /*font-weight: 500;*/
+                /*font-style: italic;*/
+            }
+
+            .advice__action {
+                margin-top: 24px;
+            }
+}
+

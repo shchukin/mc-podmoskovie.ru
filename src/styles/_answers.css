@@ -1,0 +1,84 @@
+.answers {
+    display: grid;
+    grid-template-columns: 553fr 783fr;
+    gap: 40px;
+}
+    .answers__head {
+        margin-top: 6px;
+    }
+        .answers__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+            .answers__heading.title,
+            .answers__heading .title {
+                font-weight: bold;
+            }
+
+        .answers__note {
+            margin-top: 24px;
+            font-size: 22px;
+            line-height: 27px;
+            color: #919191;
+        }
+
+    .answers__list {
+
+    }
+        .answers__item {
+            margin-top: 24px;
+            background-color: #F3F3F3;
+            border-radius: 12px;
+        }
+
+        .answers__item:first-child {
+            margin-top: 0;
+        }
+            .answers__handler {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border: none;
+                padding: 24px;
+                background-color: transparent;
+                border-radius: 12px;
+                vertical-align: top;
+                text-align: left;
+                cursor: pointer;
+                transition: background-color var(--transition-hover);
+            }
+
+            .answers__handler:hover {
+                background-color: #E9E9E9;
+            }
+                .answers__index {
+                    margin-right: 17px;
+                    font-family: var(--font-heading);
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 34px;
+                    color: #1FBBC7;
+                }
+
+                .answers__label {
+                    margin-right: 40px;
+                    font-family: var(--font-heading);
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #585858;
+                }
+
+                .answers__handler::after {
+                    content: "";
+                    display: block;
+                    margin-left: auto;
+                    width: 24px;
+                    height: 24px;
+                    background-color: #1FBBC7;
+                    border-radius: 50%;
+                }
+
+            .answers__dropdown {
+                padding: 0 24px 24px;
+            }
