@@ -1,0 +1,31 @@
+.cta {
+    background-image: radial-gradient(circle, #B3E0E6, transparent 700px);
+}
+    .cta__wrap {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 692fr 668fr;
+    }
+        .cta__body {
+            padding-top: 53px;
+            padding-bottom: 101px;
+        }
+            .cta__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 37px;
+            }
+
+            .cta__text {
+                margin-top: 24px;
+            }
+
+            .cta__action {
+                margin-top: 64px;
+            }
+
+        .cta__image {
+            align-self: end;
+        }

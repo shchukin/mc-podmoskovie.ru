@@ -44,6 +44,29 @@
 
 
 
+.wysiwyg--larger {
+    --wysiwyg-font-size: 22px;
+    --wysiwyg-line-height: 26px;
+}
+
+@media (768px <= width < 1200px) {
+
+    .wysiwyg--larger {
+        --wysiwyg-font-size: 17px;
+        --wysiwyg-line-height: 23px;
+    }
+}
+
+@media (width < 767px) {
+
+    .wysiwyg--larger {
+        --wysiwyg-font-size: 16px;
+        --wysiwyg-line-height: 23px;
+    }
+}
+
+
+
 
 .wysiwyg {
     font-size: var(--wysiwyg-font-size);
