@@ -4,7 +4,6 @@
     grid-template-columns: minmax(0, 512fr) minmax(0, 839fr);
     align-items: center;
     gap: 9px;
-    user-select: none;
 }
     .feedback__preview {
         flex-shrink: 0;

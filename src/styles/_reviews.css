@@ -2,7 +2,7 @@
 
 }
     .reviews__container {
-
+        user-select: none; /* Чтобы при клике пло кнопкам слайдера не выделялось */
     }
         .reviews__heading {
             margin-top: 0;
