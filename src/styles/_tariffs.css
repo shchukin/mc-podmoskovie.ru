@@ -403,11 +403,11 @@
             width: 100%;
         }
 
-        .tariffs__item-heading {
+        .tariffs__item--prices .tariffs__item-heading {
 
         }
 
-        .tariffs__item-description {
+        .tariffs__item--prices .tariffs__item-description {
             margin-left: auto;
             margin-top: 0;
             white-space: nowrap;
