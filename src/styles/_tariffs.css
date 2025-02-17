@@ -357,14 +357,13 @@
                     .tariffs__arrow {
                         position: absolute !important; /* выше слоя с эффектом наведения */
                         right: 0 !important;
-                        bottom: 14px !important;
-                        top: auto !important;
+                        bottom: auto !important;
+                        top: 50% !important;
+                        margin-top: -4px !important;
                         width: 32px !important;
                         height: 32px !important;
                         padding: 0 !important;
-                        /*background-image: url("../vectors/tariffs-arrow.svg");*/
                         background-size: contain !important;
-                        /*background-repeat: no-repeat;*/
                         background-position: center center !important;
                         text-indent: 200% !important;
                         white-space: nowrap !important;
@@ -372,35 +371,17 @@
                     }
 
                     .tariffs__item--expanded .tariffs__arrow {
-                        /*margin-top: 16px;*/
-                        /*margin-left: -16px;*/
-                        /*position: static;*/
-                        /*display: block;*/
-                        /*width: fit-content;*/
-                        /*height: auto;*/
-                        /*padding: 10px 20px 10px 46px;*/
-                        /*background-image: url("../vectors/tariffs-close.svg");*/
-                        /*background-size: 20px 20px;*/
-                        /*background-repeat: no-repeat;*/
-                        /*background-position: 16px center;*/
-                        /*border-radius: 4px;*/
-                        /*text-indent: 0;*/
-                        /*font-weight: 600;*/
-                        /*font-size: 16px;*/
-                        /*line-height: 20px;*/
-                        /*color: #0096AA;*/
-                        /*pointer-events: auto;*/
+
                     }
 
                     .tariffs__item--expanded .tariffs__arrow:hover {
-                        /*background-color: #F5F5F5;*/
+
                     }
 
 
                 .tariffs__dropdown {
                     padding-top: 0;
                     padding-bottom: 20px;
-                    /*display: none;*/
                 }
 
                 .tariffs__item--expanded .tariffs__dropdown {
