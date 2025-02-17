@@ -1,4 +1,5 @@
 .total-price {
+    padding-top: 10px;
     font-family: var(--font-heading);
     font-weight: bold;
     font-size: 28px;

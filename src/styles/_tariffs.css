@@ -88,44 +88,60 @@
             margin-bottom: 2px;
         }
             .tariffs__item::after {
+                content: ""; /* Разделитель */
                 position: absolute;
                 left: 12px;
                 right: 12px;
                 top: 100%;
                 height: 2px;
                 background-color: #B3E0E6;
-                content: ""; /* Разделитель */
             }
 
         .tariffs__item--expanded {
             display: grid;
             grid-template-columns: 1fr 3fr;
         }
-
             .tariffs__handler {
+                position: relative;
                 align-self: start;
                 width: 100%;
                 background-color: transparent;
                 border: none;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 50px;
+                padding-bottom: 16px;
                 padding-left: 12px; /* Вместо gap 3 */
                 padding-right: 12px; /* Вместо gap 4 */
                 font-family: inherit;
                 text-align: left;
                 cursor: pointer;
-                transition: background-color var(--transition-hover);
+                transition: padding-top 800ms var(--ease-out-quint);
             }
 
-            .tariffs__handler:hover {
-                background-color: #F5F5F5;
+            .tariffs__item--expanded .tariffs__handler {
+                padding-top: 30px;
+                pointer-events: none; /* Весь заголовок не должен быть кликабельным (ниже будет стрелочка с pointer-events: auto) */
             }
+                .tariffs__handler::before {
+                    content: ""; /* Наведение */
+                    position: absolute;
+                    z-index: 10;
+                    inset: -2px -12px;
+                    background-color: transparent;
+                    border-radius: 12px;
+                    transition: background-color var(--transition-hover);
+                }
 
-            .tariffs__item:first-child .tariffs__handler {
-                border-top-left-radius: 12px;
-                border-top-right-radius: 12px;
-            }
+                .tariffs__item--expanded .tariffs__handler::before {
+                    display: none;
+                }
+
+                .tariffs__handler:hover::before {
+                    background-color: #ECF8F9;
+                }
+
                 .tariffs__sub-heading {
+                    position: relative; /* выше слоя с эффектом наведения */
+                    z-index: 20;
                     font-family: var(--font-heading);
                     font-weight: bold;
                     font-size: 24px;
@@ -134,13 +150,46 @@
                 }
 
                 .tariffs__arrow {
+                    position: absolute; /* выше слоя с эффектом наведения */
+                    right: 8px;
+                    bottom: 14px;
+                    z-index: 20;
+                    width: 32px;
+                    height: 32px;
+                    background-image: url("../vectors/tariffs-arrow.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    text-indent: 200%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .tariffs__item--expanded .tariffs__arrow {
+                    margin-top: 16px;
+                    margin-left: -16px;
+                    position: static;
                     display: block;
                     width: fit-content;
-                    font-weight: bold;
+                    height: auto;
+                    padding: 10px 20px 10px 46px;
+                    background-image: url("../vectors/tariffs-close.svg");
+                    background-size: 20px 20px;
+                    background-repeat: no-repeat;
+                    background-position: 16px center;
+                    border-radius: 4px;
+                    text-indent: 0;
+                    font-weight: 600;
                     font-size: 16px;
                     line-height: 20px;
                     color: #0096AA;
+                    pointer-events: auto;
                 }
+
+                .tariffs__item--expanded .tariffs__arrow:hover {
+                    background-color: #F5F5F5;
+                }
+
 
             .tariffs__dropdown {
                 padding-top: 20px;
