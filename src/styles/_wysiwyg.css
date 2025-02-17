@@ -112,7 +112,7 @@
 /* pressed */
 
 .wysiwyg--pressed {
-
+    font-weight: 500;
 }
 
 .wysiwyg--pressed p,
@@ -122,8 +122,8 @@
 .wysiwyg--pressed figure,
 .wysiwyg--pressed blockquote,
 .wysiwyg .informer {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .wysiwyg--pressed li {
