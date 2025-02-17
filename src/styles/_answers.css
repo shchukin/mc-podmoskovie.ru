@@ -321,6 +321,8 @@
 
                 .answers__dropdown {
                     /*padding: 0 24px 24px;*/
+                    padding-left: 16px;
+                    padding-right: 16px;
                     /*display: none;*/
                 }
 
