@@ -239,65 +239,43 @@
                 }
 
             .tariffs__preview {
-
+                margin-top: 24px;
             }
                 .tariffs__preview-item {
                     /*margin-top: 24px;*/
                 }
 
                 .tariffs__preview-item:first-child {
-                    /*margin-top: 0;*/
+
                 }
                     .tariffs__preview-heading {
-                        /*margin-top: 0;*/
-                        /*margin-bottom: 0;*/
-                        /*font-family: var(--font-heading);*/
-                        /*font-weight: 500;*/
-                        /*font-size: 28px;*/
-                        /*line-height: 32px;*/
-                        /*color: #0096AA;*/
+                        font-size: 20px;
+                        line-height: 23px;
                     }
 
                     .tariffs__preview-description {
-                        /*margin-top: 16px;*/
-                        /*font-weight: 500;*/
-                        /*font-size: 20px;*/
-                        /*line-height: 24px;*/
-                        /*color: #585858;*/
+                        margin-top: 11px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
 
                     .tariffs__preview-note {
-                        /*margin-top: 8px;*/
-                        /*font-style: italic;*/
-                        /*font-size: 20px;*/
-                        /*line-height: 24px;*/
-                        /*color: #919191;*/
+                        margin-top: 7px;
+                        font-size: 15px;
+                        line-height: 18px;
                     }
 
 
         .tariffs__additional-description {
-            /*margin-top: 60px;*/
-            /*width: 55%;*/
-            /*font-weight: 500;*/
-            /*font-size: 22px;*/
-            /*line-height: 27px;*/
+            margin-top: 40px;
+            width: auto;
+            font-size: 18px;
+            line-height: 22px;
         }
 
         .tariffs__table-heads {
             display: none;
         }
-            .tariffs__table-heads::before {
-                display: none;
-            }
-
-            .tariffs__table-heads-column {
-                /*font-family: var(--font-heading);*/
-                /*font-weight: bold;*/
-                /*font-size: 28px;*/
-                /*line-height: 32px;*/
-                /*color: #0096AA;*/
-                /*text-align: center;*/
-            }
 
         .tariffs__body {
             margin-top: 0;
@@ -324,7 +302,7 @@
                     /*background-color: transparent;*/
                     /*border: none;*/
                     padding-top: 42px !important; /* important чтобы перекрыть замес с изменяющимся паддингом в расхлопнутом состоянии */
-                    padding-bottom: 18px;
+                    padding-bottom: 14px;
                     padding-left: 0;
                     padding-right: 30px;
                     /*font-family: inherit;*/
@@ -359,7 +337,7 @@
                         right: 0 !important;
                         bottom: auto !important;
                         top: 50% !important;
-                        margin-top: -4px !important;
+                        margin-top: -2px !important;
                         width: 32px !important;
                         height: 32px !important;
                         padding: 0 !important;
@@ -380,7 +358,7 @@
 
 
                 .tariffs__dropdown {
-                    padding-top: 0;
+                    padding-top: 14px;
                     padding-bottom: 20px;
                 }
 
