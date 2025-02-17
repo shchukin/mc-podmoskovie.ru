@@ -84,23 +84,46 @@
         margin-right: -12px; /* Вместо gap 2 */
     }
         .tariffs__item {
+            position: relative;
+            margin-bottom: 2px;
+        }
+            .tariffs__item::after {
+                position: absolute;
+                left: 12px;
+                right: 12px;
+                top: 100%;
+                height: 2px;
+                background-color: #B3E0E6;
+                content: ""; /* Разделитель */
+            }
+
+        .tariffs__item--expanded {
             display: grid;
             grid-template-columns: 1fr 3fr;
-            border-bottom: 2px solid #B3E0E6;
-            padding-top: 20px;
-            padding-bottom: 20px;
         }
+
             .tariffs__handler {
                 align-self: start;
+                width: 100%;
                 background-color: transparent;
                 border: none;
-                padding-top: 0;
-                padding-bottom: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
                 padding-left: 12px; /* Вместо gap 3 */
                 padding-right: 12px; /* Вместо gap 4 */
                 font-family: inherit;
                 text-align: left;
                 cursor: pointer;
+                transition: background-color var(--transition-hover);
+            }
+
+            .tariffs__handler:hover {
+                background-color: #F5F5F5;
+            }
+
+            .tariffs__item:first-child .tariffs__handler {
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
             }
                 .tariffs__sub-heading {
                     font-family: var(--font-heading);
@@ -120,12 +143,19 @@
                 }
 
             .tariffs__dropdown {
-
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: none;
             }
+
+            .tariffs__item--expanded .tariffs__dropdown {
+                display: block;
+                animation: var(--slide-bottom);
+            }
+
                 .tariffs__list {
                     display: grid;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
-
                 }
                     .tariffs__column {
                         padding-left: 12px; /* Вместо gap 5 */
