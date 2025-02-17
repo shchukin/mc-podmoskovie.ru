@@ -131,11 +131,11 @@
     margin-bottom: 10px !important;
 }
 
-.wysiwyg--pressed .wysiwyg li:first-child {
+.wysiwyg--pressed li:first-child {
     margin-top: 0 !important;
 }
 
-.wysiwyg--pressed .wysiwyg li:last-child {
+.wysiwyg--pressed li:last-child {
     margin-bottom: 0 !important;
 }
 

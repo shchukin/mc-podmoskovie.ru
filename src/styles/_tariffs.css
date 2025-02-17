@@ -118,7 +118,7 @@
             }
 
             .tariffs__item--expanded .tariffs__handler {
-                padding-top: 30px;
+                padding-top: 27px;
                 pointer-events: none; /* Весь заголовок не должен быть кликабельным (ниже будет стрелочка с pointer-events: auto) */
             }
                 .tariffs__handler::before {
@@ -192,8 +192,8 @@
 
 
             .tariffs__dropdown {
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
                 display: none;
             }
 
@@ -217,3 +217,217 @@
                         .tariffs__item-description {
 
                         }
+
+
+
+@media (width < 1000px) {
+
+    .tariffs {
+
+    }
+        .tariffs__summary {
+            display: block;
+            /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+        }
+            .tariffs__heading {
+                /*margin-top: -4px;*/
+                /*margin-bottom: 0;*/
+            }
+                .tariffs__heading.title,
+                .tariffs__heading .title {
+                    /*font-weight: bold;*/
+                }
+
+            .tariffs__preview {
+
+            }
+                .tariffs__preview-item {
+                    /*margin-top: 24px;*/
+                }
+
+                .tariffs__preview-item:first-child {
+                    /*margin-top: 0;*/
+                }
+                    .tariffs__preview-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+                        /*font-size: 28px;*/
+                        /*line-height: 32px;*/
+                        /*color: #0096AA;*/
+                    }
+
+                    .tariffs__preview-description {
+                        /*margin-top: 16px;*/
+                        /*font-weight: 500;*/
+                        /*font-size: 20px;*/
+                        /*line-height: 24px;*/
+                        /*color: #585858;*/
+                    }
+
+                    .tariffs__preview-note {
+                        /*margin-top: 8px;*/
+                        /*font-style: italic;*/
+                        /*font-size: 20px;*/
+                        /*line-height: 24px;*/
+                        /*color: #919191;*/
+                    }
+
+
+        .tariffs__additional-description {
+            /*margin-top: 60px;*/
+            /*width: 55%;*/
+            /*font-weight: 500;*/
+            /*font-size: 22px;*/
+            /*line-height: 27px;*/
+        }
+
+        .tariffs__table-heads {
+            display: none;
+        }
+            .tariffs__table-heads::before {
+                display: none;
+            }
+
+            .tariffs__table-heads-column {
+                /*font-family: var(--font-heading);*/
+                /*font-weight: bold;*/
+                /*font-size: 28px;*/
+                /*line-height: 32px;*/
+                /*color: #0096AA;*/
+                /*text-align: center;*/
+            }
+
+        .tariffs__body {
+            margin-top: 0;
+            margin-left: 0; /* Вместо gap 1 */
+            margin-right: 0; /* Вместо gap 2 */
+        }
+            .tariffs__item {
+                /*position: relative;*/
+                margin-bottom: 0;
+                border-bottom: 2px solid #B3E0E6;
+            }
+                .tariffs__item::after {
+                    display: none;
+                }
+
+            .tariffs__item--expanded {
+                display: block;
+                /*grid-template-columns: 1fr 3fr;*/
+            }
+                .tariffs__handler {
+                    /*position: relative;*/
+                    /*align-self: start;*/
+                    /*width: 100%;*/
+                    /*background-color: transparent;*/
+                    /*border: none;*/
+                    padding-top: 42px !important; /* important чтобы перекрыть замес с изменяющимся паддингом в расхлопнутом состоянии */
+                    padding-bottom: 18px;
+                    padding-left: 0;
+                    padding-right: 30px;
+                    /*font-family: inherit;*/
+                    /*text-align: left;*/
+                    /*cursor: pointer;*/
+                    /*transition: padding-top 800ms var(--ease-out-quint);*/
+                }
+
+                .tariffs__item--expanded .tariffs__handler {
+                    pointer-events: auto;
+                }
+                    .tariffs__handler::before {
+                        display: none;
+                    }
+
+                    .tariffs__handler:hover::before {
+                        /*background-color: #ECF8F9;*/
+                    }
+
+                    .tariffs__sub-heading {
+                        /*position: relative; !* выше слоя с эффектом наведения *!*/
+                        /*z-index: 20;*/
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: bold;*/
+                        font-size: 20px;
+                        line-height: 24px;
+                        /*color: #2D2D2D;*/
+                    }
+
+                    .tariffs__arrow {
+                        position: absolute !important; /* выше слоя с эффектом наведения */
+                        right: 0 !important;
+                        bottom: 14px !important;
+                        top: auto !important;
+                        width: 32px !important;
+                        height: 32px !important;
+                        padding: 0 !important;
+                        /*background-image: url("../vectors/tariffs-arrow.svg");*/
+                        background-size: contain !important;
+                        /*background-repeat: no-repeat;*/
+                        background-position: center center !important;
+                        text-indent: 200% !important;
+                        white-space: nowrap !important;
+                        overflow: hidden !important;
+                    }
+
+                    .tariffs__item--expanded .tariffs__arrow {
+                        /*margin-top: 16px;*/
+                        /*margin-left: -16px;*/
+                        /*position: static;*/
+                        /*display: block;*/
+                        /*width: fit-content;*/
+                        /*height: auto;*/
+                        /*padding: 10px 20px 10px 46px;*/
+                        /*background-image: url("../vectors/tariffs-close.svg");*/
+                        /*background-size: 20px 20px;*/
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: 16px center;*/
+                        /*border-radius: 4px;*/
+                        /*text-indent: 0;*/
+                        /*font-weight: 600;*/
+                        /*font-size: 16px;*/
+                        /*line-height: 20px;*/
+                        /*color: #0096AA;*/
+                        /*pointer-events: auto;*/
+                    }
+
+                    .tariffs__item--expanded .tariffs__arrow:hover {
+                        /*background-color: #F5F5F5;*/
+                    }
+
+
+                .tariffs__dropdown {
+                    padding-top: 0;
+                    padding-bottom: 20px;
+                    /*display: none;*/
+                }
+
+                .tariffs__item--expanded .tariffs__dropdown {
+
+                }
+                    .tariffs__list {
+                        display: block;
+                    }
+                        .tariffs__column {
+                            margin-top: 24px;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
+                        .tariffs__column:first-child {
+                            margin-top: 0;
+                        }
+                            .tariffs__item-heading {
+                                display: block;
+                                font-family: var(--font-heading);
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 23px;
+                                color: #0096AA;
+                            }
+
+                            .tariffs__item-description {
+                                margin-top: 13px;
+                            }
+}
