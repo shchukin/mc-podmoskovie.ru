@@ -1,0 +1,8 @@
+.total-price {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1FBBC7;
+    text-align: center;
+}
