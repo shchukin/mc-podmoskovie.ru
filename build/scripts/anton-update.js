@@ -29,6 +29,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Аккордеон в tariffs */
+
+    const tariffsHandler = document.querySelectorAll('.tariffs__handler');
+
+    tariffsHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            const tariffsItem = event.currentTarget.closest('.tariffs__item');
+            tariffsItem.classList.toggle('tariffs__item--expanded');
+        });
+    });
+
+
+    /* Аккордеон в answer */
+
+    const answerHandler = document.querySelectorAll('.answers__handler');
+
+    answerHandler.forEach(item => {
+        item.addEventListener('click', event => {
+            const answersItem = event.currentTarget.closest('.answers__item');
+            answersItem.classList.toggle('answers__item--expanded');
+        });
+    });
+
+
 
     /* Аккордеон в branches */
 
@@ -410,5 +434,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     document.addEventListener("mousemove", parallax);
+
+
+
+
 
 });
