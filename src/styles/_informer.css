@@ -3,18 +3,17 @@
     align-items: flex-start;
     gap: 4px;
 }
-
-.informer::before {
-    content: "";
-    margin-top: -4px;
-    flex-shrink: 0;
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-image: url("../vectors/informer.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+    .informer::before {
+        content: "";
+        margin-top: -4px;
+        flex-shrink: 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-image: url("../vectors/informer.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 
 
 

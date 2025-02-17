@@ -67,7 +67,6 @@
 
 
 
-
 .wysiwyg {
     font-size: var(--wysiwyg-font-size);
     line-height: var(--wysiwyg-line-height);
@@ -78,17 +77,79 @@
 .wysiwyg ol,
 .wysiwyg hr,
 .wysiwyg figure,
-.wysiwyg blockquote {
+.wysiwyg blockquote,
+.wysiwyg .informer {
     margin-top: var(--wysiwyg-line-height);
     margin-bottom: var(--wysiwyg-line-height);
 }
+
+
+.wysiwyg ol {
+
+}
+
+.wysiwyg ul {
+
+}
+    .wysiwyg ul li::before {
+        content: "" !important;
+        width: 4px !important;
+        height: 4px !important;
+        padding: 0 !important;
+        margin-right: 11px !important;
+        margin-top: 10px !important;
+        border-radius: 50% !important;
+        background-color: currentColor !important;
+    }
+
+.wysiwyg li {
+    margin-top: 0 !important; /* !important чтобы перебить глобальные стили сайта */
+    margin-bottom: 0 !important; /* !important чтобы перебить глобальные стили сайта */
+}
+
+
+
+/* pressed */
+
+.wysiwyg--pressed {
+
+}
+
+.wysiwyg--pressed p,
+.wysiwyg--pressed ul,
+.wysiwyg--pressed ol,
+.wysiwyg--pressed hr,
+.wysiwyg--pressed figure,
+.wysiwyg--pressed blockquote,
+.wysiwyg .informer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wysiwyg--pressed li {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.wysiwyg--pressed .wysiwyg li:first-child {
+    margin-top: 0 !important;
+}
+
+.wysiwyg--pressed .wysiwyg li:last-child {
+    margin-bottom: 0 !important;
+}
+
+
+
+/* All WYSIWYGs */
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
 .wysiwyg ol:first-child,
 .wysiwyg hr:first-child,
 .wysiwyg figure:first-child,
-.wysiwyg blockquote:first-child {
+.wysiwyg blockquote:first-child,
+.wysiwyg .informer:first-child {
     margin-top: 0;
 }
 
@@ -97,7 +158,8 @@
 .wysiwyg ol:last-child,
 .wysiwyg hr:last-child,
 .wysiwyg figure:last-child,
-.wysiwyg blockquote:last-child {
+.wysiwyg blockquote:last-child,
+.wysiwyg .informer:last-child {
     margin-bottom: 0;
 }
 
