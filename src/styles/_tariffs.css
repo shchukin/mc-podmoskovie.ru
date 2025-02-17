@@ -53,6 +53,7 @@
 
     .tariffs__additional-description {
         margin-top: 60px;
+        padding-bottom: 20px;
         width: 55%;
         font-weight: 500;
         font-size: 22px;
@@ -60,7 +61,16 @@
     }
 
     .tariffs__table-heads {
-        margin-top: 40px;
+        position: sticky;
+        padding-top: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 20px 0 #FFFFFF;
+        z-index: 100;
+        top: 0;
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 24px;
