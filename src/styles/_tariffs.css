@@ -389,4 +389,37 @@
                             .tariffs__item-description {
                                 margin-top: 13px;
                             }
+
+    .tariffs__item--prices {
+
+    }
+        .tariffs__item--prices {
+
+        }
+
+        .tariffs__item--prices .tariffs__column {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .tariffs__item-heading {
+
+        }
+
+        .tariffs__item-description {
+            margin-left: auto;
+            margin-top: 0;
+            white-space: nowrap;
+        }
 }
+
+
+
+
+
+
+
+
+
+

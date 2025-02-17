@@ -7,3 +7,12 @@
     color: #1FBBC7;
     text-align: center;
 }
+
+@media (width < 1000px) {
+    .total-price {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 23px;
+
+    }
+}
