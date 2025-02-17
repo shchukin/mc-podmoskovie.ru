@@ -110,6 +110,11 @@
                 padding-top: 0;
                 padding-bottom: 0;
             }
+
+            .cta__body:not(:has(.cta__action)) {
+                margin-bottom: 0;
+            }
+
                 .cta__heading {
 
                 }
