@@ -8,7 +8,7 @@
         gap: 20px 24px;
     }
         .pins__tab {
-            border: 1px solid #0096AA;
+            border: 1px solid #1FBBC7;
             padding: 16px 28px;
             background-color: transparent;
             border-radius: 28px;
@@ -27,7 +27,7 @@
 
         .pins__tab--current,
         .pins__tab--current:hover {
-            background-color: #0096AA;
+            background-color: #1FBBC7;
             color: #FFFFFF;
             cursor: default;
         }
