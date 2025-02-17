@@ -92,15 +92,31 @@
         }
             .tariffs__handler {
                 align-self: start;
+                background-color: transparent;
+                border: none;
+                padding-top: 0;
+                padding-bottom: 0;
                 padding-left: 12px; /* Вместо gap 3 */
                 padding-right: 12px; /* Вместо gap 4 */
+                font-family: inherit;
+                text-align: left;
+                cursor: pointer;
             }
                 .tariffs__sub-heading {
-
+                    font-family: var(--font-heading);
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #2D2D2D;
                 }
 
                 .tariffs__arrow {
-
+                    display: block;
+                    width: fit-content;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #0096AA;
                 }
 
             .tariffs__dropdown {
