@@ -148,3 +148,24 @@
         margin-right: -60px;
     }
 }
+
+
+
+.cta--all-on-4 {
+
+}
+
+@media (1200px <= width) {
+
+    .cta--all-on-4 {
+        padding-top: 26px;
+    }
+        .cta--all-on-4 .cta__body {
+            margin-bottom: 44px;
+            padding-right: 80px;
+        }
+
+        .cta--all-on-4 .cta__text {
+            margin-top: 40px;
+        }
+}
