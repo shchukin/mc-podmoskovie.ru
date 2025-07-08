@@ -13,7 +13,6 @@
     .stats__item--all-on-4 {
         grid-column: span 4;
     }
-
         .stats__primary {
             font-family: var(--font-heading);
             font-weight: 500;
@@ -30,7 +29,9 @@
 
 
     .stats__item--all-on-4 {
-
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
         .stats__item--all-on-4 .stats__primary {
             font-size: 24px;
@@ -39,5 +40,20 @@
         }
 
         .stats__item--all-on-4 .stats__description {
+            margin-top: 16px;
             max-width: 740px;
         }
+
+        .stats__item--all-on-4 .stats__illustration {
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            margin-top: -112px;
+            border: none;
+        }
+            .stats__item--all-on-4 .stats__image {
+                vertical-align: top;
+                width: 167px;
+                height: 225px;
+            }
+
