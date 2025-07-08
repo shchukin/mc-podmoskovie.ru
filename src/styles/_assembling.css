@@ -1,0 +1,124 @@
+.assembling {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 46px;
+}
+    .assembling__variant {
+        padding-top: 2px;
+        padding-left: 260px;
+        min-height: 252px;
+        background-size: 232px 269px;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    .assembling__variant--removable {
+        background-image: url("../images/assembling-removable.jpg");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .assembling__variant--removable {
+            background-image: url("../images/assembling-removable@2x.jpg");
+        }
+    }
+
+
+    .assembling__variant--non-removable {
+        background-image: url("../images/assembling-non-removable.jpg");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .assembling__variant--non-removable {
+            background-image: url("../images/assembling-non-removable@2x.jpg");
+        }
+    }
+
+    .assembling__variant--non-removable {
+
+    }
+        .assembling__heading {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #1FBBC7;
+        }
+
+        .assembling__description {
+            margin-top: 12px;
+            max-width: 400px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+
+/* Упрощаяем размеры до мобильной версии */
+@media (width < 1200px) {
+
+    .assembling {
+
+    }
+        .assembling__variant {
+
+        }
+
+        .assembling__variant--non-removable {
+
+        }
+            .assembling__heading {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .assembling__description {
+                margin-top: 9px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+}
+
+
+
+@media (992px <= width < 1200px) {
+
+    .assembling {
+        gap: 32px;
+    }
+        .assembling__variant {
+            padding-left: 200px;
+            min-height: 202px;
+            background-size: 174px 202px;
+        }
+}
+
+
+@media (width < 992px) {
+
+    .assembling {
+        gap: 72px;
+    }
+        .assembling__variant {
+            padding-left: 0;
+            padding-top: 202px;
+            background-size: 174px 202px;
+        }
+}
+
+
+@media (width < 768px) {
+
+    .assembling {
+        display: block;
+    }
+        .assembling__variant {
+            margin-top: 24px;
+            padding-top: 159px;
+            background-size: 132px 153px;
+        }
+
+        .assembling__variant:first-child {
+            margin-top: 0;
+        }
+}
