@@ -1,0 +1,246 @@
+.steps {
+
+}
+    .steps__wrap {
+
+    }
+        .steps__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .steps__description {
+            margin-top: 40px;
+            max-width: 784px;
+        }
+
+        .steps__list {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+            .steps__item {
+                min-height: 251px;
+                border: 2px solid #20BBC7;
+                border-radius: 12px;
+                padding: 22px;
+            }
+                .steps__index {
+                    font-family: var(--font-heading);
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #1FBBC7;
+                }
+
+                .steps__text {
+                    margin-top: 16px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .steps__note {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-style: italic;
+                    color: #808080;
+                }
+
+                .steps__note + .steps__note {
+                    margin-top: 12px;
+                }
+
+        .steps__surgery {
+            margin-top: 40px;
+            max-width: 660px;
+            padding: 10px 24px;
+            box-shadow: inset 5px 0 0 #0096AA;
+        }
+            .steps__surgery-price {
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #0096AA;
+            }
+
+            .steps__surgery-text {
+                margin-top: 16px;
+                font-style: italic;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+
+
+@media (width < 1200px) {
+
+    .steps {
+
+    }
+        .steps__wrap {
+
+        }
+            .steps__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+            }
+
+            .steps__description {
+                /*margin-top: 40px;*/
+                /*max-width: 784px;*/
+                /*font-size: 20px;*/
+                /*line-height: 24px;*/
+            }
+
+            .steps__list {
+                /*margin-top: 40px;*/
+                /*display: grid;*/
+                /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+                /*gap: 24px;*/
+            }
+                .steps__item {
+                    /*min-height: 251px;*/
+                    /*border: 1px solid #20BBC7;*/
+                    /*border-radius: 16px;*/
+                    /*padding: 24px;*/
+                }
+                    .steps__index {
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+                        font-size: 24px;
+                        line-height: 29px;
+                        /*color: #1FBBC7;*/
+                    }
+
+                    .steps__text {
+                        /*margin-top: 16px;*/
+                        /*font-weight: 500;*/
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+
+                    .steps__note {
+                        /*margin-top: 16px;*/
+                        font-size: 14px;
+                        line-height: 17px;
+                        /*font-style: italic;*/
+                        /*color: #808080;*/
+                    }
+
+                    .steps__note + .steps__note {
+                        /*margin-top: 12px;*/
+                    }
+
+            .steps__surgery {
+                margin-top: 24px;
+                /*max-width: 660px;*/
+                padding: 16px 0 16px 16px;
+                box-shadow: inset 4px 0 0 #0096AA;
+            }
+                .steps__surgery-price {
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-size: 24px;*/
+                    /*line-height: 29px;*/
+                    /*color: #0096AA;*/
+                }
+
+                .steps__surgery-text {
+                    /*margin-top: 16px;*/
+                    /*font-style: italic;*/
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+}
+
+
+
+@media (width < 740px) {
+
+    .steps {
+
+    }
+        .steps__wrap {
+
+        }
+            .steps__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+            }
+
+            .steps__description {
+                margin-top: 24px;
+                /*max-width: 784px;*/
+            }
+
+            .steps__list {
+                margin-top: 24px;
+                display: block;
+                /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+                /*gap: 24px;*/
+            }
+                .steps__item {
+                    margin-top: 16px;
+                    max-width: 400px;
+                    min-height: 0;
+                    /*border: 1px solid #20BBC7;*/
+                    /*border-radius: 16px;*/
+                    padding-left: 14px;
+                    padding-right: 14px;
+                }
+
+                .steps__item:first-child {
+                    margin-top: 0;
+                }
+                    .steps__index {
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+                        /*color: #1FBBC7;*/
+                    }
+
+                    .steps__text {
+                        /*margin-top: 16px;*/
+                        /*font-weight: 500;*/
+                        /*font-size: 20px;*/
+                        /*line-height: 24px;*/
+                    }
+
+                    .steps__note {
+                        /*margin-top: 16px;*/
+                        /*font-size: 16px;*/
+                        /*line-height: 19px;*/
+                        /*font-style: italic;*/
+                        /*color: #808080;*/
+                    }
+
+                    .steps__note + .steps__note {
+                        /*margin-top: 12px;*/
+                    }
+
+            .steps__surgery {
+                /*margin-top: 40px;*/
+                /*max-width: 660px;*/
+                /*padding: 10px 24px;*/
+                /*box-shadow: inset 5px 0 0 #0096AA;*/
+            }
+                .steps__surgery-price {
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-size: 24px;*/
+                    /*line-height: 29px;*/
+                    /*color: #0096AA;*/
+                }
+
+                .steps__surgery-text {
+                    /*margin-top: 16px;*/
+                    /*font-style: italic;*/
+                    /*font-size: 18px;*/
+                    /*line-height: 22px;*/
+                }
+}
+
+

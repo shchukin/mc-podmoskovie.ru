@@ -83,6 +83,19 @@
     margin-bottom: var(--wysiwyg-line-height);
 }
 
+.wysiwyg--halved p,
+.wysiwyg--halved ul,
+.wysiwyg--halved ol,
+.wysiwyg--halved hr,
+.wysiwyg--halved figure,
+.wysiwyg--halved blockquote,
+.wysiwyg--halved .informer {
+    margin-top: calc(var(--wysiwyg-line-height) / 2);
+    margin-bottom: calc(var(--wysiwyg-line-height) / 2);
+}
+
+
+
 
 .wysiwyg ol {
 
