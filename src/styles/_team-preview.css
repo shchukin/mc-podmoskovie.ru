@@ -1,0 +1,56 @@
+.team-preview {
+
+}
+    .team-preview__head {
+
+    }
+        .team-preview__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 46px;
+        }
+
+        .team-preview__description {
+            margin-top: 24px;
+            font-size: 22px;
+            line-height: 26px;
+            max-width: 563px;
+        }
+
+        .team-preview__navigation {
+            margin-top: 40px;
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+        }
+            .team-preview__handler {
+                border: 1px solid #0096AA;
+                padding: 15px 40px;
+                background-color: transparent;
+                border-radius: 28px;
+                font-family: inherit;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #0096AA;
+                cursor: pointer;
+            }
+
+            .team-preview__handler--current {
+                background-color: #0096AA;
+                color: #FFFFFF;
+                cursor: default;
+            }
+
+    .team-preview__body {
+        margin-top: 26px;
+    }
+        .team-preview__item {
+            display: none;
+        }
+
+        .team-preview__item--current {
+            display: block;
+        }

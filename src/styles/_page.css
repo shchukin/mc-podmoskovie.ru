@@ -43,6 +43,26 @@
 }
 
 
+
+.page--prosthetic {
+    margin-top: 40px;
+}
+
+@media (740px <= width < 1200px) {
+
+    .page--prosthetic {
+        margin-top: 32px;
+    }
+}
+
+@media (width < 740px) {
+
+    .page--prosthetic {
+        margin-top: 24px;
+    }
+}
+
+
 .page--equipment-v2 {
     padding-bottom: 0;
 }
@@ -50,4 +70,6 @@
 .page--anesthesia-v2 {
     padding-bottom: 0;
 }
+
+
 
