@@ -1,0 +1,30 @@
+.result-preview {
+
+}
+    .result-preview__body {
+
+    }
+
+    .result-preview__note {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 22px;
+        color: #0096AA;
+    }
+
+
+
+@media (width < 740px) {
+
+    .result-preview {
+
+    }
+        .result-preview__body {
+
+        }
+
+        .result-preview__note {
+            margin-top: 10px;
+        }
+}
