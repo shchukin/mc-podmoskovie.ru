@@ -47,3 +47,19 @@
         line-height: 28px;
     }
 }
+
+
+
+.title--larger {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+@media (width < 740px) {
+
+    .title--larger {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

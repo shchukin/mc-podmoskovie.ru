@@ -1,0 +1,11 @@
+.feedback-as-grid {
+
+}
+    .feedback-as-grid__heading {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .feedback-as-grid__body {
+        margin-top: 40px;
+    }
