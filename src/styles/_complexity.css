@@ -45,67 +45,74 @@
 
 
 
-@media (740px <= width < 1200px) {
+@media (width < 992px) {
 
     .complexity {
-        min-height: 400px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-size: 470px auto, auto;
-        background-position: calc(50% + 260px) 27px, center top;
+        min-height: 365px;
+        /*padding-top: 80px;*/
+        /*padding-bottom: 80px;*/
+        /*background-color: #63BFCB;*/
+        /*background-image: url("../images/complexity@1x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);*/
+        background-size: 501px 365px, auto;
+        /*background-repeat: no-repeat, repeat;*/
+        background-position: calc(50% + 220px) center, center top;
     }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .complexity {
+            /*background-image: url("../images/complexity@2x.png"), linear-gradient(-99.401deg, #B3E0E6 0%, #0096AA 100%);*/
+        }
+    }
+
         .complexity__container {
 
         }
             .complexity__heading {
-                max-width: 600px;
-                font-size: 40px;
-                line-height: 46px;
+                max-width: 400px;
+                font-size: 28px;
+                line-height: 32px;
             }
 
             .complexity__description {
                 margin-top: 16px;
-                max-width: 540px;
                 font-size: 18px;
                 line-height: 22px;
+                /*color: #FFFFFF;*/
             }
 
             .complexity__action {
-
+                margin-top: 40px;
             }
 }
+
+
 
 
 @media (width < 740px) {
 
     .complexity {
-        padding-top: 28px;
-        padding-bottom: 300px;
-        background-size: 353px auto, auto;
+        padding-top: 24px;
+        padding-bottom: 312px;
+        background-size: 430px auto, auto;
         background-position: center bottom, center top;
     }
         .complexity__container {
 
         }
             .complexity__heading {
-                font-size: 40px;
-                line-height: 46px;
+
             }
 
             .complexity__description {
-                margin-top: 25px;
-                /*max-width: 600px;*/
-                font-size: 16px;
-                line-height: 19px;
+
             }
 
             .complexity__action {
-                margin-top: 40px;
+
             }
                 .complexity__action.button,
                 .complexity__action .button {
-                    padding: 12px 24px;
-                    font-size: 16px;
-                    line-height: 20px;
+
                 }
 }
