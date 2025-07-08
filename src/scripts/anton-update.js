@@ -453,8 +453,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     document.addEventListener("mousemove", parallax);
 
-
-
-
-
 });

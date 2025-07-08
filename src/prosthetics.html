@@ -69,12 +69,17 @@
         z-index: -1
     }</style>
     <link rel="stylesheet" type="text/css" href="legacy/glbox.e14f15e8.css">
+    <script src="vendors/jquery/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
 
+    <link rel="stylesheet" href="vendors/img-comparison-slider/img-comparison-slider.css">
+    <script src="vendors/img-comparison-slider/img-comparison-slider.js"></script>
+
     <link rel="stylesheet" href="styles/anton-update.css">
     <script src="scripts/anton-update.js"></script>
+
 
 
 </head>
@@ -542,50 +547,23 @@
                         ДО/ПОСЛЕ
                     </h2>
                     <div class="before-after__body">
-                        <div class="swiper  swiper--css-disabled-on-desktop  swiper--js-init-before-after  swiper--css-skin-equipment  swiper--css-default-skin">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="results-preview">
-                                        <div class="result-preview__body">
-                                            <!-- temp -->
-                                            <div style="height: 313px; background: purple"></div>
-                                            <!--/temp -->
-                                        </div>
-                                        <div class="result-preview__note">
-                                            Врач: Илья Михайлович Десяткин
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="results-preview">
-                                        <div class="result-preview__body">
-                                            <!-- temp -->
-                                            <div style="height: 313px; background: purple"></div>
-                                            <!--/temp -->
-                                        </div>
-                                        <div class="result-preview__note">
-                                            Врач: Илья Михайлович Десяткин
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="results-preview">
-                                        <div class="result-preview__body">
-                                            <!-- temp -->
-                                            <div style="height: 313px; background: purple"></div>
-                                            <!--/temp -->
-                                        </div>
-                                        <div class="result-preview__note">
-                                            Врач: Илья Михайлович Десяткин
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-controls container">
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next"></div>
-                            </div>
+                        <div class="before-after__item">
+                            <img-comparison-slider>
+                                <img slot="first" src="temp/before-after/before-after-a.jpg" alt="Before">
+                                <img slot="second" src="temp/before-after/before-after-b.jpg" alt="After">
+                            </img-comparison-slider>
+                        </div>
+                        <div class="before-after__item">
+                            <img-comparison-slider>
+                                <img slot="first" src="temp/before-after/before-after-a.jpg" alt="Before">
+                                <img slot="second" src="temp/before-after/before-after-b.jpg" alt="After">
+                            </img-comparison-slider>
+                        </div>
+                        <div class="before-after__item">
+                            <img-comparison-slider>
+                                <img slot="first" src="temp/before-after/before-after-a.jpg" alt="Before">
+                                <img slot="second" src="temp/before-after/before-after-b.jpg" alt="After">
+                            </img-comparison-slider>
                         </div>
                     </div>
                 </section>
