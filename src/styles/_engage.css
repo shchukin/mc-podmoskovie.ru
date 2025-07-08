@@ -180,7 +180,7 @@
             .engage::before {
                 content: "";
                 position: absolute;
-                inset: 0 -15px; /* растягиваем фон, обрежется на уровне .content */
+                inset: 0 calc(-1 * var(--container-padding)); /* растягиваем фон, обрежется на уровне .content */
                 top: 0;
                 background-color: #E4F7FA;
             }
