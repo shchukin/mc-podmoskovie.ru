@@ -1,6 +1,6 @@
 .all-on-4 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
     .all-on-4__body {

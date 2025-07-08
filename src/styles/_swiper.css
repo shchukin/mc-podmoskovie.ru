@@ -783,3 +783,56 @@
 
 
 
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.swiper--css-disable-on-smartphone {
+
+}
+
+@media (width < 740px) {
+
+    .swiper--css-disable-on-smartphone {
+        overflow: visible;
+    }
+        .swiper--css-disable-on-smartphone .swiper-wrapper {
+            height: auto !important;
+            transform: none !important;
+        }
+            .swiper--css-disable-on-smartphone .swiper-slide {
+                width: auto !important;
+                margin: 0 !important;
+            }
+
+    .swiper--css-disable-on-smartphone .swiper-controls {
+        display: none;
+    }
+}
+
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.swiper--css-disabled-on-desktop {
+
+}
+
+@media (740px <= width) {
+
+    .swiper--css-disabled-on-desktop {
+        overflow: visible;
+    }
+        .swiper--css-disabled-on-desktop .swiper-wrapper {
+            height: auto !important;
+            transform: none !important;
+        }
+            .swiper--css-disabled-on-desktop .swiper-slide {
+                width: auto !important;
+                margin: 0 !important;
+            }
+
+    .swiper--css-disabled-on-desktop .swiper-controls {
+        display: none;
+    }
+}

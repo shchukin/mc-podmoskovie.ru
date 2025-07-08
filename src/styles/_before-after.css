@@ -9,10 +9,16 @@
     .before-after__body {
         margin-top: 40px;
     }
-        .before-after__item {
 
-        }
+    
+@media (740px <= width) {
 
+    .before-after__body .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}    
 
 
 @media (width < 740px) {
@@ -28,7 +34,7 @@
         .before-after__body {
             margin-top: 24px;
         }
-            .before-after__item {
+            .before-after__body .swiper-slide {
 
             }
 }
