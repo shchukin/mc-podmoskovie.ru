@@ -1,8 +1,22 @@
 .steps {
-
+    position: relative;
 }
-    .steps__wrap {
+    .steps::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: calc(-1 * var(--section-spacing));
+        left: 0;
+        right: 0;
+        height: 2000px;
+        background-image: url("../images/prosthetics-background@1x.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
 
+    .steps__wrap {
+        position: relative;
     }
         .steps__heading {
             margin-top: 0;
