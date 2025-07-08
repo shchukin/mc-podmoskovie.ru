@@ -31,7 +31,7 @@
 }
 
 
-@media (1000px <= width < 1200px) {
+@media (992px <= width < 1200px) {
 
     .title--secondary {
         font-size: 30px;
@@ -54,6 +54,15 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+}
+
+
+@media (992px <= width < 1200px) {
+
+    .title--larger {
+        font-size: 30px;
+        line-height: 35px;
+    }
 }
 
 @media (width < 740px) {
