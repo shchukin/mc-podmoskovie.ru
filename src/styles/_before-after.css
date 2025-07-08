@@ -1,5 +1,5 @@
 .before-after {
-
+    overflow: hidden; /* cur carousels */
 }
     .before-after__heading {
         margin-top: 0;
