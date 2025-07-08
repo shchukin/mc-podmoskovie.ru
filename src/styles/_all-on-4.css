@@ -1,0 +1,32 @@
+.all-on-4 {
+    display: grid;
+    grid-template-columns: 668px auto;
+    gap: 40px;
+}
+    .all-on-4__body {
+
+    }
+        .all-on-4__heading {
+
+        }
+
+        .all-on-4__description {
+            margin-top: 38px;
+        }
+
+        .all-on-4__action {
+            margin-top: 64px;
+        }
+
+    .all-on-4__illustration {
+        background-image: url("../images/all-on-4@1x.jpg");
+        background-size: contain;
+        aspect-ratio: 1/1;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .all-on-4__illustration {
+            background-image: url("../images/all-on-4@2x.jpg");
+        }
+    }
