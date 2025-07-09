@@ -53,6 +53,13 @@
         .team-preview__item--current {
             display: block;
         }
+            .team-preview__desktop-slide {
+
+            }
+
+            .team-preview__mobile-slide {
+                display: none;
+            }
 
 
 
@@ -97,4 +104,11 @@
             .team-preview__item--current {
                 /*display: block;*/
             }
+                .team-preview__desktop-slide {
+                    display: none;
+                }
+
+                .team-preview__mobile-slide {
+                    display: block;
+                }
 }
