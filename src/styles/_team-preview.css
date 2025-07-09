@@ -54,6 +54,8 @@
             height: 100%;
             opacity: 0;
             visibility: hidden;
+            transition: opacity 300ms ease,
+                        visibility 300ms ease;
         }
 
         .team-preview__item--current {

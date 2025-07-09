@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
-    /* Свайпер До/После */
+    /* Свайпер "Команда врачей" */
 
     new Swiper('.swiper--js-init-team', {
         slidesPerView: 1,
@@ -267,6 +267,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
             currentBody.classList.remove('pins__item--current');
             const newBody = tabsContainer.querySelectorAll('.pins__item')[tabIndex];
             newBody.classList.add('pins__item--current');
+        });
+    });
+
+
+    /* Pins (табы) */
+
+    document.querySelectorAll('.team-preview__handler').forEach((tab) => {
+        tab.addEventListener('click', function () {
+
+            const tabsContainer = tab.closest('.team-preview');
+            const tabSiblings = Array.from(tabsContainer.querySelectorAll('.team-preview__handler'));
+            const tabIndex = tabSiblings.indexOf(tab);
+
+            /* Закладки */
+            const currentTab = tabsContainer.querySelector('.team-preview__handler--current');
+            currentTab.classList.remove('team-preview__handler--current');
+            tab.classList.add('team-preview__handler--current');
+
+            /* Тельца */
+            const currentBody = tabsContainer.querySelector('.team-preview__item--current');
+            currentBody.classList.remove('team-preview__item--current');
+            const newBody = tabsContainer.querySelectorAll('.team-preview__item')[tabIndex];
+            newBody.classList.add('team-preview__item--current');
         });
     });
 
