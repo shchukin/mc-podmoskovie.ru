@@ -211,7 +211,6 @@
             display: block;
             /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
             /*gap: 24px;*/
-
         }
             .trust__item {
                 margin-top: 24px;
