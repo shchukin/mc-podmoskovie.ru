@@ -1,6 +1,48 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
 
+    /* Параллакс имплантов */
+
+    const screws = document.querySelector('.screws');
+    const screwItems = document.querySelectorAll('.screws__item');
+
+
+    let isTicking = false;
+
+    // Функция для обновления параллакса
+    function updateParallax() {
+        const rect = screws.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+
+        // Проверяем, виден ли контейнер screws в области просмотра
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+
+            const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
+
+            screwItems.forEach(item => {
+                // Получаем коэффициент из data-factor или устанавливаем 1 по умолчанию
+                const factor = parseFloat(item.dataset.factor) || 1;
+
+                console.log(scrollProgress, factor)
+                // Перемещение на 10% от высоты элемента, умноженное на коэффициент
+                const translateY = -300 * scrollProgress * factor;
+                item.style.transform = `translateY(${translateY}px)`;
+            });
+        }
+    }
+
+
+    // Привязываем событие скролла к window
+    window.addEventListener('scroll', updateParallax);
+
+
+    // Вызываем при загрузке
+    updateParallax();
+
+
+
+
     /* Константы */
 
     let isDesktop; /* т.е. не смартфон, а любой десктоп */
@@ -472,9 +514,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     document.addEventListener("mousemove", parallax);
-
-
-    /* Параллакс имплантов */
 
 
 
