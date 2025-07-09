@@ -1,5 +1,5 @@
 .screws {
-
+    overflow: hidden;
 }
     .screws__item {
         position: absolute;
