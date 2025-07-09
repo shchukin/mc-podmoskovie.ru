@@ -14,22 +14,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const rect = screws.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-
-        // Проверяем, виден ли контейнер screws в области просмотра
+        // Проверяем, виден ли контейнер screws
         if (rect.top <= windowHeight && rect.bottom >= 0) {
-
+            // Обратный прогресс: 1 (секция только появилась) -> 0 (секция внизу)
             const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
+            const reverseProgress = 1 - scrollProgress;
 
             screwItems.forEach(item => {
-                // Получаем коэффициент из data-factor или устанавливаем 1 по умолчанию
                 const factor = parseFloat(item.dataset.factor) || 1;
-
-                console.log(scrollProgress, factor)
-                // Перемещение на 10% от высоты элемента, умноженное на коэффициент
-                const translateY = -300 * scrollProgress * factor;
+                // Смещение от 300px * factor до 0
+                const translateY = 300 * reverseProgress * factor;
                 item.style.transform = `translateY(${translateY}px)`;
             });
-        }
+        } 
     }
 
 
