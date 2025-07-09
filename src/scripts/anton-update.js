@@ -453,4 +453,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     document.addEventListener("mousemove", parallax);
 
+
+    /* Параллакс имплантов */
+
+
+
 });
