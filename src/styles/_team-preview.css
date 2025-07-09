@@ -44,6 +44,7 @@
 
     .team-preview__body {
         margin-top: 26px;
+        background-image: linear-gradient(#31ABBB, #B3E0E6);
     }
         .team-preview__item {
             display: none;

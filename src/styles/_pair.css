@@ -1,0 +1,12 @@
+.pair {
+
+}
+    .pair__image {
+        vertical-align: top;
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
