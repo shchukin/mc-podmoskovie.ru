@@ -1,0 +1,6 @@
+img-comparison-slider {
+    --divider-width: 3px; /* Толщина разделителя */
+    --divider-color: #1FBBC7; /* Цвет разделителя */
+    --default-handle-color: #1FBBC7;
+    --divider-shadow: 0 0 5px #1FBBC7;
+}
