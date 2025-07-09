@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
-
     /* Константы */
 
     let isDesktop; /* т.е. не смартфон, а любой десктоп */
@@ -232,6 +231,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
+    /* Свайпер "Команда врачей" */
+
+    new Swiper('.swiper--js-init-team', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 20,
+        pagination: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
+
 
     /* Pins (табы) */
 
@@ -252,6 +266,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
             currentBody.classList.remove('pins__item--current');
             const newBody = tabsContainer.querySelectorAll('.pins__item')[tabIndex];
             newBody.classList.add('pins__item--current');
+        });
+    });
+
+
+    /* team-preview (табы) */
+
+    document.querySelectorAll('.team-preview__handler').forEach((tab) => {
+        tab.addEventListener('click', function () {
+
+            const tabsContainer = tab.closest('.team-preview');
+            const tabSiblings = Array.from(tabsContainer.querySelectorAll('.team-preview__handler'));
+            const tabIndex = tabSiblings.indexOf(tab);
+
+            /* Закладки */
+            const currentTab = tabsContainer.querySelector('.team-preview__handler--current');
+            currentTab.classList.remove('team-preview__handler--current');
+            tab.classList.add('team-preview__handler--current');
+
+            /* Тельца */
+            const currentBody = tabsContainer.querySelector('.team-preview__item--current');
+            currentBody.classList.remove('team-preview__item--current');
+            const newBody = tabsContainer.querySelectorAll('.team-preview__item')[tabIndex];
+            newBody.classList.add('team-preview__item--current');
         });
     });
 
@@ -438,5 +475,77 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /* Параллакс имплантов */
+
+    /* Изначальный скрипт (для простоты понимания) выглядел так:
+        function updateParallax() {
+            const windowHeight = window.innerHeight;
+            screwItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                    const reverseProgress = 1 - scrollProgress;
+                    const factor = parseFloat(item.dataset.factor) || 1;
+                    const translateY = 120 * reverseProgress * factor;
+                    item.style.transform = `translateY(${translateY}px)`;
+                }
+            });
+        }
+
+    */
+
+    /* Версия с более крутыми анимациями (задержками) сгенерированная ИИ: */
+
+    if (isDesktop) {
+
+        const screwItems = document.querySelectorAll('.screws__item');
+
+        // Храним текущие и целевые значения translateY для каждого элемента
+        const itemStates = Array.from(screwItems).map(item => ({
+            element: item,
+            currentY: 0,
+            targetY: 0
+        }));
+
+        // Коэффициент интерполяции (уменьшен для более сильной задержки)
+        const lerpFactor = 0.05;
+
+        // Функция для обновления параллакса
+        function updateParallax() {
+            const windowHeight = window.innerHeight;
+
+            screwItems.forEach((item, index) => {
+                const rect = item.getBoundingClientRect();
+                // Проверяем, виден ли элемент в области просмотра
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    // Обратный прогресс: 1 (элемент только появился) -> 0 (элемент внизу)
+                    const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
+                    const reverseProgress = 1 - scrollProgress;
+                    const factor = parseFloat(item.dataset.factor) || 1;
+                    // Целевое смещение от 120px * factor до 0
+                    itemStates[index].targetY = 120 * reverseProgress * factor;
+                }
+            });
+        }
+
+        // Функция для плавного обновления позиций
+        function animate() {
+            itemStates.forEach(state => {
+                // Линейная интерполяция: currentY приближается к targetY
+                state.currentY += (state.targetY - state.currentY) * lerpFactor;
+                // Обновляем transform
+                state.element.style.transform = `translateY(${state.currentY}px)`;
+            });
+            // Продолжаем анимацию
+            requestAnimationFrame(animate);
+        }
+
+        // Привязываем событие скролла к window
+        window.addEventListener('scroll', updateParallax);
+
+        // Запускаем анимацию
+        requestAnimationFrame(animate);
+
+        // Вызываем при загрузке
+        updateParallax();
+    }
 
 });
