@@ -783,6 +783,95 @@
 
 
 
+/* Минималистичные контролы 3 */
+
+.swiper--another-minimalistic-controls {
+
+}
+    .swiper--another-minimalistic-controls * {
+        user-select: none;
+    }
+
+    .swiper--another-minimalistic-controls .swiper-wrapper {
+
+    }
+        .swiper--another-minimalistic-controls .swiper-slide {
+
+        }
+
+    .swiper--another-minimalistic-controls .swiper-controls {
+        /*margin-top: -46px;*/
+        /*position: relative;*/
+        /*top: -40px;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: flex-end;*/
+        /*pointer-events: none;*/
+    }
+        .swiper--another-minimalistic-controls .swiper-button-prev,
+        .swiper--another-minimalistic-controls .swiper-button-next {
+            position: absolute;
+            top: auto;
+            bottom: 24px;
+            margin: 0;
+            width: 44px;
+            height: 44px;
+            pointer-events: auto;
+        }
+
+        .swiper--another-minimalistic-controls .swiper-button-prev:hover,
+        .swiper--another-minimalistic-controls .swiper-button-next:hover {
+
+        }
+
+        .swiper--another-minimalistic-controls .swiper-button-prev:active,
+        .swiper--another-minimalistic-controls .swiper-button-next:active {
+            transform: translateY(1px);
+        }
+
+        .swiper--another-minimalistic-controls .swiper-button-prev {
+            background-image: url("../vectors/swiper-another-minimalistic-prev.svg");
+            left: var(--container-padding);
+        }
+
+        .swiper--another-minimalistic-controls .swiper-button-next {
+            background-image: url("../vectors/swiper-another-minimalistic-next.svg");
+            right: var(--container-padding);
+        }
+
+        @media (400px <= width) {
+
+            .swiper--another-minimalistic-controls .swiper-button-prev {
+                left: auto;
+                right: 50%;
+                margin: 0 140px 0 0;
+            }
+
+            .swiper--another-minimalistic-controls .swiper-button-next {
+                right: auto;
+                left: 50%;
+                margin: 0 0 0 140px;
+            }
+        }
+
+        .swiper--another-minimalistic-controls .swiper-button-next.swiper-button-disabled,
+        .swiper--another-minimalistic-controls .swiper-button-prev.swiper-button-disabled {
+            opacity: 50%;
+        }
+            .swiper--another-minimalistic-controls .swiper-button-prev::after,
+            .swiper--another-minimalistic-controls .swiper-button-next::after {
+                display: none;
+            }
+
+            .swiper--another-minimalistic-controls .swiper-button-prev::after {
+                background-image: url("../vectors/swiper-alt-minimalistic-controls-prev.svg");
+            }
+
+            .swiper--another-minimalistic-controls .swiper-button-next::after {
+                background-image: url("../vectors/swiper-alt-minimalistic-controls-next.svg");
+            }
+
+
 
 /* Довольно запарно выключать слайдер на десктопах скриптом.
    Проще перебить пару стилей:

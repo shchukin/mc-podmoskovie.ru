@@ -234,15 +234,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     /* Свайпер До/После */
 
-    new Swiper('.swiper--js-init-before-after', {
+    new Swiper('.swiper--js-init-team', {
         slidesPerView: 1,
         slidesPerGroup: 1,
         autoHeight: true,
-        spaceBetween: 15,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-        },
+        spaceBetween: 20,
+        pagination: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
