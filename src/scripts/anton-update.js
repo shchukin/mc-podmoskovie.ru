@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
 
-    /* Pins (табы) */
+    /* team-preview (табы) */
 
     document.querySelectorAll('.team-preview__handler').forEach((tab) => {
         tab.addEventListener('click', function () {
