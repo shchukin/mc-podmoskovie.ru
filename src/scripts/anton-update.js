@@ -474,44 +474,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-    if(isDesktop) {
-
+    if (isDesktop) {
         /* Параллакс имплантов */
-
-        const screws = document.querySelector('.screws');
         const screwItems = document.querySelectorAll('.screws__item');
-
-
-        let isTicking = false;
 
         // Функция для обновления параллакса
         function updateParallax() {
-            const rect = screws.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            // Проверяем, виден ли контейнер screws
-            if (rect.top <= windowHeight && rect.bottom >= 0) {
-                // Обратный прогресс: 1 (секция только появилась) -> 0 (секция внизу)
-                const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
-                const reverseProgress = 1 - scrollProgress;
-
-                screwItems.forEach(item => {
+            screwItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                // Проверяем, виден ли элемент в области просмотра
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    // Обратный прогресс: 1 (элемент только появился) -> 0 (элемент внизу)
+                    const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
+                    const reverseProgress = 1 - scrollProgress;
                     const factor = parseFloat(item.dataset.factor) || 1;
-                    // Смещение от 300px * factor до 0
-                    const translateY = 500 * reverseProgress * factor;
+                    // Смещение от 500px * factor до 0
+                    const translateY = 120 * reverseProgress * factor;
                     item.style.transform = `translateY(${translateY}px)`;
-                });
-            }
+                }
+            });
         }
-
 
         // Привязываем событие скролла к window
         window.addEventListener('scroll', updateParallax);
 
-
         // Вызываем при загрузке
         updateParallax();
-
     }
 
 });
