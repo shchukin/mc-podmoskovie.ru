@@ -23,6 +23,13 @@
         height: 100vh;
     }
 
+    @media (width < 1580px) {
+
+        .steps__parallax {
+            display: none;
+        }
+    }
+
     .steps__wrap {
         position: relative;
     }
