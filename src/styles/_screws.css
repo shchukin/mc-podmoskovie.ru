@@ -1,0 +1,119 @@
+.screws {
+
+}
+    .screws__item {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+    .screws__item--01 {
+        left: -10px;
+        top: 136px;
+        width: 99px;
+        height: 135px;
+        background-image: url("../images/steps/step-screw-1@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--01 {
+            background-image: url("../images/steps/step-screw-1@2x.png");
+        }
+    }
+
+
+    .screws__item--02 {
+        left: -390px;
+        top: 430px;
+        width: 547px;
+        height: 560px;
+        background-image: url("../images/steps/step-screw-2@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--02 {
+            background-image: url("../images/steps/step-screw-2@2x.png");
+        }
+    }
+
+
+    .screws__item--03 {
+        right: 70px;
+        top: 55px;
+        width: 124px;
+        height: 125px;
+        background-image: url("../images/steps/step-screw-3@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--03 {
+            background-image: url("../images/steps/step-screw-3@2x.png");
+        }
+    }
+
+
+    .screws__item--04 {
+        right: -326px;
+        top: 260px;
+        width: 450px;
+        height: 488px;
+        background-image: url("../images/steps/step-screw-4@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--04 {
+            background-image: url("../images/steps/step-screw-4@2x.png");
+        }
+    }
+
+
+    .screws__item--05 {
+        left: 50%;
+        margin-left: -142px;
+        top: 920px;
+        width: 110px;
+        height: 68px;
+        background-image: url("../images/steps/step-screw-5@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--05 {
+            background-image: url("../images/steps/step-screw-5@2x.png");
+        }
+    }
+
+
+    .screws__item--06 {
+        left: 50%;
+        margin-left: 160px;
+        top: 810px;
+        width: 96px;
+        height: 105px;
+        background-image: url("../images/steps/step-screw-6@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--06 {
+            background-image: url("../images/steps/step-screw-6@2x.png");
+        }
+    }
+
+
+    .screws__item--07 {
+        left: 50%;
+        margin-left: 460px;
+        top: 835px;
+        width: 178px;
+        height: 138px;
+        background-image: url("../images/steps/step-screw-7@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .screws__item--07 {
+            background-image: url("../images/steps/step-screw-7@2x.png");
+        }
+    }
+
+
