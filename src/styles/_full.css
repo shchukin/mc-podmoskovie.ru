@@ -7,3 +7,10 @@
     max-width: 1440px;
     height: auto;
 }
+
+
+@media (1850px <= width) {
+    .full {
+        max-width: 1920px;
+    }
+}
