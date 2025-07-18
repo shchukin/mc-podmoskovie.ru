@@ -495,56 +495,81 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /* Версия с более крутыми анимациями (задержками) сгенерированная ИИ: */
 
     if (isDesktop) {
-
         const screwItems = document.querySelectorAll('.screws__item');
 
-        // Храним текущие и целевые значения translateY для каждого элемента
+        // Храним текущие и целевые значения translateY, а также последнее известное значение targetY
         const itemStates = Array.from(screwItems).map(item => ({
             element: item,
-            currentY: 0,
-            targetY: 0
+            currentY: 120, // Инициализируем на максимальное смещение
+            targetY: 120,  // Инициализируем на максимальное смещение
+            lastKnownTargetY: 120 // Храним последнее известное значение targetY
         }));
 
-        // Коэффициент интерполяции (уменьшен для более сильной задержки)
+        // Коэффициент интерполяции
         const lerpFactor = 0.05;
+        // Порог для остановки обновления
+        const threshold = 0.01;
+        let isAnimating = false;
 
         // Функция для обновления параллакса
         function updateParallax() {
             const windowHeight = window.innerHeight;
+            let isAnyVisible = false;
 
             screwItems.forEach((item, index) => {
                 const rect = item.getBoundingClientRect();
                 // Проверяем, виден ли элемент в области просмотра
                 if (rect.top <= windowHeight && rect.bottom >= 0) {
-                    // Обратный прогресс: 1 (элемент только появился) -> 0 (элемент внизу)
+                    isAnyVisible = true;
+                    // Прогресс: 0 (элемент внизу viewport) -> 1 (элемент вверху viewport)
                     const scrollProgress = Math.min(Math.max((windowHeight - rect.top) / windowHeight, 0), 1);
-                    const reverseProgress = 1 - scrollProgress;
                     const factor = parseFloat(item.dataset.factor) || 1;
-                    // Целевое смещение от 120px * factor до 0
-                    itemStates[index].targetY = 120 * reverseProgress * factor;
+                    // Целевое смещение: от 120px * factor (внизу) до 0px (вверху)
+                    itemStates[index].targetY = Math.round(120 * (1 - scrollProgress) * factor * 100) / 100;
+                    // Обновляем последнее известное значение
+                    itemStates[index].lastKnownTargetY = itemStates[index].targetY;
+                } else {
+                    // Если элемент не виден, оставляем targetY равным последнему известному значению
+                    itemStates[index].targetY = itemStates[index].lastKnownTargetY;
                 }
             });
+
+            // Запускаем анимацию, если есть видимые элементы и анимация ещё не активна
+            if (isAnyVisible && !isAnimating) {
+                isAnimating = true;
+                requestAnimationFrame(animate);
+            }
         }
 
         // Функция для плавного обновления позиций
         function animate() {
+            let shouldContinue = false;
+
             itemStates.forEach(state => {
-                // Линейная интерполяция: currentY приближается к targetY
-                state.currentY += (state.targetY - state.currentY) * lerpFactor;
-                // Обновляем transform
-                state.element.style.transform = `translateY(${state.currentY}px)`;
+                // Проверяем, нужно ли обновлять позицию
+                if (Math.abs(state.currentY - state.targetY) > threshold) {
+                    shouldContinue = true;
+                    // Линейная интерполяция
+                    state.currentY += (state.targetY - state.currentY) * lerpFactor;
+                    // Округляем currentY
+                    state.currentY = Math.round(state.currentY * 100) / 100;
+                    // Обновляем transform
+                    state.element.style.transform = `translateY(${state.currentY}px)`;
+                }
             });
-            // Продолжаем анимацию
-            requestAnimationFrame(animate);
+
+            // Продолжаем анимацию, если есть изменения
+            if (shouldContinue) {
+                requestAnimationFrame(animate);
+            } else {
+                isAnimating = false;
+            }
         }
 
-        // Привязываем событие скролла к window
+        // Привязываем событие скролла
         window.addEventListener('scroll', updateParallax);
 
-        // Запускаем анимацию
-        requestAnimationFrame(animate);
-
-        // Вызываем при загрузке
+        // Вызываем при загрузке и инициализируем позиции
         updateParallax();
     }
 
