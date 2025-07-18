@@ -17,10 +17,7 @@
 
     .steps__parallax {
         position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        height: 100vh;
+        inset: 0;
     }
 
     @media (width < 1580px) {
@@ -84,7 +81,7 @@
 
         .steps__surgery {
             margin-top: 40px;
-            max-width: 660px;
+            max-width: 720px;
             padding: 10px 24px;
             box-shadow: inset 5px 0 0 #0096AA;
         }
