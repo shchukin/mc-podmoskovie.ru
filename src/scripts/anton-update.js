@@ -580,10 +580,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $('.anchor').on('click', function (event) {
         event.preventDefault();
 
-        var $target = $( $(this).attr('href') );
-        var headerHeight = $('.header-v2__detachable-panel').length && $('.header-v2__detachable-panel').css('position') === 'fixed' ? $('.header-v2__detachable-panel').outerHeight() : 0;
-        var scrollGap = parseInt($('.page').css('gap')) / 2;
-        var scrollCoordinate = $target.offset().top - headerHeight;
+        const $target = $( $(this).attr('href') );
+        const headerHeight = $('.header-v2__detachable-panel').length && $('.header-v2__detachable-panel').css('position') === 'fixed' ? $('.header-v2__detachable-panel').outerHeight() : 0;
+        const scrollGap = parseInt($('.page').css('gap')) / 2;
+        const scrollCoordinate = $target.offset().top - headerHeight;
 
         if( $target.length ) {
             $('html, body').animate({
