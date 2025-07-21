@@ -160,6 +160,16 @@ gulp.task('images', function () {
 });
 
 
+// Fonts: copy
+
+gulp.task('fonts', function () {
+    return gulp.src('src/fonts/**/*', {encoding: false})
+        .pipe(plumber())
+        .pipe(gulp.dest('build/fonts/'))
+        ;
+});
+
+
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function () {
@@ -241,7 +251,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'legacy', 'temp', 'content', 'images', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
+    run('clean', 'legacy', 'temp', 'content', 'images', 'fonts', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
 });
 
 
