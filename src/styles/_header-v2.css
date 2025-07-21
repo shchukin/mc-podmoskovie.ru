@@ -1,4 +1,8 @@
 .header-v2 {
+    --header-v2-height: 84px;
+}
+
+.header-v2 {
     height: var(--header-v2-height);
 }
     .header-v2__detachable-panel {
@@ -9,6 +13,7 @@
             height: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
             .header-v2__logo {
                 flex-shrink: 0;
@@ -26,28 +31,32 @@
             .header-v2__menu {
                 flex-grow: 1;
                 height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
-                .header-v2__item {
+                .header-v2__ribbon {
                     height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-                    .header-v2__link {
-                        display: flex;
-                        align-items: center;
+                    .header-v2__item {
                         height: 100%;
-                        padding: 15px;
-                        font-size: 16px;
-                        line-height: 22px;
-                        color: #22BBC7;
-                        text-decoration: none;
-                        border: none;
                     }
+                        .header-v2__link {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                            padding: 15px;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #22BBC7;
+                            text-decoration: none;
+                            border: none;
+                            white-space: nowrap;
+                        }
 
-                    .header-v2__link:hover {
-                        color: #F08C07 !important;
-                    }
+                        .header-v2__link:hover {
+                            color: #F08C07 !important;
+                        }
 
             .header-v2__contacts {
                 flex-shrink: 0;
@@ -72,6 +81,13 @@
                     text-decoration-color: transparent;
                     color: #F08C07;
                 }
+                    .header-v2__consult-desktop {
+
+                    }
+
+                    .header-v2__consult-smartphone {
+                        display: none;
+                    }
 
                 .header-v2__phone {
                     display: block;
@@ -87,4 +103,222 @@
 
 .header-v2 ~ .content {
     padding-top: 0;
+}
+
+
+
+@media (1000px <= width < 1200px) {
+
+    .header-v2 {
+        --header-v2-height: 78px;
+    }
+
+    .header-v2 {
+
+    }
+        .header-v2__detachable-panel {
+
+        }
+            .header-v2__wrap {
+
+            }
+                .header-v2__logo {
+
+                }
+                    .header-v2__emblem {
+                        width: 220px;
+                    }
+
+                .header-v2__menu {
+
+                }
+                    .header-v2__ribbon {
+
+                    }
+                        .header-v2__item {
+
+                        }
+                            .header-v2__link {
+                                padding: 10px;
+                                font-size: 15px;
+                                line-height: 20px;
+                            }
+
+                            .header-v2__link:hover {
+
+                            }
+
+                .header-v2__contacts {
+                    padding-bottom: 8px;
+                }
+                    .header-v2__request {
+                        padding: 6px 0;
+                        font-size: 13px;
+                        line-height: 18px;
+                    }
+
+                    .header-v2__request:hover {
+
+                    }
+                        .header-v2__consult-desktop {
+
+                        }
+
+                        .header-v2__consult-smartphone {
+
+                        }
+
+                    .header-v2__phone {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+}
+
+
+
+
+@media (width < 1000px) {
+
+    .header-v2 {
+        --header-v2-height: 100px;
+    }
+
+    .header-v2 {
+
+    }
+        .header-v2__detachable-panel {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            right: 0;
+            overflow: hidden; /* В некоторых браузерах header-v2__menu */
+        }
+            .header-v2__wrap {
+                position: relative;
+                align-items: flex-start;
+                gap: 30px;
+            }
+                .header-v2__logo {
+                    flex-shrink: 1;
+                    padding-top: 20px;
+                    padding-bottom: 0;
+                }
+                    .header-v2__emblem {
+                        width: 100%;
+                        max-width: 220px;
+                    }
+
+                .header-v2__menu {
+                    position: absolute;
+                    left: calc(-1 * var(--container-padding));
+                    right: calc(-1 * var(--container-padding));
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                    bottom: 0;
+                    height: auto;
+                    overflow-x: auto;
+                }
+                    .header-v2__ribbon {
+                        display: inline-flex;
+                    }
+                        .header-v2__item {
+                            /*height: 100%;*/
+                        }
+
+                        .header-v2__item:first-child {
+                            margin-left: -10px; /* (1) Аналогично паддингу */
+                        }
+
+                        .header-v2__item:last-child {
+                            margin-right: -10px; /* (1) Аналогично паддингу */
+                        }
+                            .header-v2__link {
+                                padding: 13px 10px;  /* (1) Аналогично маргину выше */
+                                font-size: 15px;
+                                line-height: 20px;
+                                /*color: #22BBC7;*/
+                                /*text-decoration: none;*/
+                                /*border: none;*/
+                            }
+
+                            .header-v2__link:hover {
+                                /*color: #F08C07 !important;*/
+                            }
+
+                .header-v2__contacts {
+                    /*flex-shrink: 0;*/
+                    /*padding-bottom: 10px;*/
+                }
+                    .header-v2__request {
+                        margin-top: 20px;
+                        /*padding: 8px 0;*/
+                        /*background-color: transparent;*/
+                        /*border: none;*/
+                        /*font-family: inherit;*/
+                        /*font-weight: bold;*/
+                        /*font-size: 14px;*/
+                        /*line-height: 20px;*/
+                        /*color: #0096AA;*/
+                        /*cursor: pointer;*/
+                        /*text-decoration: 1px underline rgb(0 150 170 / 50%);*/
+                        /*text-decoration-style: dashed;*/
+                        /*text-underline-offset: 4px;*/
+                    }
+
+                    .header-v2__request:hover {
+                        /*text-decoration-color: transparent;*/
+                        /*color: #F08C07;*/
+                    }
+
+                    .header-v2__phone {
+                        display: none;
+                    }
+}
+
+
+@media (width < 740px) {
+
+    .header-v2__request {
+        padding: 5px 10px;
+        background-color: #f08c07;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .header-v2__request:hover {
+        color: #FFFFFF;
+    }
+
+    .header-v2__consult-desktop {
+        display: none;
+    }
+
+    .header-v2__consult-smartphone {
+        display: inline;
+    }
+}
+
+@media (width < 400px) {
+
+    .header-v2__request {
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 8px;
+    }
+}
+
+@media (width < 350px) {
+
+    .header-v2__request {
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 6px;
+    }
 }
