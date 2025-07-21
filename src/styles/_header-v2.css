@@ -238,38 +238,21 @@
                                 padding: 13px 10px;  /* (1) Аналогично маргину выше */
                                 font-size: 15px;
                                 line-height: 20px;
-                                /*color: #22BBC7;*/
-                                /*text-decoration: none;*/
-                                /*border: none;*/
                             }
 
                             .header-v2__link:hover {
-                                /*color: #F08C07 !important;*/
+
                             }
 
                 .header-v2__contacts {
-                    /*flex-shrink: 0;*/
-                    /*padding-bottom: 10px;*/
+
                 }
                     .header-v2__request {
                         margin-top: 20px;
-                        /*padding: 8px 0;*/
-                        /*background-color: transparent;*/
-                        /*border: none;*/
-                        /*font-family: inherit;*/
-                        /*font-weight: bold;*/
-                        /*font-size: 14px;*/
-                        /*line-height: 20px;*/
-                        /*color: #0096AA;*/
-                        /*cursor: pointer;*/
-                        /*text-decoration: 1px underline rgb(0 150 170 / 50%);*/
-                        /*text-decoration-style: dashed;*/
-                        /*text-underline-offset: 4px;*/
                     }
 
                     .header-v2__request:hover {
-                        /*text-decoration-color: transparent;*/
-                        /*color: #F08C07;*/
+
                     }
 
                     .header-v2__phone {
@@ -282,7 +265,7 @@
 
     .header-v2__request {
         padding: 5px 10px;
-        background-color: #f08c07;
+        background-color: #F08C07;
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
