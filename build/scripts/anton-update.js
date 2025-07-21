@@ -573,4 +573,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
         updateParallax();
     }
 
+
+
+    var scrollSpeedPer100ms = 200; /* 200px per 100ms */
+
+    $('.anchor').on('click', function (event) {
+        event.preventDefault();
+
+        var $target = $( $(this).attr('href') );
+        var headerHeight = $('.header-v2__detachable-panel').length && $('.header-v2__detachable-panel').css('position') === 'fixed' ? $('.header-v2__detachable-panel').outerHeight() : 0;
+        var scrollGap = parseInt($('.page').css('gap')) / 2;
+        var scrollCoordinate = $target.offset().top - headerHeight;
+
+        if( $target.length ) {
+            $('html, body').animate({
+                scrollTop: Math.ceil(scrollCoordinate - scrollGap)
+            }, 600);
+        }
+    });
+
 });
