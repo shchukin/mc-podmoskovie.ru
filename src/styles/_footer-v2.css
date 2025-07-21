@@ -14,25 +14,92 @@
                 display: grid;
                 grid-template-columns: 2fr 1fr;
             }
-                .footer-v2__contacts {
+                .footer-v2__primary-info {
 
                 }
+                    .footer-v2__address {
+                        max-width: 600px;
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
 
-                .footer-v2__social-media {
-                    margin-top: 20px;
-                }
+                    .footer-v2__working-hours {
+                        margin-top: 24px;
+                    }
+                        .footer-v2__line {
+                            margin-top: 8px;
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
 
-                .footer-v2__legalities {
-                    margin-top: 20px;
-                }
+                    .footer-v2__copy-right {
+                        margin-top: 30px;
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
 
-                .footer-v2__address {
-                    max-width: 680px;
-                }
+                .footer-v2__secondary-info {
 
-                .footer-v2__copy-right {
-                    margin-top: 30px;
                 }
+                    .footer-v2__contacts {
+
+                    }
+                        .footer-v2__phone {
+                            display: block;
+                            width: fit-content;
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+
+                        .footer-v2__email {
+                            padding-top: 4px;
+                            display: block;
+                            width: fit-content;
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                    .footer-v2__social-media {
+                        margin-top: 20px;
+                    }
+                        .footer-v2__media-heading {
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+
+                        .footer-v2__media-list {
+                            margin-top: 10px;
+                            display: flex;
+                            align-items: flex-start;
+                        }
+                            .footer-v2__net {
+                                display: block;
+                                padding: 5px;
+                                text-decoration: none;
+                                border: none;
+                            }
+
+                            .footer-v2__net:first-child {
+                                margin-left: -5px;
+                            }
+
+                            .footer-v2__net:last-child {
+                                margin-right: -5px;
+                            }
+                                .footer-v2__icon {
+                                    vertical-align: top;
+                                }
+
+                    .footer-v2__legalities {
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        font-size: 18px;
+                        line-height: 20px;
+                        gap: 10px;
+                    }
+
 
 
         .footer-v2__contraindications {
@@ -45,4 +112,22 @@
             text-transform: uppercase;
             text-align: center;
             letter-spacing: 2px;
+        }
+
+        @media (1100px <= width < 1340px) {
+
+            .footer-v2__contraindications {
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        @media (900px <= width < 1100px) {
+
+            .footer-v2__contraindications {
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1px;
+            }
         }
