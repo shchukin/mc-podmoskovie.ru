@@ -1,4 +1,5 @@
 :root {
+    --header-v2-height: 84px;
     --font-heading: "Ubuntu";
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 200ms ease;

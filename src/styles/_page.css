@@ -45,21 +45,21 @@
 
 
 .page--prosthetic {
-    margin-top: 40px;
     overflow: hidden;
+    margin-top: 0;
 }
 
 @media (740px <= width < 1200px) {
 
     .page--prosthetic {
-        margin-top: 32px;
+
     }
 }
 
 @media (width < 740px) {
 
     .page--prosthetic {
-        margin-top: 24px;
+
     }
 }
 
