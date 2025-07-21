@@ -19,11 +19,11 @@
                 }
 
                 .footer-v2__social-media {
-
+                    margin-top: 20px;
                 }
 
                 .footer-v2__legalities {
-
+                    margin-top: 20px;
                 }
 
                 .footer-v2__address {
@@ -31,16 +31,18 @@
                 }
 
                 .footer-v2__copy-right {
-
+                    margin-top: 30px;
                 }
 
 
         .footer-v2__contraindications {
-            margin-top: 40px;
+            margin-top: 50px;
             font-family: "Bebas Neue";
             font-weight: normal;
-            font-size: 40px;
-            line-height: 40px;
+            font-size: 48px;
+            line-height: 48px;
             color: #B3E0E6;
             text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
         }
