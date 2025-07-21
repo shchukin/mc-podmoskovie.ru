@@ -1,0 +1,46 @@
+.footer-v2 {
+    padding-top: 45px;
+    padding-bottom: 48px;
+    background-color: #F7F7F7;
+}
+    .footer-v2__wrap {
+
+    }
+
+        .footer-v2__content {
+
+        }
+            .footer-v2__summary {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+            }
+                .footer-v2__contacts {
+
+                }
+
+                .footer-v2__social-media {
+
+                }
+
+                .footer-v2__legalities {
+
+                }
+
+                .footer-v2__address {
+                    max-width: 680px;
+                }
+
+                .footer-v2__copy-right {
+
+                }
+
+
+        .footer-v2__contraindications {
+            margin-top: 40px;
+            font-family: "Bebas Neue";
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 40px;
+            color: #B3E0E6;
+            text-transform: uppercase;
+        }
