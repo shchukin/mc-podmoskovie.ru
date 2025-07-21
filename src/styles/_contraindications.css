@@ -1,0 +1,22 @@
+.contraindications {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #B3E0E6;
+    text-transform: uppercase;
+}
+
+
+
+@media (width < 740px) {
+
+    .contraindications {
+        padding-top: 24px;
+        padding-bottom: 16px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
