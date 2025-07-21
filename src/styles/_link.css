@@ -8,17 +8,17 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #1B73E8;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.2em;
+    color: #1FBBC7;
+    text-decoration: 1px underline rgba(0 150 170 / 30%);
+    text-underline-offset: 0.3em;
     cursor: pointer;
     transition: text-decoration-color var(--transition-hover);
 }
 
 .link:hover,
 .wysiwyg a:hover {
-    text-decoration-color: transparent;
+    color: #F08C07;
+    text-decoration-color: rgb(240 140 7 / 30%);
 }
 
 .link:active,

@@ -60,7 +60,7 @@
                         }
 
                     .footer-v2__social-media {
-                        margin-top: 20px;
+                        margin-top: 24px;
                     }
                         .footer-v2__media-heading {
                             font-size: 24px;
@@ -92,13 +92,16 @@
 
                     .footer-v2__legalities {
                         margin-top: 20px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        font-size: 18px;
-                        line-height: 20px;
-                        gap: 10px;
                     }
+                        .footer-v2__agreement {
+                            margin-top: 10px;
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+
+                        .footer-v2__agreement:first-child {
+                            margin-top: 0;
+                        }
 
 
 
