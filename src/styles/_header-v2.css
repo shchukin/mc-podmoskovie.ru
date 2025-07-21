@@ -221,6 +221,8 @@
                 }
                     .header-v2__ribbon {
                         display: inline-flex;
+                        min-width: 100%;
+                        justify-content: space-evenly;
                     }
                         .header-v2__item {
                             /*height: 100%;*/
