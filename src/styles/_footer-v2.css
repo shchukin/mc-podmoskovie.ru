@@ -105,32 +105,225 @@
 
 
 
-        .footer-v2__contraindications {
+        .footer-v2__note {
             margin-top: 50px;
-            font-family: "Bebas Neue";
-            font-weight: normal;
-            font-size: 48px;
-            line-height: 48px;
-            color: #B3E0E6;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 2px;
         }
 
-        @media (1100px <= width < 1340px) {
 
-            .footer-v2__contraindications {
-                font-size: 36px;
-                line-height: 40px;
-                letter-spacing: 1.5px;
+
+
+@media (740px <= width < 1200px) {
+
+    .footer-v2 {
+        padding-top: 38px;
+        padding-bottom: 40px;
+    }
+        .footer-v2__wrap {
+
+        }
+
+            .footer-v2__content {
+
             }
-        }
+                .footer-v2__summary {
+                    grid-template-columns: 3fr 2fr;
+                }
+                    .footer-v2__primary-info {
 
-        @media (900px <= width < 1100px) {
+                    }
+                        .footer-v2__address {
+                            max-width: 480px;
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
 
-            .footer-v2__contraindications {
-                font-size: 32px;
-                line-height: 36px;
-                letter-spacing: 1px;
+                        @media (width < 900px) {
+                            .footer-v2__address {
+                                max-width: 400px;
+                            }
+                        }
+
+                        .footer-v2__working-hours {
+
+                        }
+                            .footer-v2__line {
+                                font-size: 18px;
+                                line-height: 26px;
+                            }
+
+                        .footer-v2__copy-right {
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+
+                    .footer-v2__secondary-info {
+
+                    }
+                        .footer-v2__contacts {
+
+                        }
+                            .footer-v2__phone {
+                                font-size: 22px;
+                                line-height: 26px;
+                            }
+
+                            .footer-v2__email {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+
+                        .footer-v2__social-media {
+
+                        }
+                            .footer-v2__media-heading {
+                                font-size: 22px;
+                                line-height: 30px;
+                            }
+
+                            .footer-v2__media-list {
+
+                            }
+                                .footer-v2__net {
+
+                                }
+                                    .footer-v2__icon {
+
+                                    }
+
+                        .footer-v2__legalities {
+
+                        }
+                            .footer-v2__agreement {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+
+                            .footer-v2__agreement:first-child {
+
+                            }
+
+
+
+            .footer-v2__note {
+
             }
+}
+
+
+
+@media (width < 740px) {
+
+    .footer-v2 {
+        /*padding-top: 45px;*/
+        /*padding-bottom: 48px;*/
+        /*background-color: #F7F7F7;*/
+    }
+        .footer-v2__wrap {
+
         }
+
+            .footer-v2__content {
+
+            }
+                .footer-v2__summary {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 32px;
+                }
+                    .footer-v2__primary-info {
+
+                    }
+                        .footer-v2__address {
+                            /*max-width: 600px;*/
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+
+                        .footer-v2__working-hours {
+                            /*margin-top: 24px;*/
+                        }
+                            .footer-v2__line {
+                                /*margin-top: 8px;*/
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+
+                        .footer-v2__copy-right {
+                            /*margin-top: 30px;*/
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+
+                    .footer-v2__secondary-info {
+
+                    }
+                        .footer-v2__contacts {
+
+                        }
+                            .footer-v2__phone {
+                                /*display: block;*/
+                                /*width: fit-content;*/
+                                font-size: 22px;
+                                line-height: 26px;
+                            }
+
+                            .footer-v2__email {
+                                /*padding-top: 4px;*/
+                                /*display: block;*/
+                                /*width: fit-content;*/
+                                font-size: 15px;
+                                line-height: 22px;
+                            }
+
+                        .footer-v2__social-media {
+                            /*margin-top: 24px;*/
+                        }
+                            .footer-v2__media-heading {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+
+                            .footer-v2__media-list {
+                                /*margin-top: 10px;*/
+                                /*display: flex;*/
+                                /*align-items: flex-start;*/
+                            }
+                                .footer-v2__net {
+                                    /*display: block;*/
+                                    /*padding: 5px;*/
+                                    /*text-decoration: none;*/
+                                    /*border: none;*/
+                                }
+
+                                .footer-v2__net:first-child {
+                                    /*margin-left: -5px;*/
+                                }
+
+                                .footer-v2__net:last-child {
+                                    /*margin-right: -5px;*/
+                                }
+                                    .footer-v2__icon {
+                                        /*vertical-align: top;*/
+                                    }
+
+                        .footer-v2__legalities {
+                            /*margin-top: 20px;*/
+                        }
+                            .footer-v2__agreement {
+                                /*margin-top: 10px;*/
+                                font-size: 15px;
+                                line-height: 18px;
+                            }
+
+                            .footer-v2__agreement:first-child {
+                                /*margin-top: 0;*/
+                            }
+
+            .footer-v2__note {
+                /*margin-top: 50px;*/
+            }
+}
+
+
+
+
